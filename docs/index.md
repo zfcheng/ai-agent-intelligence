@@ -1,5 +1,6 @@
 ---
-title: AI Agent Intelligence
+title: Home
+nav_order: 1
 ---
 
 # AI Agent Intelligence

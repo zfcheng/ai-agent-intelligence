@@ -1,6 +1,35 @@
 title: AI Agent Intelligence
 description: Production-grade AI Agent knowledge base. Daily, weekly, and monthly summaries on frameworks, harnesses, observability, self-improving loops, and real-world deployment.
-markdown: kramdown
-permalink: pretty
-exclude: []
-include: []
+
+# Use just-the-docs theme (excellent left sidebar + search)
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+# UI settings
+color_scheme: light
+search_enabled: true
+search:
+  tokenizer_separator: /[\s/]+/
+
+# Top right links
+aux_links:
+  "View on GitHub":
+    - "//github.com/zfcheng/ai-agent-intelligence"
+
+# Sidebar behavior
+nav_sort: case_insensitive
+
+# Footer
+footer_content: "Generated with ai-agent-intelligence skill • Hosted on GitHub Pages"
+
+# === Analytics (optional) ===
+# GitHub Pages has NO built-in traffic stats.
+# To enable:
+# 1. Plausible (recommended, privacy-friendly): sign up at plausible.io, then set:
+# plausible: "zfcheng.github.io"
+#
+# 2. Google Analytics 4:
+# google_analytics: "G-XXXXXXXXXX"
+#
+# The head_custom include will load the script when configured.
