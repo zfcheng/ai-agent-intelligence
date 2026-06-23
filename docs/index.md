@@ -27,9 +27,17 @@ nav_order: 1
 - Prioritizes posts and discussions from core accounts (@hwchase17, @swyx, @steipete, @HamelHusain, @sh_reya, etc.).
 - Emphasis on actionable insights for AI Native organizations and building "AI super individuals."
 
+## Skill Source
+
+The skill itself is open source and maintained in this repository under the `skill/` directory.
+
+- [View skill source](https://github.com/zfcheng/ai-agent-intelligence/tree/main/skill)
+- The skill can be installed directly from this repo.
+
 ---
 
 **Repository**: [zfcheng/ai-agent-intelligence](https://github.com/zfcheng/ai-agent-intelligence)  
-**Source**: All summaries live in the `docs/` folder and are served via GitHub Pages.
+**Site source**: `docs/` (GitHub Pages)  
+**Skill source**: `skill/`
 
 *This site is automatically maintained using the ai-agent-intelligence skill.*
