@@ -11,7 +11,7 @@ title: AI Agent Intelligence
 ## Latest Summaries
 
 ### Daily
-- [2026-06-23](./daily/2026-06-23.md) — Deep Agents, Leve (filesystem LangGraph), 4-layer Loop Engineering, hill-climbing self-improvement
+- [2026-06-23](./daily/2026-06-23.md) — Deep Agents, Leve (filesystem-first LangGraph), 4-layer Loop Engineering, hill-climbing self-improvement
 
 *(More dailies will appear here automatically)*
 
@@ -28,4 +28,7 @@ title: AI Agent Intelligence
 
 ---
 
-*Maintained as a GitHub Pages site. All summaries are persisted in this `docs/` structure.*
+**Repository**: [zfcheng/ai-agent-intelligence](https://github.com/zfcheng/ai-agent-intelligence)  
+**Source**: All summaries live in the `docs/` folder and are served via GitHub Pages.
+
+*This site is automatically maintained using the ai-agent-intelligence skill.*
