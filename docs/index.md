@@ -12,7 +12,7 @@ nav_order: 1
 ## Latest Summaries
 
 ### Daily
-- [2026-06-26](./daily/2026-06-26.html) — Harness > model (~7× impact); agent-native infra (Vercel Eve) & FDE as the enterprise adoption bottleneck
+- [2026-06-26](./daily/2026-06-26.html) — LangSmith Fleet On-Call Copilot + Rubrics for self-correcting Deep Agents, LLM Gateway; "Code as Agent Harness" paper and trace harness data challenges
 - [2026-06-23](./daily/2026-06-23.html) — Docs built for agents; workflow/orchestration focus in frameworks
 
 *(More dailies will appear here automatically)*
