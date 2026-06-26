@@ -13,6 +13,7 @@ nav_order: 1
 
 ### Daily
 - [2026-06-26](./daily/2026-06-26.html) — LangSmith Fleet On-Call Copilot + Rubrics for self-correcting Deep Agents, LLM Gateway; "Code as Agent Harness" paper and trace harness data challenges
+- [2026-06-25](./daily/2026-06-25.html) — LangSmith Fleet On-Call Copilot, RubricMiddleware for Deep Agents, SmithDB full-text search; 100x cheaper trace judges, Vercel product-design skill, JS deployment cookbook, @sh_reya harness data challenges
 - [2026-06-23](./daily/2026-06-23.html) — Docs built for agents; workflow/orchestration focus in frameworks
 
 *(More dailies will appear here automatically)*
