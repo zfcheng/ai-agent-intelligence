@@ -1,0 +1,8 @@
+.bundle/
+.site/
+vendor/bundle/
+
+# Local generation telemetry (per-run quality/cost reports)
+scripts/run-logs/
+# Local test prompt (no-push generation testing)
+scripts/daily-test-nopush.prompt
