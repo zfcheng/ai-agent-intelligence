@@ -12,6 +12,7 @@ nav_order: 1
 ## Latest Summaries
 
 ### Daily
+- [2026-06-26](./daily/2026-06-26.html) — Harness > model (~7× impact); agent-native infra (Vercel Eve) & FDE as the enterprise adoption bottleneck
 - [2026-06-23](./daily/2026-06-23.html) — Docs built for agents; workflow/orchestration focus in frameworks
 
 *(More dailies will appear here automatically)*
