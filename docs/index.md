@@ -13,6 +13,7 @@ nav_order: 1
 
 ### Daily
 - [2026-06-28](./daily/2026-06-28.html) — RubricMiddleware grader loops + LLM Gateway governance; Leve filesystem-first LangGraph agents; Engine trace-to-memory self-improvement; @sh_reya 200GB harness cleanup + DocWriter
+- [2026-06-27](./daily/2026-06-27.html) — Deep Agents 49-80% prompt caching + KV hit rate as key metric; Vercel eve agent-native infra and durable stacks; Self-Harness autonomous model-specific harness improvement loops
 - [2026-06-26](./daily/2026-06-26.html) — LangSmith Fleet On-Call Copilot + Rubrics for self-correcting Deep Agents, LLM Gateway; "Code as Agent Harness" paper and trace harness data challenges
 - [2026-06-25](./daily/2026-06-25.html) — LangSmith Fleet On-Call Copilot, RubricMiddleware for Deep Agents, SmithDB full-text search; 100x cheaper trace judges, Vercel product-design skill, JS deployment cookbook, @sh_reya harness data challenges
 - [2026-06-23](./daily/2026-06-23.html) — Docs built for agents; workflow/orchestration focus in frameworks
