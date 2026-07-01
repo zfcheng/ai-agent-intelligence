@@ -26,7 +26,7 @@ nav_order: 1
 - (No weekly summary yet)
 
 ## Monthly
-- (No monthly summary yet)
+- [2026-07](./monthly/2026-07.html) — Harness engineering, LangSmith Engine flywheels, and agentic infrastructure (eve, per-PR) mature as production baseline while private-cloud governance risks and FDE demand stay central
 
 ## How This Works
 - All content generated exclusively via the `ai-agent-intelligence` skill.
