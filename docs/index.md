@@ -12,6 +12,11 @@ nav_order: 1
 ## Latest Summaries
 
 ### Daily
+- 2026-07-01
+  - [Grok](./daily/2026-07-01-grok.html)
+  - [Codex (GPT 5.5)](./daily/2026-07-01-codex.html)
+  - [PI (Deepseek)](./daily/2026-07-01-pi.html)
+
 - 2026-06-30  [GROK](./daily/2026-06-30-grok.html)  [Codex (GPT 5.5)](./daily/2026-06-30-codex.html)  [PI (Deepseek)](./daily/2026-06-30-pi.html)
 - [2026-06-29](./daily/2026-06-29.html) — LangSmith harbor + Engine for sandboxed evals and trace-driven self-improvement flywheels; Fleet embeds agents in Slack/Teams; "2026 is the year of the harness" and loop engineering consolidate
 - [2026-06-28](./daily/2026-06-28.html) — RubricMiddleware grader loops + LLM Gateway governance; Leve filesystem-first LangGraph agents; Engine trace-to-memory self-improvement; @sh_reya 200GB harness cleanup + DocWriter
