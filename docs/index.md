@@ -38,6 +38,7 @@ nav_order: 1
 *(More dailies will appear here automatically)*
 
 ## Weekly
+- [2026-27](./weekly/2026-27.html) — LangSmith unifies coding agent observability + cost governance; OpenWiki delivers durable, incrementally updated repo memory for agents; verification-first design and trajectory evals rise as core reliability practices
 - (No weekly summary yet)
 
 ## Monthly
