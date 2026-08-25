@@ -12,6 +12,11 @@ nav_order: 1
 ## Latest Summaries
 
 ### Daily
+- 2026-08-25
+  - [Grok](./daily/2026-08-25-grok.html)
+  - [Codex (GPT 5.5)](./daily/2026-08-25-codex.html)
+  - [PI (Deepseek)](./daily/2026-08-25-pi.html)
+
 - 2026-08-24
   - [Grok](./daily/2026-08-24-grok.html)
   - [Codex (GPT 5.5)](./daily/2026-08-24-codex.html)
