@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Convert markdown reports to HTML for GitHub Pages static serving.
-Usage: python3 scripts/md-to-html.py docs/ai-loop/2026-11-18-commander.md
-Output: docs/ai-loop/2026-11-18-commander.html (same path, .md -> .html)
+Usage: python3 scripts/md-to-html.py <md_file>
+Output: <md_file>.html (same directory)
+
+Design System: skill/frontend-design/DESIGN-SYSTEM.md
 """
-import sys, os, subprocess, re
+import sys, os, subprocess, re, glob
 
 def md_to_html(md_path):
     with open(md_path) as f:
@@ -42,29 +44,330 @@ def md_to_html(md_path):
     body = result.stdout
     os.unlink(tmp_path)
 
-    html_path = md_path.replace('.md', '.html')
+    html_path = md_path.rsplit('.md', 1)[0] + '.html'
 
-    nav_links = [
+    # Determine current section for nav highlighting
+    section = ''
+    for seg in ['ai-loop', 'llm-rankings', 'trending', 'pricing', 'blog-monitor', 'insights']:
+        if seg in md_path:
+            section = seg
+            break
+    if 'daily' in md_path:
+        section = 'daily'
+
+    nav_items = [
         ('AI Agent Intelligence', ''),
-        ('Daily', 'daily.html'),
-        ('AI Loop', 'ai-loop/'),
-        ('LLM Rankings', 'llm-rankings/'),
-        ('Trending', 'trending/'),
-        ('Pricing', 'pricing/'),
-        ('Blog Monitor', 'blog-monitor/'),
-        ('Insights', 'insights/'),
+        ('Daily', 'daily.html', 'daily'),
+        ('AI Loop', 'ai-loop/', 'ai-loop'),
+        ('LLM Rankings', 'llm-rankings/', 'llm-rankings'),
+        ('Trending', 'trending/', 'trending'),
+        ('Pricing', 'pricing/', 'pricing'),
+        ('Blog Monitor', 'blog-monitor/', 'blog-monitor'),
+        ('Insights', 'insights/', 'insights'),
     ]
 
-    nav_html = ''.join(
-        f'<a href="/ai-agent-intelligence/{url}" class="{"site-title" if label == "AI Agent Intelligence" else ""}">{label}</a>'
-        for label, url in nav_links
-    )
+    def nav_item(label, url, key):
+        is_active = (section == key) if key else False
+        cls = 'site-title' if label == 'AI Agent Intelligence' else ''
+        if is_active:
+            cls += ' active'
+        return f'<a href="/ai-agent-intelligence/{url}" class="{cls.strip()}">{label}</a>'
+
+    nav_html = ''.join(nav_item(l, u, k) for l, u, k in nav_items)
+
+    # === CSS with dark mode support ===
+    css = '''
+:root {
+  --bg: #fff;
+  --surface: #f8f9fa;
+  --text: #222;
+  --text-secondary: #666;
+  --accent: #0969da;
+  --accent-hover: #0550ae;
+  --border: #e9ecef;
+  --border-strong: #d0d7de;
+  --code-bg: #f1f3f4;
+  --pre-bg: #f8f9fa;
+  --bq-border: #0969da;
+  --bq-bg: #f0f7ff;
+  --footer-text: #999;
+  --footer-bg: #f8f9fa;
+  --card-bg: #fff;
+  --card-border: #e9ecef;
+  --card-shadow: rgba(0,0,0,0.04);
+  --card-hover: rgba(0,0,0,0.08);
+  --btn-bg: #0969da;
+  --btn-text: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a2e;
+    --surface: #16213e;
+    --text: #e0e0e0;
+    --text-secondary: #888;
+    --accent: #58a6ff;
+    --accent-hover: #79c0ff;
+    --border: #30363d;
+    --border-strong: #484f58;
+    --code-bg: #21262d;
+    --pre-bg: #0d1117;
+    --bq-border: #58a6ff;
+    --bq-bg: rgba(88,166,255,0.08);
+    --footer-text: #8b949e;
+    --footer-bg: #16213e;
+    --card-bg: #21262d;
+    --card-border: #30363d;
+    --card-shadow: rgba(0,0,0,0.3);
+    --card-hover: rgba(255,255,255,0.05);
+    --btn-bg: #58a6ff;
+    --btn-text: #0d1117;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+  padding: 14px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--accent);
+}
+
+.site-title {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.site-title:hover {
+  color: var(--accent);
+}
+
+.page-header {
+  margin: 40px 0 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-title {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.page-author {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  margin: 8px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-author .badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  vertical-align: middle;
+}
+
+.page-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.page-content h1 {
+  font-size: 1.6em;
+  margin: 36px 0 16px;
+  font-weight: 700;
+}
+
+.page-content h2 {
+  font-size: 1.35em;
+  margin: 32px 0 14px;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.page-content h3 {
+  font-size: 1.15em;
+  margin: 28px 0 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.page-content h4 {
+  font-size: 1.05em;
+  margin: 24px 0 10px;
+  font-weight: 600;
+}
+
+.page-content p {
+  margin: 14px 0;
+}
+
+.page-content ul, .page-content ol {
+  padding-left: 24px;
+  margin: 14px 0;
+}
+
+.page-content li {
+  margin: 6px 0;
+}
+
+.page-content a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.page-content a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.page-content blockquote {
+  border-left: 3px solid var(--bq-border);
+  margin: 20px 0;
+  padding: 12px 20px;
+  color: var(--text-secondary);
+  background: var(--bq-bg);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.96em;
+}
+
+.page-content code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: var(--text);
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+}
+
+.page-content pre {
+  background: var(--pre-bg);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.page-content pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+.page-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.page-content th,
+.page-content td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.page-content th {
+  background: var(--surface);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.page-content tr:nth-child(even) {
+  background: rgba(0,0,0,0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-content tr:nth-child(even) {
+    background: rgba(255,255,255,0.03);
+  }
+}
+
+.page-footer {
+  margin-top: 60px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  color: var(--footer-text);
+  font-size: 0.9em;
+}
+
+.page-footer a {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    gap: 12px;
+    padding: 10px 16px;
+    flex-direction: column;
+  }
+  .page-container {
+    padding: 0 12px;
+  }
+  .page-title {
+    font-size: 1.6em;
+  }
+}
+'''
 
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 <title>{title} | AI Agent Intelligence</title>
 </head>
 <body>
@@ -79,31 +382,7 @@ def md_to_html(md_path):
 <footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
 </main>
 </div>
-<style>
-body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }}
-.page-container {{ max-width: 900px; margin: 0 auto; padding: 20px; }}
-.site-nav {{ display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }}
-.site-nav a {{ text-decoration: none; color: #0969da; font-weight: 500; }}
-.site-title {{ font-weight: 700; color: #222; }}
-.page-header {{ margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }}
-.page-title {{ font-size: 1.8em; margin: 0; }}
-.page-author {{ color: #666; font-size: 0.9em; margin: 6px 0 0; }}
-.page-content {{ line-height: 1.8; font-size: 16px; }}
-.page-content h2 {{ font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }}
-.page-content h3 {{ font-size: 1.2em; margin: 24px 0 10px; }}
-.page-content table {{ border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }}
-.page-content th, .page-content td {{ border: 1px solid #ddd; padding: 8px 12px; }}
-.page-content th {{ background: #f8f9fa; font-weight: 600; }}
-.page-content tr:nth-child(even) {{ background: #f9f9f9; }}
-.page-content a {{ color: #0969da; text-decoration: none; }}
-.page-content a:hover {{ text-decoration: underline; }}
-.page-content code {{ background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }}
-.page-content pre {{ background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }}
-.page-footer {{ margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }}
-.page-footer a {{ color: #0969da; }}
-blockquote {{ border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }}
-@media (max-width: 600px) {{ .site-nav {{ flex-direction: column; gap: 8px; }} .page-container {{ padding: 12px; }} }}
-</style>
+<style>{css}</style>
 </body>
 </html>'''
 
@@ -112,7 +391,8 @@ blockquote {{ border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px;
     print(f'Generated: {html_path}')
 
 if __name__ == '__main__':
-    if len(sys.argv) != 2:
-        print('Usage: python3 scripts/md-to-html.py <md_file>')
+    if len(sys.argv) < 2:
+        print('Usage: python3 scripts/md-to-html.py <md_file> [md_file ...]')
         sys.exit(1)
-    md_to_html(sys.argv[1])
+    for path in sys.argv[1:]:
+        md_to_html(path)
