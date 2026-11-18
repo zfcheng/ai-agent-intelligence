@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-07-09 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-07-09 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-07-09 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li><p><strong>Harness engineering became the clearest production-agent lever of the day</strong>: LangChain and NVIDIA launched the NemoClaw Deep Agents Blueprint, combining LangChain Deep Agents Code, NVIDIA Nemotron 3 Ultra, and NVIDIA OpenShell into an open, governed stack for specialized agents. The notable result was not model retraining: LangChain reported that a tuned Deep Agents harness reached a 0.86 aggregate score at $4.48 per eval run versus $43.48 for the next closest model, reinforcing that memory, tool use, evals, runtime policy, and model behavior need to be optimized together (<a href="https://www.langchain.com/blog/langchain-and-nvidia-launch-the-nemoclaw-deep-agents-blueprint">LangChain</a>, <a href="https://blogs.nvidia.com/blog/nemotron-langchain-agents-open-stack/">NVIDIA</a>).</p></li>
+<li><p><strong>Copilot moved further into enterprise-grade agent operations</strong>: GitHub added enterprise-managed OpenTelemetry export for VS Code and Copilot CLI, including approved OTLP collectors, prompt/response/tool-content capture controls, and safer managed headers that do not leak into spawned tool subprocesses. Combined with MDM-delivered managed settings, GA browser tools, parallel agent sessions, mobile merge-conflict repair, and live Copilot CLI session notifications, the coding-agent surface is shifting from “developer feature” to managed endpoint fleet with observability, policy, cost visibility, and remote supervision (<a href="https://github.blog/changelog/2026-07-08-enterprise-managed-opentelemetry-export-for-vs-code-and-cli/">OTel export</a>, <a href="https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/">VS Code releases</a>, <a href="https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/">MDM settings</a>, <a href="https://github.blog/changelog/2026-07-08-github-mobile-fix-merge-conflicts-with-copilot-cloud-agent/">mobile cloud agent</a>).</p></li>
+<li><p><strong>GitHub published a concrete guarded-agent case study</strong>: the Aspire team used GitHub Agentic Workflows to turn merged product changes into SME-reviewed docs PRs across repositories, producing 82 feature-doc PRs for Aspire 13.3 and 13.4 at a median 44.8 hours after the product PR. The important architectural pattern is the “safe outputs” split: the agent reads and emits intent as JSON, while a narrow, verifiable job with a per-workflow GitHub app performs the write (<a href="https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/">GitHub</a>).</p></li>
+<li><p><strong>Benchmarks got more domain-realistic and less flattering</strong>: JetBrains released the Kotlin Benchmark for AI coding agents on real-world Kotlin tasks with a public leaderboard and future metrics beyond passing tests, while Alibaba highlighted HSCodeComp, an ACL 2026 Best Resource Paper benchmark for deep-search agents applying hierarchical customs rules. Alibaba’s Qwen-based agent led HSCodeComp at 65.0%, which is useful progress but still a reminder that professional rule application remains far from fully automated (<a href="https://blog.jetbrains.com/kotlin/2026/07/introducing-the-kotlin-benchmark-evaluate-ai-coding-agents-on-real-world-kotlin-tasks/">JetBrains</a>, <a href="https://www.alibabacloud.com/blog/alibabas-latest-ai-agent-benchmark-awarded-best-resource-paper-at-acl-2026_603341">Alibaba Cloud</a>).</p></li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li><p><strong>Agent observability language is splitting into two different markets</strong>: Dash0’s July 8 explainer separated observing agents from agents doing observability, while the CNCF/F5 post showed a practical Kubernetes network boundary for OpenClaw using NGINX as the enforced egress control plane and OpenTelemetry as the audit plane. The discussion is becoming more operational: traces are necessary, but autonomous workloads also need egress control, policy, and auditable side effects (<a href="https://www.dash0.com/faq/what-is-agentic-observability">Dash0</a>, <a href="https://www.cncf.io/blog/2026/07/08/network-boundary-for-ai-agents-using-nginx-and-opentelemetry/">CNCF</a>).</p></li>
+<li><p><strong>FDE/PDE keeps becoming the enterprise-AI delivery model, not a job-title fad</strong>: Microsoft Frontier Company’s $2.5B / 6,000-expert push was still heavily discussed through the US day because it frames AI deployment as embedded engineering plus governance, observability, accountability, model diversity, and protected customer IP. Paired with AWS’s recent $1B forward-deployed engineering move, the bottleneck is clearly shifting from model access to customer-specific production integration (<a href="https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/">Microsoft</a>, <a href="https://www.techradar.com/pro/amazon-is-spending-billions-on-deploying-engineers-into-customers-looking-to-get-started-with-ai">TechRadar</a>).</p></li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>Treat the next internal agent pilot as a <strong>governed harness program</strong>: capture OTel traces and tool-content policy from day one, route autonomous writes through intent-plus-safe-output handlers, put egress behind an auditable boundary, and tune the harness against real workload evals before changing models. For private-cloud or enterprise rollout, the durable asset is not just the agent code; it is the trace dataset, eval suite, policy envelope, and deployment playbook that compound across customers.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

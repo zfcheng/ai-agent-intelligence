@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-07-04 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-07-04 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-07-04 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li><p><strong>Agent evals are standardizing around reproducible environments, not final-answer grading</strong>: LangChain’s <a href="https://www.langchain.com/blog/unified-stack-for-evaluating-agents">Harbor x LangChain eval stack</a> shows the direction clearly: <code>langgraph.json</code> as the agent entrypoint, Harbor as the trial orchestrator, LangSmith Sandboxes as isolated execution, and LangSmith traces as the system of record. The important shift is that agent evaluation now includes environment state, artifacts, repeated trials, deterministic verifier scripts, and trace-backed explanations.</p></li>
+<li><p><strong>LangSmith Engine put “continuous agent evals” into the center of the discussion</strong>: Harrison Chase’s Max Agency episode on <a href="https://www.linkedin.com/posts/harrison-chase-961287118_special-episode-with-benjamin-tannyhill-activity-7478475036593508352-2Hg1">LangSmith Engine</a> focused on an agent that hunts failures, prioritizes issues, drafts fixes, and uses sandboxes and subagents. The hard problem raised in the US-day discussion was evals for an agent that never stops running: teams need sampled decision-point grading, shadow production, drift baselines, and accepted-fix feedback rather than a single terminal pass/fail gate.</p></li>
+<li><p><strong>Enterprise observability vendors are moving agent telemetry into the SRE control plane</strong>: Dynatrace’s <a href="https://www.dynatrace.com/news/blog/dynatrace-observability-meets-nvidia-ai-q/">NVIDIA AI-Q integration</a> treats agent workflows as full-stack production systems, ingesting OpenTelemetry traces, model metadata, token usage, inference latency, GPU utilization, infrastructure health, and deployment/reliability context. That is a practical signal that agent observability is becoming part of incident analysis, cost governance, and software-delivery review, not a separate LLMOps dashboard.</p></li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li><p><strong>The AI Engineer World’s Fair postgame converged on loops, trust, and review debt</strong>: Latent Space’s July 3 <a href="https://www.latent.space/p/aiewf-daily-dispatch-locomotives">daily dispatch</a> captured the argument: autonomous loops are already productive, but the discipline around verifiability, economics, and human review is lagging. The strongest takeaway for production teams is not “software factories now”; it is that agent loops should start narrow, expose their state, and preserve human conceptual control until the control layer is proven.</p></li>
+<li><p><strong>Harness engineering became a community topic, not just a vendor category</strong>: The <a href="https://shashikantjagtap.net/superagentic-ai-hosted-largest-technical-side-event-of-ai-engineer-worlds-fair-on-harness-engineering/">Harness Engineering side event</a> at AI Engineer World’s Fair drew unusually strong attention for a still-emerging discipline. Combined with GitHub’s <a href="https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/">Copilot agent session streaming</a> for prompts, responses, and tool calls, the hot discussion is shifting toward enterprise-grade session ledgers: who asked, what tools ran, what changed, what it cost, and where auditors can inspect it.</p></li>
+<li><p><strong>Agent orchestration is favoring deterministic routing around probabilistic workers</strong>: Microsoft’s <a href="https://github.com/microsoft/conductor">Conductor</a> is a useful example: multi-agent workflows are YAML-defined, version-controlled, conditionally routed with deterministic logic, and observable through a live dashboard. This matches the broader sentiment from the day: spend model tokens on judgment-heavy subtasks, but keep workflow routing, limits, human gates, and audit surfaces explicit.</p></li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For the next internal agent pilot, treat the harness as the product boundary: run agents in clean sandboxes, record traces and tool calls as first-class artifacts, grade sampled decisions as well as final outcomes, and attach budget, credential scope, and human approval at the same workflow layer. In private-cloud or enterprise settings, this gives you a credible path from prototype to controlled deployment without betting everything on model quality alone.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

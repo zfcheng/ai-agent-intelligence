@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-08-15 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-08-15 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-08-15 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>LangSmith’s current production signal is less about flashy agent features and more about hardening the harness: the August 3-10 cloud changelog tightened access-policy error semantics, fixed hosted LangSmith MCP client registration for confidential-method clients, and improved cached authorization invalidation in split-plane deployments (<a href="https://docs.langchain.com/langsmith/changelog">LangSmith Cloud changelog</a>). For enterprise/private-cloud teams, this is the kind of control-plane reliability work that makes agent observability usable beyond demos.</li>
+<li>Self-hosted LangSmith continued moving toward agent-platform completeness: v0.16 is now the recommended self-hosted release, bringing SmithDB, Engine, and Sandboxes, while August 12-13 patches were maintenance releases on that line (<a href="https://docs.langchain.com/langsmith/self-hosted-changelog">self-hosted changelog</a>). The practical takeaway is that self-hosted agent harnesses are becoming first-class, but upgrades now need explicit runbooks for bulk export compression, backfill checks, Fleet migration, and sandbox-backed agent behavior.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>Hamel Husain and Shreya Shankar’s DAB discussion was the highest-signal eval thread of the US day: DAB frames data agents as full enterprise workflows across fragmented databases, inconsistent references, and unstructured text rather than text-to-SQL toy tasks; the paper reports 54 queries across 12 datasets, 9 domains, and 4 DBMSs, with the best frontier model at only 38% pass@1 (<a href="https://x.com/HamelHusain">Hamel post surface</a>, <a href="https://arxiv.org/abs/2603.20576">DAB paper</a>, <a href="https://github.com/ucbepic/DataAgentBench">GitHub repo</a>). This reinforces that reliable data agents need scoped schemas, executable traces, failure taxonomies, and regression suites built from real business questions.</li>
+<li>The broader infra conversation kept converging on the same rule: production evals should be mined from production behavior, not invented in isolation. swyx’s visible discussion around eval harnesses and production-data mining, plus the newer DAB/DABstep/FDABench wave, suggests the next useful agent benchmark layer is not another leaderboard alone but a trace-to-dataset loop that captures tool choice, intermediate code, retrieval evidence, and final business correctness (<a href="https://x.com/swyx/highlights">swyx highlights</a>, <a href="https://arxiv.org/abs/2506.23719">DABstep</a>, <a href="https://arxiv.org/abs/2509.02473">FDABench</a>).</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For any private-cloud agent pilot this week, treat “observability-aware correctness” as a release gate: collect nested traces, convert real failures into eval cases, separate model failures from scaffold failures, and require safe remediation boundaries before allowing autonomous data or SRE actions. A recent observability paper found agent-generated systems often restore logs without exposing useful runtime fault signals, which is a strong warning against relying on generic logging as proof of production readiness (<a href="https://arxiv.org/abs/2607.05785">observability-aware code paper</a>).</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

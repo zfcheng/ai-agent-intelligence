@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-08-12 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-08-12 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-08-12 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>LangChain’s August 11 cycle was unusually production-heavy: one post asked how many agent calls really need frontier models, while another dissected monday.com Sidekick as a case where capable agents need more than tool access. Together with the August 7 Managed Deep Agents public beta, the signal is clear: hosted runtimes are moving toward persistence, memory mounts, sandbox lifecycle, deployment, and model-routing controls as first-class harness concerns. Sources: <a href="https://www.langchain.com/blog">LangChain blog</a>, <a href="https://www.langchain.com/blog/managed-deep-agents-is-now-in-public-beta">Managed Deep Agents beta</a>.</li>
+<li>The eval conversation is consolidating around release gates, not dashboards. LangChain’s agent evaluation checklist emphasizes offline, online, and ad-hoc evals, multiple trials for nondeterminism, trace review for grader fairness, CI/CD quality gates, production feedback capture, and versioned prompts/tools. Arize’s current resource focus echoes the same direction with harness engineering, self-hosted observability, eval platforms, and production workflows. Sources: <a href="https://www.langchain.com/blog/agent-evaluation-readiness-checklist">LangChain eval checklist</a>, <a href="https://arize.com/resources/">Arize resources</a>.</li>
+<li>AI SRE is now a concrete platform category rather than a loose demo theme. Azure SRE Agent is positioned around incident diagnosis, mitigation, cost optimization, and reduced alert fatigue with human oversight, while recent AWS and Google SRE materials frame agents as bounded operators for incident investigation and remediation. Source: <a href="https://azure.microsoft.com/en-us/products/sre-agent">Azure SRE Agent</a>.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>The day’s practical debate: agent observability alone is insufficient unless traces become regression cases, online evals, annotation queues, and deployment gates. This is especially relevant for private-cloud or enterprise deployments where every tool call needs authority boundaries, auditability, and rollback semantics.</li>
+<li>Agent-native DevOps discussion is widening beyond incident response into per-PR environments, scoped credentials, autonomous code review, deployment rollback, and Kubernetes/SRE workflows. The high-signal pattern is not “fully autonomous ops”; it is agents operating inside narrow runbooks with explicit permissions, telemetry, and human escalation.</li>
+<li>FDE/PDE roles remain the organizational bottleneck for enterprise agent adoption: the hard work is translating customer workflow messiness into production agents with eval harnesses, data access, security review, and measurable business outcomes. Treat FDE motion as part of the agent product architecture, not post-sales support.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For any serious agent initiative this week, define one production behavior as a capability eval, wire it into CI with a small regression set, and require trace review for failures before expanding scope. The next leverage point is a closed loop: production trace -&gt; labeled failure -&gt; dataset update -&gt; eval gate -&gt; safer deploy.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

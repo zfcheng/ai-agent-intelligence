@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-06-25 | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-06-25</h1>
+<p class="page-author">作者：unknown | 日期：2026-06-25 | 板块：daily</p></header>
+<div class="page-content">
+<h1 id="ai-agent-daily-summary---2026-06-25">AI Agent Daily Summary - 2026-06-25</h1>
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li><p><strong>LangSmith Fleet and Deep Agents updates (June 25 newsletter)</strong>: Fleet On-Call Copilot (prebuilt agent triaging alerts via traces + runbooks), isolated computer use for agents in Fleet, RubricMiddleware (grader sub-agent evaluates against explicit rubric criteria using tools and iterates until satisfied or max iterations), programmatic subagents, experiment status tracking, new voice traces UI, Slack integration for Engine, and launch of LangSmith Deployment course.</p></li>
+<li><p><strong>SmithDB production trace infrastructure</strong>: Detailed technical post on building full-text search inverted index over durable agent trace data in object storage (handling 50-100ms GET costs), with inline construction during ingestion, FSTs, string interning, radix sort, compaction streaming merge, L0/L1 tiering for sub-second freshness on recent traces, and efficient query paths for json_key and full-text search.</p></li>
+<li><p><strong>100x cheaper trace judges</strong>: LangChain + Fireworks fine-tuned Qwen model for detecting “Perceived Error” on production traces matches or exceeds frontier models (Claude, GPT) at 10-100x lower cost; trained on chat-langchain data and transfers to Fleet; early access sign-up opened.</p></li>
+<li><p><strong>LangChain JS deployment cookbook and Vercel agent harness</strong>: Published full-stack examples for shipping agents in real apps (streaming UI, subagents, thread history, production persistence across JS frameworks, Next.js App Router + SSE + langchain/react); Vercel detailed “product-design” agent skill with references/exemplars, linters, evals, and weekly evidence loop from Slack/Figma/GitHub to encode and enforce product design standards, judgment, copy, and states for coding agents. Next.js added “Copy prompt” buttons.</p></li>
+<li><p><strong>Harness data challenges and DocWriter from <span class="citation" data-cites="sh_reya">@sh_reya</span></strong>: Cleared 200GB uncompressed JSON traces and sandboxes created by AI coding agents from one laptop (“Wild West of vibe-coded harnesses”; providers need real data management); received Laude grant for DocWriter harness and UI for AI-assisted writing, targeting async human-AI collaboration, long-horizon agent steering, and continual evals under drift.</p></li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li><p><strong>Self-improving loops, rubrics, and validators</strong>: Emphasis on explicit rubrics + dedicated grader sub-agents for self-correction, multi-agent “orchestrator + workers + validators” patterns that judge artifacts against standards, repair loops driven by trace mining, and continual learning benchmarks separating capability from experience-based updating.</p></li>
+<li><p><strong>Production reliability, observability, and infra</strong>: Calls for ephemeral isolated runtimes and persistent structured workspaces to prevent state contamination in production (beyond prompt issues); full instrumentation from day one; proper durable trace stores vs local JSON sprawl; environmental and attention bottlenecks for reliable agents.</p></li>
+<li><p><strong>Agent-native infrastructure and design enforcement</strong>: Vercel patterns for baking product standards into agent skills + automated checks; agentic UX (e.g. prompt copy buttons); discussions of Fleet auth models, trace-driven insights, and FDE/harness engineering as bottlenecks and enablers for real enterprise agent deployments.</p></li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<p>Define explicit rubrics + grader loops (RubricMiddleware or equivalent) with tool-augmented verification so agents self-correct on measurable criteria instead of shipping variance to humans. Instrument rich traces from day one and adopt production-grade trace/memory stores (avoid vibe-coded 200GB JSON sprawl on laptops). Use fine-tuned cheap judges for scale, structure your own standards (design, harness rules) as loadable skills + linters + evals, and leverage the new LangChain JS cookbook + Fleet computer-use for isolated, persistent production deployments.</p>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

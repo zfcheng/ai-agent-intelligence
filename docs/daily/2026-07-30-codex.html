@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-07-30 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-07-30 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-07-30 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>LangChain’s July 29 push centered on harness efficiency: <a href="https://www.langchain.com/blog/deep-agents-v0-7">Deep Agents v0.7</a> trims the base harness, removes default planning middleware, and reports 65% fewer base input tokens while keeping comparable benchmark performance. The practical signal is that agent reliability work is shifting from “add more scaffold” to measured, token-aware harness minimalism.</li>
+<li>LangChain also highlighted production evaluation workflows: the blog index shows <a href="https://www.langchain.com/blog">How Similarweb Evaluates Long-Form Agent Research Reports with LangSmith</a> on July 29, while last week’s <a href="https://www.langchain.com/blog/towards-automating-eval-engineering">Eval Engineering Skill</a> mines repo context and traces to generate runnable evals. Together, this reinforces a loop of trace capture, error taxonomy, eval generation, and targeted regression testing.</li>
+<li>Recent LangChain evaluation posts, including <a href="https://www.langchain.com/blog/how-we-benchmark-deep-agents">How We Benchmark Deep Agents</a>, continue moving from unit-style agent checks toward end-to-end harness evaluation with Harbor and Terminal-Bench-style runners. This is important because long-running agents fail through orchestration, tool use, memory, and recovery behavior, not just single-turn reasoning.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>The day’s strongest production theme was governance of autonomous agents with real credentials. Coverage of the July AI security incident, including <a href="https://www.theguardian.com/technology/2026/jul/29/rogue-openai-agent-that-hacked-startup-tried-to-attack-other-firms">The Guardian</a>, <a href="https://www.axios.com/newsletters/axios-future-of-cybersecurity-0b9a66b0-8606-11f1-acd9-a503264ab609">Axios</a>, and <a href="https://www.helpnetsecurity.com/2026/07/29/1password-ai-agent-governance/">Help Net Security</a>, pushed the same lesson: agent sandboxes, scoped credentials, monitoring, and kill/approval boundaries must be designed before agents touch production-like systems.</li>
+<li>Agentic DevOps is converging with enterprise controls rather than pure autonomy. Vercel’s agentic-infrastructure narrative emphasizes scoped tokens, incident correlation, and human-approved fixes, while OpenAI’s FDE postings describe engineers owning discovery, system design, rollout, and production deployment with strategic customers. The common pattern is “agent plus accountable deployment owner,” not a detached black-box operator.</li>
+<li>The broader harness debate stayed hot: recent survey and commentary around agent harnesses, eval cost, and harness evolution suggest teams should treat harness changes like infrastructure changes. Every prompt/tool/memory/runtime tweak needs budgeted evals, production traces, rollback, and held-out validation, because benchmark gains can come from search pressure or overfitting rather than durable capability.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For private-cloud or enterprise agent work, standardize a release gate around four artifacts: trace sample, targeted eval suite, credential/tool permission manifest, and rollback plan. The highest-leverage near-term experiment is a LangSmith/Langfuse-style trace-to-eval loop for one real workflow, with agent permissions scoped as tightly as service accounts in production SRE.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>work-profile | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">work-profile</h1>
+<p class="page-author">作者：unknown | 日期： | 板块：unknown</p></header>
+<div class="page-content">
+<h1 id="工作画像匹配锚点">工作画像（匹配锚点）</h1>
+<blockquote>
+<p>状态：DRAFT，待用户确认。本文件是「信号 → 工作匹配」的唯一锚点： insights/ 周报中的每条建议都必须能追溯到本文件的某个方向。 变更规则：方向增删由用户确认；司令可根据工作进展每季度提议更新。</p>
+</blockquote>
+<h2 id="当前工作方向按权重排序">当前工作方向（按权重排序）</h2>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>方向</th>
+<th>说明</th>
+<th>当前关注点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>AI Agent 生产落地</strong>（ITU 云计算）</td>
+<td>agent 在生产环境的可靠性、可观测性、评测体系</td>
+<td>eval 频率与生产决策、可审查的自修复、HITL 边界</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Agent 军团 / 多机协同</strong></td>
+<td>司令+阿壹+阿贰多 agent 协作体系、agent-team 编排</td>
+<td>多 agent 任务分配、subagent 上下文管理、成本治理</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>代码审查与自动修复闭环</strong></td>
+<td>itu-code-manage：PR 扫描→AI Review→自动修复</td>
+<td>review 质量、修复采纳率、安全工单联动</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>MWS 平台前端 / Web 架构</strong></td>
+<td>WebStatic / cloudfe / cloudx / Veronica 等应用</td>
+<td>平台化能力、资源治理、服务可观测</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>nocode 平台</strong></td>
+<td>nocode-itu 前端、CDP 部署体系</td>
+<td>AI 生成应用质量、数据库流程自动化</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>CLIHub / CLI 需求</strong></td>
+<td>CLIHub 对内/企业版、MEP 需求管理</td>
+<td>需求同步自动化、多维表格集成</td>
+</tr>
+</tbody>
+</table>
+<h2 id="技术栈与偏好">技术栈与偏好</h2>
+<ul>
+<li>语言/框架：TypeScript / Node.js，前端 React 系</li>
+<li>部署：CDP、阿贰 opencode-mt、内部 git</li>
+<li>沟通：大象（Daxiang），日报推送偏好精简摘要 + 可回查链接</li>
+<li>决策风格：先看架构判断和风险，再决定投入；讨厌灌水信息</li>
+</ul>
+<h2 id="信号匹配规则">信号匹配规则</h2>
+<ul>
+<li>强相关：agent 生产实践、评测/可观测、多 agent 编排、coding agent 效率工具</li>
+<li>中相关：LLM 模型格局变化（影响选型/成本）、框架重大版本</li>
+<li>弱相关（仅重大事件）：模型发布八卦、融资新闻</li>
+<li>每条建议需标注「作用于哪个方向 #N」+「预期收益/成本/风险」</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

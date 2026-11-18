@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-07-16 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-07-16 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-07-16 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>LangChain’s July 15 release, <a href="https://www.langchain.com/blog/new-in-langsmith-fleet-bring-agents-into-slack-in-one-click">“New in LangSmith Fleet: Bring agents into Slack in one click”</a>, turned the “company agent” pattern into a workflow primitive: specialized agents get Slack identities, permissions, spend controls, approval steps, and thread-native collaboration. The signal is that production agents are moving from private developer tools into shared operational channels where governance and identity become product requirements.</li>
+<li>LangChain also published <a href="https://www.langchain.com/blog/agents-need-their-own-computer">“Agents need their own computer. Here’s how to give them one safely.”</a>, sharpening the infrastructure bar for autonomous work: real agents need filesystem, shell, package manager, network, and persistent state, but those environments must be isolated, disposable, observable, and separated from laptops and production. This reinforces the emerging harness stack: sandbox first, then trace, approve, and replay.</li>
+<li>The July 14 LangSmith tracing post on coding agents stayed active because it names a common failure mode: final diffs hide bad handoffs, stale helpers, subagent fanout, retries, token burn, and wrong tool choices. The practical update is unified coding-agent observability across Codex, Claude Code, Cursor, Copilot, OpenCode, and similar tools, so teams can debug the process rather than only review the patch.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>Hamel Husain and Shreya Shankar’s circle kept pushing the eval conversation around <a href="https://parlance-labs.com/blog/posts/auto-evals.html">“Do Automated Evals Work?”</a>: automated trace reviewers can surface issues humans miss and fit well into triage workflows, but they are not a substitute for expert judgment or product-specific failure taxonomies. The strongest takeaway for self-improving loops is to keep humans in the labeling loop while using tools to accelerate trace mining and judge creation.</li>
+<li>Production governance was the other dominant thread: TechRadar/Coder’s July 13 analysis argued that coding agents stall before production when organizations lack isolation, scoped credentials, approval gates, audit trails, and monitoring. This maps cleanly to agent-native DevOps: treat agents as managed workloads and identities with policy at the infrastructure layer, not as untracked extensions of a developer account.</li>
+<li>The FDE/PDE operating model continued to expand from startups into large services companies: TCS said it wants 1% to 1.5% of its workforce, roughly 5,900 to 8,900 people, trained as forward-deployed engineers for AI adoption. That is a strong market signal that enterprise AI bottlenecks are shifting from model access to customer-context integration, data/security constraints, and production deployment ownership.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For private-cloud or enterprise agent rollout, prioritize a “governed agent computer” baseline before scaling use cases: ephemeral sandbox, explicit network/tool allowlists, per-agent credentials, trace export, spend limits, and human approval for privileged actions. Then close the improvement loop by converting repeated trace failures into eval datasets and regression gates; this is where reliability, cost control, and self-improvement compound.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

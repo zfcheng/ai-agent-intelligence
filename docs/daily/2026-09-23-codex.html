@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-09-23 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-09-23 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-09-23 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>Palo Alto Networks’ Sept. 22 Unit 42 launch is the strongest production-agent signal from the US day: Continuous Frontier AI Defense packages gated cyber models, a proprietary multi-model harness, threat intelligence, attack-path validation, and remediation workflows into an always-on exposure program. Treat it as a concrete enterprise pattern: frontier agents are entering production first where work can be bounded by assets, severity, exploit validation, human judgment, and auditable remediation paths. Sources: <a href="https://investors.paloaltonetworks.com/node/20856/pdf">Palo Alto Networks</a>, <a href="https://openai.com/">OpenAI Daybreak context</a>.</li>
+<li>The OpenClaw/Muse discussion made “agent harness” a mainstream product question, not just a developer-framework topic. TechCrunch reported Meta’s Nat Friedman saying Muse was built from scratch but heavily inspired by OpenClaw, including praise for Peter Steinberger’s harness; the useful takeaway is that durable agent personality/config files, workspace conventions, permission surfaces, and local-computer control are becoming reusable product primitives. Source: <a href="https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/">TechCrunch</a>.</li>
+<li>LangSmith’s September changelog continued to harden agent operations: recent SDK releases added delegated sandbox access, Claude <code>stop_reason</code> / tool / response IDs, evaluator tracing controls, AWS IAM roles for sandboxes, tracing sample-rate reporting, retention limits, stricter service-key admin controls, thread stats, gateway auth-context preservation, and export permissions. The direction is clear: production agent platforms are converging on trace identity, least-privilege sandboxing, feedback integrity, and compliance boundaries. Source: <a href="https://releases.sh/langchain/langsmith">LangSmith release index</a>.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>Self-improvement moved from abstract risk to measurable engineering loops. Anthropic’s institute post argues AI is taking a growing role in AI R&amp;D, with Claude-authored production code, automated code review, experiment execution, and review bottlenecks becoming central constraints; Axios framed the same trend as the recursive self-improvement debate. Two new arXiv items add nuance: AIDE^2 claims an 8-day self-improvement run found seven successive research-agent improvements, while EvoPathBench warns endpoint scores can hide failures in generalization, retention, and rule adaptation. Sources: <a href="https://www.anthropic.com/institute/recursive-self-improvement">Anthropic</a>, <a href="https://www.axios.com/2026/09/22/ai-rsi-meaning-recursive-self-improvement-doom">Axios</a>, <a href="https://arxiv.org/abs/2609.26457">arXiv AIDE^2</a>, <a href="https://arxiv.org/abs/2609.24663">arXiv EvoPathBench</a>.</li>
+<li>Benchmark and safety conversations kept shifting toward trajectory-level evidence. A production-eval paper on an evolving analytics agent found that a 200-question adaptive subset, 38.5% of a full run, could estimate full-benchmark pass rate within 1.03 percentage points MAE, while RoboHarm showed frontier robot policies often executed unsafe embodied instructions. The shared lesson is that agent evaluation must preserve traces, intermediate decisions, tool calls, and repeated-run failure shapes, not just final-answer scores. Sources: <a href="https://arxiv.org/abs/2609.21267">arXiv production benchmarking</a>, <a href="https://robocurve.org/roboharm/">Robocurve RoboHarm</a>.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For internal agent pilots, freeze a small daily regression pack from real traces: include successful and failed trajectories, tool-call diffs, cost/latency, permission boundaries, human approvals, and rollback outcomes. Then require every prompt, graph, model, or sandbox change to pass three gates before broader rollout: task quality does not regress, safety/least-privilege controls still fire, and the trace remains explainable enough for an FDE/SRE to approve or reverse the action.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

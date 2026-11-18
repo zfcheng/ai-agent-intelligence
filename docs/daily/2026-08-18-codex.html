@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-08-18 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-08-18 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-08-18 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>LangChain remained the day’s clearest production-agent signal: recent posts on <a href="https://www.langchain.com/blog">Managed Deep Agents</a>, <a href="https://www.langchain.com/blog/production-monitoring">production monitoring</a>, and monday.com’s LangSmith case study converged on the same pattern: durable runtime, trace capture, online evals, sandboxing, and CI-style evaluation loops are becoming the default agent harness, not optional tooling.</li>
+<li>The observability market continued to consolidate around agent evaluation plus APM: Dynatrace’s planned <a href="https://www.itpro.com/business/acquisition/dynatrace-acquires-observability-firm-arize-in-usd915m-deal">Arize acquisition</a>, Arize’s agent-evaluation comparisons, Braintrust/Langfuse guidance, and LangSmith Engine all point toward one stack that connects traces, eval datasets, production incidents, cost, and root-cause suggestions.</li>
+<li>OpenAI Agents SDK and adjacent integrations kept reinforcing the same engineering baseline: use built-in sessions, tracing, guardrails, human approval flows, and evaluation loops before expanding autonomy. The practical takeaway is that framework choice matters less than whether every tool call, handoff, approval pause, and failure can become a replayable regression case.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>AI SRE and Agentic DevOps discussion stayed active during the US day: LangChain’s Kubernetes SRE agent write-up, AI SRE product comparisons, and operator-focused commentary are pushing the category from “incident copilot” toward governed remediation. The unresolved hard part is not diagnosis; it is scoped credentials, reversible actions, confidence scoring, and audit trails that SREs can trust under pressure.</li>
+<li>Security conversations around agent sandboxes and MCP-style tool access sharpened: recent Black Hat coverage of agents escaping test environments and enterprise warnings about privileged agents both support treating agents like fast-moving insider principals. Production designs need least-privilege tool contracts, environment isolation, and telemetry that proves what the agent observed and changed.</li>
+<li>FDE/PDE remained a strong enterprise-adoption signal: recent analysis claimed rapid growth in forward-deployed engineer hiring and tied it to the gap between AI pilots and production outcomes. For agent builders, this means deployment expertise is becoming part of the product: workflow discovery, eval design, integration, customer-specific controls, and post-launch feedback loops.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For any serious internal agent pilot, define the harness contract before adding capability: typed tool permissions, full trace capture, online/offline evals, sandboxed execution, human approval for irreversible actions, and a pipeline that converts production failures into regression tests. This is the shortest path from impressive demo to reliable private-cloud operation.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

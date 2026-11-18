@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-08-06 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-08-06 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-08-06 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>LangChain published a high-signal production case on an autonomous SRE agent for Kubernetes deployments, framed around live-cluster diagnosis, self-hosted upgrade work, and the need for agents that can read operational state rather than only generate code (<a href="https://www.langchain.com/blog/how-we-build-an-autonomous-sre-agent-for-kubernetes-deployments">LangChain, Aug 5</a>).</li>
+<li>LangSmith’s recent eval content sharpened the harness pattern: voice agents should be evaluated across execution, outcome, and experience, while code-review agents need benchmarks grounded in real PR feedback instead of generic answer quality (<a href="https://www.langchain.com/blog/how-to-evaluate-voice-agents-execution-outcomes-and-experience">voice evals</a>, <a href="https://www.langchain.com/blog/evaluating-code-review-agents-with-reviewbench">ReviewBench</a>).</li>
+<li>Runtime control is becoming part of the production agent stack: LangSmith LLM Gateway is positioned as a shared policy layer for spend caps, rate limits, fallback routing, usage tracking, and BYOK workflows, including use with coding harnesses such as Claude Code, Codex, and Deep Agents Code (<a href="https://www.langchain.com/blog/langsmith-llm-gateway-runtime-controls-for-production-agents">LangSmith Gateway</a>).</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>The main reliability discussion is shifting from “is the service up?” to “is the agent making good decisions?”; recent observability commentary argues traditional APM misses agent failures because reasoning drift, wrong tool calls, and policy violations can occur while infrastructure metrics remain healthy (<a href="https://www.dataiku.com/blog/traditional-observability-misses-ai-agent-failure">Dataiku</a>).</li>
+<li>FDE/PDE moved from org-pattern curiosity to enterprise AI bottleneck: Amazon’s $1B AWS Forward Deployed Engineering push, plus hiring by OpenAI, Anthropic, Google Cloud, Stripe, and Palantir, reinforces that production AI adoption now depends on embedded engineers who can translate customer workflows into deployed agent systems (<a href="https://www.businessinsider.com/amazon-investing-1b-in-new-role-forward-deployed-engineer-career-2026-7">Business Insider</a>, <a href="https://techcrunch.com/2026/07/30/forward-deployed-engineers-are-the-ai-industrys-latest-talent-obsession/">TechCrunch</a>).</li>
+<li>The academic signal remains cautionary for self-improving harnesses: recent harness-evolution work found that apparent gains can collapse against simple test-time search baselines or held-out tasks, and coding-agent RL infrastructure studies show large latency/cost variance across execution substrates, making environment design part of the model system rather than deployment plumbing (<a href="https://arxiv.org/abs/2607.12227">Harness Evolution</a>, <a href="https://arxiv.org/abs/2607.01415">Rollout Infrastructure Tax</a>).</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For private-cloud or enterprise agent work, treat every production agent as a graph plus harness plus policy gateway: define task-level evals from real traces, enforce budget/tool/permission limits at runtime, and require observability that captures decisions, tool calls, memory access, and final business outcomes before expanding autonomy.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

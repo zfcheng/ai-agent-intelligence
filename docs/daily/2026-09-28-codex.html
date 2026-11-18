@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-09-28 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-09-28 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-09-28 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li><strong>Eval cadence is becoming a first-class production decision.</strong> Hamel Husain and Shreya Shankar published fresh guidance on how often to run evals, framing cadence around evaluator cost, whether the eval is saturated, and the business value of catching the failure; the useful operating pattern is cheap deterministic checks on every change or trace, expensive judges on higher-value release gates or samples, and periodic retirement or hardening of saturated evals. Source: <a href="https://hamel.dev/blog/posts/evals-faq/how-often-should-i-run-my-evals.html">Hamel’s Blog, 2026-09-27</a>.</li>
+<li><strong>LangSmith/LangChain activity stayed focused on trace fidelity rather than flashy features.</strong> The September 25 LangSmith SDK release restored missing OpenTelemetry exports for <code>tool_call_id</code> and <code>tool_definitions</code>, fixed Claude SDK client tracing, and added sandbox token/proxy callback verification; for production agents, this is exactly the unglamorous layer that makes trajectory evals, cost attribution, and incident forensics believable. Sources: <a href="https://github.com/langchain-ai/langsmith-sdk/releases/tag/v0.14.1">GitHub release v0.14.1</a>, <a href="https://releases.sh/langchain">LangChain release index</a>.</li>
+<li><strong>AI SRE continues moving from diagnosis to reviewable remediation, but not unsupervised repair.</strong> Splunk’s current AI SRE direction connects telemetry-backed root-cause hypotheses to Claude Managed Agents that propose code fixes and open pull requests, while Cisco’s AgenticOps research says enterprises want autonomy only with explainability, detailed tracing, and post-action audits. Sources: <a href="https://www.splunk.com/en_us/blog/observability/ai-sre-in-splunk-observability-cloud-can-remediate-incidents-with-claude-managed-agents.html">Splunk, 2026-09-17</a>, <a href="https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m09/cisco-ai-research-agenticops-scaling-quickly-in-the-enterprise.html">Cisco, 2026-09-23</a>.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li><strong>The day’s most important safety thread was eval-environment leakage.</strong> A September 27 report summarized Omer Nevo’s account that a fictional target in an agent evaluation matched a real domain, causing some runs to reach toward real systems; the takeaway is that agent evals need environment allowlists, domain ownership checks, internet egress controls, and trajectory review, not just final-answer scoring. Source: <a href="https://www.neoteo.com/en/omer-nevo-linked-reported-ai-agent-incidents-to-an-evaluation-flaw">NeoTeo, 2026-09-27</a>.</li>
+<li><strong>Practitioner discussion is converging on “online evals feed offline regression suites.”</strong> A September 25 field note comparing Braintrust, LangSmith, and Datadog argues that production traces should be scored asynchronously, sampled by failure value, and promoted back into fixed datasets when they expose regressions; the useful divide is simple CI gates for merge blocking, richer experiment tooling for diagnosis, and observability-native alerts for on-call. Source: <a href="https://www.thomaskalnik.com/posts/agent-evals-online-offline-braintrust-langsmith-datadog">Thomas Kalnik, 2026-09-25</a>.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For private-cloud or enterprise agent work, make the next sprint about the harness contract: version the task, prompt, model, tools, judge, dataset, and egress policy; run cheap trajectory/tool-call checks on every PR; sample real traces nightly; and require human-reviewed PRs for remediation agents until post-action audits and rollback evidence are routine.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insights - {{WEEK}} | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">Insights - {{WEEK}}</h1>
+<p class="page-author">作者：commander | 日期：{{DATE}} | 板块：insights</p></header>
+<div class="page-content">
+<h1 id="工作匹配与建议-week">💡 工作匹配与建议 | {{WEEK}}</h1>
+<blockquote>
+<p>生成：司令 | 输入：本周各板块报告（commander + codex）+ work-profile.md Codex 周五校准完成后生成，含对 Codex 校准结论的吸收</p>
+</blockquote>
+<h2 id="一本周信号盘点">一、本周信号盘点</h2>
+<!-- 本周最重要的 3-5 个信号，每个注明来源板块和日期，一句话说明 -->
+<h2 id="二工作匹配矩阵">二、工作匹配矩阵</h2>
+<table>
+<thead>
+<tr class="header">
+<th>信号</th>
+<th>作用方向（work-profile #N）</th>
+<th>相关度</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<!-- ... -->
+<h2 id="三建议act-列表">三、建议（ACT 列表）</h2>
+<!-- 每条格式如下；无建议的板块不硬凑 -->
+<h3 id="act-week-1">ACT-{{WEEK}}-1：<标题></h3>
+<ul>
+<li><strong>来源</strong>：<引用的报告与条目></li>
+<li><strong>建议</strong>：<具体做什么></li>
+<li><strong>作用于</strong>：work-profile #N</li>
+<li><strong>预期收益</strong>：</li>
+<li><strong>成本</strong>：</li>
+<li><strong>风险</strong>：</li>
+<li><strong>下一步</strong>：<采纳后第一动作></li>
+</ul>
+<h2 id="四思考">四、思考</h2>
+<!-- 独立判断：本周信息对工作方向的战略性影响、趋势判断、值得警惕的信号 -->
+<h2 id="五反哺">五、反哺</h2>
+<!-- 本周建议对 topic-scope / work-profile 的调整建议（如有） -->
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

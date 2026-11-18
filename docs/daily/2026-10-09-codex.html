@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-10-09 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-10-09 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-10-09 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>LangChain’s October 8 case study on Snyk Assist is the day’s most useful production signal: Snyk moved an internal support agent into its core product, kept one LangGraph runtime across Slack, web, and API surfaces, attached tools by user permissions, persisted state with a PostgreSQL checkpointer, and made LangSmith traces the basis for offline evals, CI gates, online grading, and dataset creation. The reported production result is material: 60,000+ queries, 500+ customer accounts, 85%+ sessions resolved without a support ticket, and 250+ cases auto-detected and escalated. Source: <a href="https://dev48.org/en/articles/how-snyk-turned-an-internal-support-agent-into-a-customer-feature">LangChain/Snyk case study</a>.</li>
+<li>LangChain also shipped two adjacent Deep Agents updates that push agents closer to durable internal teammates: Managed Deep Agents v0.9 adds agent-created schedules, per-run model/tool/skill configuration, and Slack reactions, while the payment demo shows a Slack agent using Stripe Link plus Machine Payments Protocol with explicit user approval and budget caps. Treat this as a pattern library for internal agents: identity-bound schedules, per-channel tool scopes, human approval for irreversible actions, and payment credentials kept out of model context. Sources: <a href="https://www.langchain.com/blog/managed-deep-agents-schedules-per-run-configuration-slack">Managed Deep Agents v0.9</a>, <a href="https://www.langchain.com/blog/agents-that-can-pay-with-stripe-link">agents that can pay</a>.</li>
+<li>Agent skills are becoming an operational packaging format, not just prompt snippets. LangChain’s Deep Agents skill revamp emphasizes progressive disclosure, binding tools to skills so tools load only when the skill is read, pinning skills at runtime, and reloading skills mid-thread; this directly supports large internal skill libraries without stuffing every tool and instruction into the initial context. Source: <a href="https://dev48.org/en/articles/revamping-skills-in-deep-agents">Revamping Skills in Deep Agents</a>.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>The most active production debate remains security inheritance: an October 7 analysis of recent agent incidents argues agents often amplify existing access, sandbox, credential, and environment mistakes rather than creating wholly new risk categories. For private-cloud or enterprise rollout, the practical implication is to audit inherited permissions, eval sandboxes, tool credentials, and network egress before adding higher-order “agent governance” layers. Source: <a href="https://www.techradar.com/pro/ai-agents-dont-create-new-risk-they-inherit-it">TechRadar Pro</a>.</li>
+<li>OpenAI’s Evals platform deprecation is now a near-term migration item: docs say existing Evals become read-only on October 31, 2026 and are scheduled to shut down on November 30, 2026, with newer dataset-oriented workflows suggested for iteration. Teams still using hosted OpenAI Evals should export definitions/results and move agent regression suites into repo-owned harnesses or another eval platform before the end-of-month freeze. Source: <a href="https://developers.openai.com/api/docs/guides/evals">OpenAI evals guide</a>.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>Today’s signal favors a “production harness first” roadmap: standardize one agent runtime with typed permission-scoped tools, persisted state, trace-to-dataset conversion, PR-level eval gates, and online grading before expanding autonomous actions. For internal R&amp;D agents, the next useful experiment is not another demo agent; it is a small Snyk-style support or ops assistant with one irreversible action behind human approval, one scheduled follow-up, and an eval suite that blocks regressions in CI.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

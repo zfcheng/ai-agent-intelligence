@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-08-10 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-08-10 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-08-10 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>LangChain’s latest positioning around <strong>Deep Agents vs. LangChain vs. LangGraph</strong> is the clearest framework signal from the US day: LangGraph is the lower-level runtime, LangChain is the composable framework layer, and Deep Agents is the higher-level harness. The practical implication is that production teams should not argue over one abstraction; they should choose the lowest layer that gives the required control, then attach tracing, evals, approval gates, and sandbox policy. Source: <a href="https://www.langchain.com/blog/deep-agents-vs-langchain-vs-langgraph">LangChain</a>.</li>
+<li>The managed-runtime trend kept consolidating around LangSmith and agent observability: recent LangChain materials emphasize company-wide agents, ReviewBench-style workflow evals, runtime controls, and managed Deep Agents, while Langfuse and Braintrust continue to frame production readiness as typed traces plus online/offline eval loops. The center of gravity is now “agent lifecycle control plane,” not standalone prompt debugging. Sources: <a href="https://www.langchain.com/blog">LangChain blog</a>, <a href="https://langfuse.com/blog/2024-07-ai-agent-observability-with-langfuse">Langfuse</a>, <a href="https://www.braintrust.dev/articles/agent-observability-complete-guide-2026">Braintrust</a>.</li>
+<li>Agent containment and sandbox design became a sharper reliability topic after reporting on OpenAI agent test incidents at Black Hat: the relevant lesson is not sensational “rogue agent” framing, but that long-horizon agents need network egress policy, identity scoping, replayable traces, and red-team environments that cannot accidentally target real systems. Sources: <a href="https://www.axios.com/2026/08/06/openai-hugging-face-black-hat">Axios</a>, <a href="https://www.businessinsider.com/openai-rogue-ai-agents-testing-environment-misconfiguration-2026-8">Business Insider</a>.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>The eval discussion is moving decisively toward <strong>in-house, product-specific harnesses</strong>: teams are treating evals as proprietary product infrastructure because generic third-party scores miss user-journey outcomes, tool correctness, recovery behavior, and trust. This aligns with the agent-builder pattern from LangSmith/Braintrust/Langfuse: convert production failures into regression datasets and block releases on trajectory-level quality, not final-answer vibes. Sources: <a href="https://www.techradar.com/pro/why-serious-ai-builders-are-skipping-third-party-evals">TechRadar</a>, <a href="https://www.braintrust.dev/articles/agent-observability-complete-guide-2026">Braintrust</a>.</li>
+<li>AI-SRE and agentic DevOps remained hot but still need bounded autonomy: guides and market coverage are converging on agents that correlate telemetry, investigate incidents, and propose or execute constrained remediation, while PagerDuty-style SRE agents and Kubernetes SRE agent examples suggest the first reliable step is read-heavy diagnosis plus human-approved writes. Sources: <a href="https://www.augmentcode.com/guides/ai-sre-ai-powered-site-reliability-engineering">Augment Code</a>, <a href="https://futurumgroup.com/insights/is-pagerdutys-new-operations-cloud-the-key-to-autonomous-incident-management/">Futurum</a>, <a href="https://www.langchain.com/blog/how-we-build-an-autonomous-sre-agent-for-kubernetes-deployments">LangChain Kubernetes SRE agent</a>.</li>
+<li>FDE/PDE demand continues to look like the enterprise-AI deployment bottleneck: recent August hiring guides and services coverage emphasize that the scarce skill is not calling a frontier model, but embedding with customers to solve permissions, integration, eval, security, rollout, and adoption problems inside real environments. Sources: <a href="https://www.herohunt.ai/blog/recruiting-forward-deployed-engineers-2026/">HeroHunt</a>, <a href="https://phosailabs.com/blog/best-forward-deployed-ai-engineers">Phos AI Labs</a>.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For private-cloud agent work, standardize a minimum production harness: graph/runtime layer choice, sandbox and egress policy, scoped tool identity, trace schema for tool/state/memory spans, online failure capture, offline regression cases, and explicit human approval boundaries. Treat every recurring production failure as an eval asset before expanding autonomy.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

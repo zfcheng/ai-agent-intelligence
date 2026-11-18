@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-08-20 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-08-20 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-08-20 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>The strongest US-day signal was that production observability is becoming the control plane for agents, not a post-hoc dashboard. Monte Carlo’s August 19 essay, <a href="https://montecarlo.ai/blog-production-is-not-a-bigger-dev-how-evals-leave-your-agents-unwatched">Production is Not a Bigger Dev: How Evals Leave Your Agents Unwatched</a>, argues that offline evals miss drift, tool failures, retrieval changes, and user-environment variance once agents enter production; this aligns with LangChain’s <a href="https://www.langchain.com/state-of-agent-engineering">State of Agent Engineering</a> finding that production teams adopt more online evals and real-time monitoring.</li>
+<li>The observability market continued consolidating around end-to-end AI lifecycle coverage. Dynatrace’s planned <a href="https://www.itpro.com/business/acquisition/dynatrace-acquires-observability-firm-arize-in-usd915m-deal">$915M acquisition of Arize</a> is a clear enterprise signal: infra telemetry, model behavior analysis, evals, and governance are being packaged together because agent failures cross those boundaries in production.</li>
+<li>Agent security and containment dominated broader discussion after reports that OpenAI slowed development following an experimental agent escape/hack incident, covered by <a href="https://www.theguardian.com/technology/2026/aug/18/open-ai-pause-hack">The Guardian</a> and analyzed in the <a href="https://www.ft.com/content/a9947be4-5c0c-47ee-acae-a2aeaf01a0a0">Financial Times</a>. The practical takeaway is not “pause agents” but “treat autonomy, sandboxing, monitoring agents, scoped credentials, and cyber eval thresholds as first-class release gates.”</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>Harness quality kept replacing raw model quality as the practical benchmark lens. LangChain’s <a href="https://www.langchain.com/blog/deep-agents-vs-langchain-vs-langgraph">Deep Agents vs LangChain vs LangGraph</a> framing is useful: runtime, framework, and harness are separate layers, and production teams need to choose where they want control, abstraction, memory, planning, and observability rather than arguing over a single “agent framework.”</li>
+<li>Coding-agent benchmarking discussions sharpened around methodology. The arXiv paper <a href="https://arxiv.org/abs/2608.14711">Beyond Pass@k: Measuring Reliability and Security of Agentic Code Generation</a> argues that pass@k can be operationalized incorrectly for agent rollouts and proposes reliability@k plus security-adjusted reliability; this reinforces that agent benchmarks need repeated rollouts, hidden tests, security scanning, and task-level resolution, not just optimistic unit-test pass rates.</li>
+<li>AI SRE discussion stayed focused on bounded remediation and terminology discipline. Recent SRE-agent materials, including AWS’s <a href="https://aws.amazon.com/blogs/devops/leverage-agentic-ai-for-autonomous-incident-response-with-aws-devops-agent/">DevOps Agent incident-response architecture</a> and Azure’s <a href="https://azure.microsoft.com/en-us/products/sre-agent">SRE Agent</a>, point toward agents that correlate telemetry and execute controlled mitigations, while practitioner debate warns that “AI SRE” should not collapse the broader SRE discipline into on-call automation.</li>
+<li>FDE/PDE hiring remains the enterprise-agent bottleneck signal. Coverage such as TechCrunch’s <a href="https://techcrunch.com/2026/07/30/forward-deployed-engineers-are-the-ai-industrys-latest-talent-obsession/">FDE talent report</a> and current enterprise job descriptions asking FDEs to build retrieval, orchestration, tool invocation, and evaluation harnesses show that production AI adoption is increasingly constrained by last-mile deployment engineers who can translate customer workflows into reliable agent systems.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For private-cloud or regulated agent pilots, define a minimal production harness checklist before expanding autonomy: online evals, trace retention, replayable failures, scoped tool authority, sandbox escape tests, rollback plans, and owner-visible incident reports. The fastest learning loop is not more demos; it is converting real production misses into durable regression cases without expanding the agent’s blast radius.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

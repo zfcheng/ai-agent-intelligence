@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-08-08 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-08-08 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-08-08 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>LangChain moved <strong>Managed Deep Agents</strong> into public beta on Aug. 7, turning the open-source Deep Agents harness into a LangSmith-managed runtime with durable threads, streaming runs, checkpointing, human-in-the-loop workflows, sandbox-backed execution, hosted agent context, tracing, and Harbor evals. This is a clear productionization move: the competitive boundary is shifting from “agent loop” to managed execution, identity, memory, approvals, and evaluability. Sources: <a href="https://www.langchain.com/blog/introducing-managed-deep-agents">LangChain blog</a>, <a href="https://www.linkedin.com/company/langchain">LangChain LinkedIn</a>.</li>
+<li>The LangChain stack narrative also tightened during the US day: <strong>Deep Agents</strong> is now positioned as the default high-level harness for most long-horizon agents, while teams should drop to LangChain or LangGraph when they need lower-level control or determinism. For private-cloud R&amp;D, that suggests a layered architecture: prototype behavior at the harness layer, then harden critical workflows in graph/state-machine form before production. Sources: <a href="https://www.linkedin.com/posts/sydney-runkle_deep-agents-vs-langchain-vs-langgraph-activity-7491192539744661504-ua7a">Deep Agents vs LangChain vs LangGraph discussion</a>, <a href="https://www.langchain.com/blog">LangChain blog listing</a>.</li>
+<li>LangChain’s Kubernetes SRE agent write-up was the most relevant production case study: it frames the agent as triage and remediation support for self-hosted Kubernetes deployments, with LangSmith used to make the workflow inspectable and trustworthy. The pattern to copy is bounded autonomy: read-heavy diagnosis, proposed fixes, and human approval before cluster-changing actions. Source: <a href="https://www.langchain.com/blog/how-we-build-an-autonomous-sre-agent-for-kubernetes-deployments">How we build an autonomous SRE Agent for Kubernetes Deployments</a>.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>Evaluation discussion continued to move away from generic leaderboards toward <strong>workflow-specific eval harnesses</strong>. LangChain’s ReviewBench example uses real PR feedback, curated verifier tasks, coverage/precision scoring, and Harbor environments; the key lesson is that harness design and review strategy materially change agent performance, not just the model choice. Source: <a href="https://www.langchain.com/blog/evaluating-code-review-agents-with-reviewbench">Evaluating code review agents with ReviewBench</a>.</li>
+<li>Observability vendors and practitioners are converging on the same production loop: capture tool calls, state transitions, memory operations, cost/latency, and trace-to-dataset feedback, then feed failures into offline and online evals. This matters because agents fail several steps before the final answer; prompt logs alone are no longer enough. Sources: <a href="https://www.braintrust.dev/articles/agent-observability-complete-guide-2026">Braintrust agent observability guide</a>, <a href="https://langfuse.com/blog/2024-07-ai-agent-observability-with-langfuse">Langfuse agent observability guide</a>, <a href="https://developers.openai.com/api/docs/guides/agents">OpenAI Agents SDK docs</a>.</li>
+<li>The FDE/PDE theme is becoming an enterprise-AI bottleneck rather than a hiring buzzword: recent coverage and job postings emphasize that models are available, but deployment still fails around messy permissions, integrations, evals, security boundaries, and user adoption. Source: <a href="https://jobs.citi.com/job/new-york/forward-deployed-engineer-ai-transformation-director/287/98849848944">Citi Forward Deployed Engineer posting</a>, <a href="https://www.christianandtimbers.com/insights/forward-deployed-engineering-teams-a-new-enterprise-priority">FDE enterprise priority analysis</a>.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>Treat the next internal agent prototype as an <strong>agent product lifecycle</strong>, not a prompt demo: define the harness, trace schema, approval boundaries, sandbox policy, and 20-50 workflow-specific eval cases before widening access.</li>
+<li>For AI-native DevOps, start with a read-only Kubernetes/SRE diagnostic agent connected to runbooks, logs, events, and deployment history; require human approval for writes, then promote only the recurring safe fixes into controlled remediation actions.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>

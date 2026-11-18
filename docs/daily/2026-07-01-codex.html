@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Daily Summary - 2026-07-01 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-07-01 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-07-01 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li><p><strong>Agent evaluation runners became the day’s clearest production theme</strong>: LangChain and Harbor published <a href="https://www.langchain.com/blog/unified-stack-for-evaluating-agents">a unified stack for evaluating agents</a>, arguing that long-running, stateful agents need eval runners that can replay full trajectories, preserve state, and connect Deep Agents, LangSmith Sandboxes, and LangSmith Experiments. This is a strong signal that serious agent teams are moving from answer grading to harness-level regression testing.</p></li>
+<li><p><strong>Execution isolation is now a first-class agent primitive</strong>: LangChain’s <a href="https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox">Deep Agents sandbox post</a> framed production safety around execution isolation, capability isolation, and durable pauses for human input. The practical takeaway is that agent-written code should run inside a controlled harness with explicit permissions, resumability, and traceability rather than sharing the host’s trust boundary.</p></li>
+<li><p><strong>Agentic coding moved deeper into enterprise IDE and cost controls</strong>: GitHub shipped <a href="https://github.blog/changelog/2026-06-30-copilot-agent-is-now-available-in-jetbrains-ai-assistant/">Copilot Agent in JetBrains AI Assistant</a>, made <a href="https://github.blog/changelog/2026-06-30-claude-sonnet-5-is-generally-available-for-github-copilot/">Claude Sonnet 5 generally available in Copilot</a>, and added <a href="https://github.blog/changelog/2026-06-30-per-user-ai-credit-budgets-available-for-cost-centers/">per-user AI credit budgets for cost centers</a>. Together these point to the next enterprise adoption layer: agents inside normal developer tools, governed by budget, identity, and workflow policy.</p></li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li><p><strong>“Harness, not prompt” kept dominating the high-signal conversation</strong>: The June 30 cluster around Harbor, LangSmith Sandboxes, dynamic subagents, and Honeycomb’s <a href="https://www.honeycomb.io/blog/instrumenting-ai-agents-agent-timeline-opentelemetry-guide">OpenTelemetry-based Agent Timeline guide</a> reinforced the same operating model: reliable agents need state models, step timelines, tool-call spans, handoff visibility, token/cost attribution, and repeatable eval suites.</p></li>
+<li><p><strong>Memory is shifting from chat history to maintained knowledge infrastructure</strong>: Harrison Chase’s <a href="https://www.langchain.com/blog/wiki-memory">Wiki Memory</a> post captured an emerging pattern where agents distill raw source data into compact, persistent, agent-readable knowledge layers. For self-improving loops, this is more actionable than generic memory: treat memory as a curated artifact with provenance, refresh rules, and evaluation coverage.</p></li>
+<li><p><strong>FDE/PDE became the enterprise AI deployment bottleneck in public view</strong>: TechCrunch reported AWS’s <a href="https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/">$1B Forward Deployed Engineering organization</a>, while the AI Engineer World’s Fair surfaced an AI FDE track during the US day. The discussion is no longer whether enterprises need embedded AI engineers; it is how to make those deployments leave behind governed systems, evals, runbooks, and maintainable ownership rather than bespoke demos.</p></li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>Build the next internal agent pilot around a production harness checklist: trajectory replay, explicit state, isolated execution, scoped tool credentials, OpenTelemetry-compatible traces, token/cost attribution, durable human approval points, and a small eval suite seeded from real failures. This turns agent adoption from one-off automation into an auditable improvement loop suitable for private-cloud and enterprise environments.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #222; background: #fff; margin: 0; }
+.page-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.site-nav { display: flex; gap: 16px; padding: 12px 20px; background: #f8f9fa; border-bottom: 1px solid #e9ecef; flex-wrap: wrap; }
+.site-nav a { text-decoration: none; color: #0969da; font-weight: 500; }
+.site-title { font-weight: 700; color: #222; }
+.page-header { margin: 30px 0 20px; padding-bottom: 16px; border-bottom: 1px solid #e9ecef; }
+.page-title { font-size: 1.8em; margin: 0; }
+.page-author { color: #666; font-size: 0.9em; margin: 6px 0 0; }
+.page-content { line-height: 1.8; font-size: 16px; }
+.page-content h2 { font-size: 1.4em; margin: 28px 0 12px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+.page-content h3 { font-size: 1.2em; margin: 24px 0 10px; }
+.page-content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+.page-content th, .page-content td { border: 1px solid #ddd; padding: 8px 12px; }
+.page-content th { background: #f8f9fa; font-weight: 600; }
+.page-content tr:nth-child(even) { background: #f9f9f9; }
+.page-content a { color: #0969da; text-decoration: none; }
+.page-content a:hover { text-decoration: underline; }
+.page-content code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+.page-content pre { background: #f8f9fa; padding: 12px; border-radius: 6px; overflow-x: auto; }
+.page-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e9ecef; color: #999; font-size: 0.9em; }
+.page-footer a { color: #0969da; }
+blockquote { border-left: 3px solid #0969da; margin: 16px 0; padding: 8px 16px; color: #555; background: #f0f7ff; }
+@media (max-width: 600px) { .site-nav { flex-direction: column; gap: 8px; } .page-container { padding: 12px; } }
+</style>
+</body>
+</html>
