@@ -17,12 +17,28 @@
 ~10:30       司令：三份报告全部 push 到 main
 10:45        Codex：周一/三/五启动（review + 校准 + daily 情报 + push）
 ~11:00       Codex：完成，摘要留在 Codex 会话内（不推送 IM）
+周五 15:00   司令：insights 周报（信息→分析→匹配→建议），推送用户
 ```
 
 **依赖关系：Codex 的 review 以司令产出为输入，触发时间不得早于 10:35。**
 Codex 运行日：周一（覆盖周末+周一）、周三（覆盖周一周二）、周五（覆盖周四周五）；周五额外生成周报。
 若司令期间未产出（文件缺失），Codex 照常生成自己的 daily 情报，review 段注明「司令期间未产出」。
 Codex 不接 IM 推送，产出以 git 仓库为准，用户到 Codex 会话或 GitHub Pages 查看。
+
+## 信息→落地 Loop（每周闭环）
+
+```
+① 信息查询   日常各板块报告（司令 + Codex）
+② 分析      各报告洞察段 + Codex 每周校准结论
+③ 工作匹配   锚点 docs/work-profile.md（用户确认一次，季度提议更新）
+④ 建议思考   周五 docs/insights/YYYY-Www-commander.md：ACT 建议列表（收益/成本/风险）
+⑤ 落地      docs/backlog.md 状态机：proposed→adopted→doing→landed/dropped
+⑥ 反哺      落地效果 → 调整 topic-scope 权重 / 更新 work-profile
+```
+
+- 每条建议必须有 ACT-ID（ACT-YYYYWww-N），可追溯到来源报告条目和 work-profile 方向
+- 用户回复「采纳/放弃 ACT-xxx」驱动 backlog 状态变更；司令负责执行与记录落地结果
+- 周五 insights 周报推送大象（single_1713920），含 backlog 当前状态摘要
 
 ## 写入规则（必须遵守）
 
