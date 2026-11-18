@@ -1,16 +1,11 @@
 ---
 layout: default
 title: "GitHub Trending"
-nav_order: 30
-parent: "Home"
 ---
 
-# GitHub Trending
+> 热门项目 + AI 项目追踪
 
-> 热门项目 + AI 项目（日更）
-
-{% for post in site.pages %}
-  {% if post.type == 'trending' %}
-  - [{{ post.date | date: "%Y-%m-%d" }}]({{ post.url }}) — {{ post.title }}
-  {% endif %}
+{% assign posts = site.pages | where: "type", "trending" | sort: "date" | reverse %}
+{% for post in posts %}
+- [{{ post.date | date: "%Y-%m-%d" }}]({{ post.url | relative_url }}) — {{ post.title }}
 {% endfor %}

@@ -1,8 +1,23 @@
-# Minimal config (GitHub Pages with .nojekyll = static only)
 title: AI Agent Intelligence
-description: Production-grade AI Agent knowledge base
+description: Production-grade AI Agent knowledge base — 多 Agent 协作维护
 
-# Include all subdirectories
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+color_scheme: light
+search_enabled: true
+
+aux_links:
+  "View on GitHub":
+    - "//github.com/zfcheng/ai-agent-intelligence"
+
+nav_sort: case_insensitive
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
 include:
   - "daily/**/*.md"
   - "ai-loop/**/*.md"
@@ -11,3 +26,5 @@ include:
   - "pricing/**/*.md"
   - "blog-monitor/**/*.md"
   - "insights/**/*.md"
+
+google_analytics: "G-6FZK77W2NJ"

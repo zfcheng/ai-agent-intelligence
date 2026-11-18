@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/just-the-docs-head-nav.css' | relative_url }}" id="jtd-head-nav-stylesheet">
+<script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
+{{ content_for_head }}
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav" role="navigation">
+<a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+<a href="{{ '/daily.html' | relative_url }}">Daily</a>
+<a href="{{ '/ai-loop/' | relative_url }}">AI Loop</a>
+<a href="{{ '/llm-rankings/' | relative_url }}">LLM Rankings</a>
+<a href="{{ '/trending/' | relative_url }}">Trending</a>
+<a href="{{ '/pricing/' | relative_url }}">Pricing</a>
+<a href="{{ '/blog-monitor/' | relative_url }}">Blog Monitor</a>
+<a href="{{ '/insights/' | relative_url }}">Insights</a>
+</nav>
+
+<main class="main-content">
+<header class="page-header">
+{% if page.title %}<h1 class="page-title">{{ page.title }}</h1>{% endif %}
+{% if page.date or page.author or page.type %}
+<p class="page-author">
+  {% if page.author %}作者：{{ page.author }} {% endif %}
+  {% if page.date %} | 日期：{{ page.date }} {% endif %}
+  {% if page.type %} | 板块：{{ page.type }} {% endif %}
+</p>
+{% endif %}
+</header>
+
+<div class="page-content">
+{{ content }}
+</div>
+
+<footer class="page-footer">
+<p>📖 <a href="{{ '/' | relative_url }}">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p>
+</footer>
+</main>
+</div>
+
+<style>
+:root {
+  --custom-bg: #fff;
+  --custom-surface: #f8f9fa;
+  --custom-text: #222;
+  --custom-text-secondary: #666;
+  --custom-accent: #0969da;
+  --custom-accent-hover: #0550ae;
+  --custom-border: #e9ecef;
+  --custom-code-bg: #f1f3f4;
+  --custom-pre-bg: #f8f9fa;
+  --custom-bq-border: #0969da;
+  --custom-bq-bg: #f0f7ff;
+  --custom-footer-text: #999;
+  --custom-card-bg: #fff;
+  --custom-card-border: #e9ecef;
+  --custom-card-shadow: rgba(0,0,0,.04);
+  --custom-card-hover: rgba(0,0,0,.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --custom-bg: #1a1a2e;
+    --custom-surface: #16213e;
+    --custom-text: #e0e0e0;
+    --custom-text-secondary: #888;
+    --custom-accent: #58a6ff;
+    --custom-accent-hover: #79c0ff;
+    --custom-border: #30363d;
+    --custom-code-bg: #21262d;
+    --custom-pre-bg: #0d1117;
+    --custom-bq-border: #58a6ff;
+    --custom-bq-bg: rgba(88,166,255,.08);
+    --custom-footer-text: #8b949e;
+    --custom-card-bg: #21262d;
+    --custom-card-border: #30363d;
+    --custom-card-shadow: rgba(0,0,0,.3);
+    --custom-card-hover: rgba(255,255,255,.05);
+  }
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color: var(--custom-text);
+  background: var(--custom-bg);
+  margin: 0;
+  line-height: 1.7;
+}
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.site-nav {
+  display: flex;
+  gap: 24px;
+  padding: 14px 24px;
+  background: var(--custom-surface);
+  border-bottom: 1px solid var(--custom-border);
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.site-nav a {
+  text-decoration: none;
+  color: var(--custom-text-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  transition: color .15s;
+  white-space: nowrap;
+}
+.site-nav a:hover { color: var(--custom-accent); }
+.site-title {
+  font-weight: 700;
+  color: var(--custom-text);
+  font-size: 16px;
+  margin-right: 8px;
+}
+.site-title:hover { color: var(--custom-accent); }
+.page-header {
+  margin: 40px 0 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--custom-border);
+}
+.page-title {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 700;
+  color: var(--custom-text);
+}
+.page-author {
+  color: var(--custom-text-secondary);
+  font-size: .9em;
+  margin: 8px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.page-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--custom-text);
+}
+.page-content h1 { font-size: 1.6em; margin: 36px 0 16px; font-weight: 700; }
+.page-content h2 { font-size: 1.35em; margin: 32px 0 14px; font-weight: 600; border-bottom: 1px solid var(--custom-border); padding-bottom: 8px; }
+.page-content h3 { font-size: 1.15em; margin: 28px 0 12px; font-weight: 600; }
+.page-content h4 { font-size: 1.05em; margin: 24px 0 10px; font-weight: 600; }
+.page-content p { margin: 14px 0; }
+.page-content ul, .page-content ol { padding-left: 24px; margin: 14px 0; }
+.page-content li { margin: 6px 0; }
+.page-content a { color: var(--custom-accent); text-decoration: none; transition: color .15s; }
+.page-content a:hover { color: var(--custom-accent-hover); text-decoration: underline; }
+.page-content blockquote {
+  border-left: 3px solid var(--custom-bq-border);
+  margin: 20px 0;
+  padding: 12px 20px;
+  color: var(--custom-text-secondary);
+  background: var(--custom-bq-bg);
+  border-radius: 0 6px 6px 0;
+  font-size: .96em;
+}
+.page-content code {
+  background: var(--custom-code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: .9em;
+  color: var(--custom-text);
+  font-family: "SF Mono","Fira Code","Consolas",monospace;
+}
+.page-content pre {
+  background: var(--custom-pre-bg);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid var(--custom-border);
+  font-size: .9em;
+  line-height: 1.5;
+}
+.page-content pre code { background: none; padding: 0; font-size: inherit; }
+.page-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 14px;
+  border: 1px solid var(--custom-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.page-content th, .page-content td {
+  border: 1px solid var(--custom-border);
+  padding: 10px 14px;
+  text-align: left;
+}
+.page-content th { background: var(--custom-surface); font-weight: 600; }
+.page-content tr:nth-child(even) { background: rgba(0,0,0,.02); }
+@media (prefers-color-scheme: dark) {
+  .page-content tr:nth-child(even) { background: rgba(255,255,255,.03); }
+}
+.page-footer {
+  margin-top: 60px;
+  padding: 24px 0;
+  border-top: 1px solid var(--custom-border);
+  color: var(--custom-footer-text);
+  font-size: .9em;
+}
+.page-footer a { color: var(--custom-accent); }
+@media (max-width: 600px) {
+  .site-nav { gap: 12px; padding: 10px 16px; flex-direction: column; }
+  .page-container { padding: 0 12px; }
+  .page-title { font-size: 1.6em; }
+}
+</style>
+</body>
+</html>
