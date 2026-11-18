@@ -1,6 +1,6 @@
 ---
 title: "Insights - {{WEEK}}"
-date: {{DATE}}
+date: "{{DATE}}"
 type: insights
 author: commander
 week: {{WEEK}}

@@ -1,6 +1,6 @@
 ---
-title: "AI Loop Daily - {{DATE}}"
-date: {{DATE}}
+title: "{{DATE}}"
+date: "{{DATE}}"
 type: ai-loop
 author: commander-openclaw
 ---

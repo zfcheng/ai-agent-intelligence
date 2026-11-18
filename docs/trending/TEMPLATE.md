@@ -1,6 +1,6 @@
 ---
-title: "GitHub Trending - {{DATE}}"
-date: {{DATE}}
+title: "{{DATE}}"
+date: "{{DATE}}"
 type: trending
 author: commander-openclaw
 ---

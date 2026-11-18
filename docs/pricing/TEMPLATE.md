@@ -1,6 +1,6 @@
 ---
-title: "LLM Pricing Alert - {{DATE}}"
-date: {{DATE}}
+title: "{{DATE}}"
+date: "{{DATE}}"
 type: pricing
 author: commander-openclaw
 ---
