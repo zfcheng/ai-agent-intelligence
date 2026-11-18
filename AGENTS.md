@@ -46,10 +46,15 @@ Codex 不接 IM 推送，产出以 git 仓库为准，用户到 Codex 会话或 
 2. **目录主责**：见上表。主责者对板块的更新频率与质量负责；非主责者可补位，同样用自己后缀。
 3. **frontmatter 必填**：`title` / `date`（YYYY-MM-DD）/ `type`（=目录名）/ `author` / `tags`。
 4. **git 流程**：`git pull --rebase origin main` → 写入 → commit → push。push 失败则 rebase 重试一次，仍失败则放弃本次并记录，**禁止 force push**。
-5. **index 更新**：写入后在 `docs/index.md` 对应板块「最近更新」下添加一行（最新在上，各板块最多保留 5 条），与报告同 commit 或紧随其后提交。
-6. **选题标尺**：统一以 `skill/references/topic-scope.md` 为准；想调整范围 → 在 commit message 中注明 `[scope-change]`，由人工最终确认。
-7. **质量线**：无新内容宁可不写；灌水条目、重复推旧闻视为事故。「暂无重大更新」需给出判断依据。
-8. **安全**：凭证不入仓库；不在报告中输出内部敏感信息（内网系统、学城私文等）。
+5. **index 更新**：写入后在 `docs/index.md` 对应板块「最近更新」下添加一行（最新在上，各板块最多保留 5 条），与报告同 commit 或紧随其后提交。**同时更新首页卡片热点摘要**（规则见 `skill/references/homepage-highlights.md`）。
+6. **首页热点同步**：司令 cron 每次提交新报告后，同步更新 `docs/index.md` 对应板块卡片的 `card-highlights`（从最近 3 天报告提取 5 条精华）。规则详见 `skill/references/homepage-highlights.md`。Codex 提交 daily 后，司令下次更新时同步补充。
+7. **选题标尺**：统一以 `skill/references/topic-scope.md` 为准；想调整范围 → 在 commit message 中注明 `[scope-change]`，由人工最终确认。
+8. **质量线**：无新内容宁可不写；灌水条目、重复推旧闻视为事故。「暂无重大更新」需给出判断依据。
+9. **安全**：凭证不入仓库；不在报告中输出内部敏感信息（内网系统、学城私文等）。
+
+## 首页热点摘要规则
+
+首页 `docs/index.md` 的「最近更新」和卡片热点摘要由 Liquid 自动渲染。**司令负责维护首页热点摘要内容**（`card-highlights` 区域），Codex 监督质量。详细规则 → `skill/references/homepage-highlights.md`。
 
 ## 校准闭环（每周）
 
