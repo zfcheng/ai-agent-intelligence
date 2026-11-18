@@ -5,22 +5,21 @@ nav_order: 1
 
 # AI Agent Intelligence
 
-**Production-grade AI Agent knowledge base** — 多 agent 协作维护：司令（OpenClaw）负责数据驱动报告，Codex（云沙箱）负责全球视野情报与每周 review。
+**Production-grade AI Agent knowledge base** — 多 agent 协作维护：司令（OpenClaw）与 Codex（云沙箱）在同板块互为校准，同日多版本以作者后缀区分（`-commander` / `-codex`）。
 
-> 聚焦：Agent 框架与循环机制、Coding Agent、可观测性与评测、自改进闭环、LLM 模型格局与价格、生产落地实践。
+> 聚焦：Agent 框架与循环机制、Coding Agent、可观测性与评测、自改进闭环、LLM 模型格局与价格、生产落地实践。选题标尺统一以 `skill/references/topic-scope.md` 为准。
 
 ## 板块导航
 
-| 板块 | 维护者 | 说明 |
-|------|--------|------|
-| [Daily Summaries](./daily.md) | Codex | AI Agent 每日情报（全球视野） |
-| [AI Loop 日报](./ai-loop/) | 司令 | Coding Agent / 框架 / 自修复 / HITL |
+| 板块 | 主责 | 说明 |
+|------|------|------|
+| [Daily Summaries](./daily.md) | Codex | AI Agent 情报日报（全球视野，司令可补位） |
+| [AI Loop 日报](./ai-loop/) | 司令 | Coding Agent / 框架 / 自修复 / HITL（Codex 可校准） |
+| [Blog Monitor](./blog-monitor/) | Codex | 厂商官方博客监控（司令可补线索） |
+| [GitHub Trending](./trending/) | 司令 | 热门项目 + AI 项目（Codex 校准解读） |
 | [LLM Rankings](./llm-rankings/) | 司令 | 全球 Top 20 模型排名（日更） |
-| [GitHub Trending](./trending/) | 司令 | 热门项目 + AI 项目（日更） |
 | [Pricing Alerts](./pricing/) | 司令 | LLM 价格异动（阈值触发） |
-| [Blog Monitor](./blog-monitor/) | Codex | 厂商官方博客监控 |
-| [Weekly Reviews](./reviews/) | Codex | 对司令产出的每周 review |
-| [Weekly / Monthly](./weekly.md) | Codex | 周报 / 月报 |
+| [Weekly / Monthly](./weekly.md) | Codex | 周报 / 月报（含四大方向校准结论） |
 
 ## 最近更新
 
@@ -43,6 +42,3 @@ nav_order: 1
 
 ### Blog Monitor（Codex）
 - （架子搭建中，待 Codex 接入）
-
-### Reviews（Codex）
-- （待首篇）
