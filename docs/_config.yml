@@ -1,29 +1,21 @@
 title: AI Agent Intelligence
 description: Production-grade AI Agent knowledge base. Daily, weekly, and monthly summaries on frameworks, harnesses, observability, self-improving loops, and real-world deployment.
 
-# Use just-the-docs theme (excellent left sidebar + search)
-remote_theme: just-the-docs/just-the-docs
-plugins:
-  - jekyll-remote-theme
+# Use custom layout instead of just-the-docs
+# remote_theme: just-the-docs/just-the-docs
+# plugins:
+#   - jekyll-remote-theme
 
-# UI settings
-color_scheme: light
-search_enabled: true
-search:
-  tokenizer_separator: /[\s/]+/
+layout: default
 
-# Top right links
-aux_links:
-  "View on GitHub":
-    - "//github.com/zfcheng/ai-agent-intelligence"
+default:
+  - type: pages
+    scope:
+      path: ""
+    values:
+      layout: default
 
-# Sidebar behavior
-nav_sort: case_insensitive
-
-# Footer
-footer_content: "Generated with ai-agent-intelligence skill • Hosted on GitHub Pages"
-
-# Include all subdirectories in Jekyll rendering
+# Include all subdirectories for Jekyll rendering
 include:
   - "daily/**/*.md"
   - "ai-loop/**/*.md"
@@ -31,14 +23,7 @@ include:
   - "trending/**/*.md"
   - "pricing/**/*.md"
   - "blog-monitor/**/*.md"
+  - "insights/**/*.md"
 
-# === Analytics (optional) ===
-# GitHub Pages has NO built-in traffic stats.
-# To enable:
-# 1. Plausible (recommended, privacy-friendly): sign up at plausible.io, then set:
-# plausible: "zfcheng.github.io"
-#
-# 2. Google Analytics 4:
+# Analytics
 google_analytics: "G-6FZK77W2NJ"
-#
-# The head_custom include will load the script when configured.

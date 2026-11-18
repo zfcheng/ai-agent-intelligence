@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "GitHub Trending"
 nav_order: 30
 parent: "Home"

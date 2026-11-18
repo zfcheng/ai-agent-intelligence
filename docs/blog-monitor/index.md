@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Blog Monitor"
 nav_order: 50
 parent: "Home"

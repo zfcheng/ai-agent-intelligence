@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "LLM Rankings"
 nav_order: 20
 parent: "Home"

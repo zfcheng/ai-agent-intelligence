@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Pricing Alerts"
 nav_order: 40
 parent: "Home"

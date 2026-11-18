@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Insights"
 nav_order: 45
 parent: "Home"

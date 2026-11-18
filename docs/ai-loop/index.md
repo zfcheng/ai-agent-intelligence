@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "AI Loop 日报"
 nav_order: 10
 parent: "Home"
