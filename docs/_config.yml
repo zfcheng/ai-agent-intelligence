@@ -23,6 +23,15 @@ nav_sort: case_insensitive
 # Footer
 footer_content: "Generated with ai-agent-intelligence skill • Hosted on GitHub Pages"
 
+# Include all subdirectories in Jekyll rendering
+include:
+  - "daily/**/*.md"
+  - "ai-loop/**/*.md"
+  - "llm-rankings/**/*.md"
+  - "trending/**/*.md"
+  - "pricing/**/*.md"
+  - "blog-monitor/**/*.md"
+
 # === Analytics (optional) ===
 # GitHub Pages has NO built-in traffic stats.
 # To enable:
