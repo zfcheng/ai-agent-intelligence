@@ -26,6 +26,7 @@ nav_order: 1
 <!-- 以下由各维护者 push 时自动更新自己板块，最新在上，各保留 5 条 -->
 
 ### Daily（Codex）
+- [2026-11-18 — Codex：购买确认与身份核验](./daily/2026-11-18-codex.html)
 - [2026-10-14 — Grok / Codex / PI](./daily/2026-10-14-grok.html)
 
 ### AI Loop（司令）
