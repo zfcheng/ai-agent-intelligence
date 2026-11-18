@@ -29,7 +29,7 @@ nav_order: 1
 - [2026-10-14 — Grok / Codex / PI](./daily/2026-10-14-grok.html)
 
 ### AI Loop（司令）
-- （待首篇入库）
+- [2026-11-18](./ai-loop/2026-11-18-commander.html)
 
 ### LLM Rankings（司令）
 - （待首篇入库）
