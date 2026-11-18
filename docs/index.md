@@ -36,10 +36,63 @@ nav_order: 1
 .recent-list a:hover { text-decoration:underline; }
 .recent-empty { color:#8b949e; font-size:14px; font-style:italic; }
 
-@media (max-width:600px) {
-  .hero { padding:36px 12px 26px; }
-  .hero-title { font-size:2em; }
-  .cards, .recent-grid { grid-template-columns:1fr; }
+/* ===== Mobile Responsive ===== */
+@media (max-width:768px) {
+  .hero { padding:40px 16px 28px; }
+  .hero-title { font-size:2.1em; }
+  .hero-subtitle { font-size:1.05em; }
+  .hero-desc { font-size:14px; }
+  .tags { padding:0 16px 28px; gap:6px; }
+  .tag { padding:3px 12px; font-size:12px; }
+  .cards { padding:0 16px 36px; gap:14px; }
+  .card { padding:18px; }
+  .card-icon { font-size:1.7em; }
+  .card-title { font-size:1.05em; }
+  .section-title { font-size:1.2em; }
+  .recent { padding:0 16px 36px; }
+  .recent-grid { gap:14px; }
+  .recent-col { padding:14px 16px; }
+}
+
+@media (max-width:480px) {
+  .hero { padding:32px 12px 22px; }
+  .hero-title { font-size:1.7em; }
+  .hero-subtitle { font-size:0.95em; margin-bottom:10px; }
+  .hero-desc { font-size:13px; }
+  .hero-desc code { font-size:.85em; }
+  .tags { padding:0 12px 22px; gap:5px; }
+  .tag { padding:3px 10px; font-size:11px; }
+  .cards { padding:0 12px 28px; gap:12px; grid-template-columns:1fr; }
+  .card { padding:16px; }
+  .card-icon { font-size:1.5em; margin-bottom:8px; }
+  .card-title { font-size:1em; }
+  .card-desc { font-size:13px; }
+  .card-meta { font-size:11px; margin-bottom:12px; }
+  .card-link { font-size:13px; }
+  .section-title { font-size:1.1em; }
+  .recent { padding:0 12px 28px; }
+  .recent-grid { grid-template-columns:1fr; gap:12px; }
+  .recent-col { padding:12px 14px; }
+  .recent-col-title { font-size:0.95em; }
+  .recent-list a { font-size:13px; }
+}
+
+@media (max-width:360px) {
+  .hero { padding:24px 10px 18px; }
+  .hero-title { font-size:1.45em; }
+  .hero-subtitle { font-size:0.88em; }
+  .hero-desc { font-size:12px; }
+  .tags { padding:0 10px 18px; }
+  .tag { padding:2px 8px; font-size:10px; }
+  .cards { padding:0 10px 24px; gap:10px; }
+  .card { padding:14px; }
+  .card-icon { font-size:1.3em; }
+  .card-title { font-size:0.95em; }
+  .card-desc { font-size:12px; }
+  .section-title { font-size:1em; }
+  .recent { padding:0 10px 24px; }
+  .recent-col { padding:10px 12px; }
+  .recent-list a { font-size:12px; }
 }
 </style>
 
