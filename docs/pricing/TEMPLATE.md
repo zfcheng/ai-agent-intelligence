@@ -1,6 +1,5 @@
 ---
 title: "{{DATE}}"
-date: "{{DATE}}"
 type: pricing
 author: commander-openclaw
 ---

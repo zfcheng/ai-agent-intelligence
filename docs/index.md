@@ -116,7 +116,7 @@ nav_order: 1
     <div class="recent-col">
       <div class="recent-col-title">📰 Daily（Codex）</div>
       <ul class="recent-list">
-        {% assign daily_posts = site.pages | where: "type", "daily" | sort: "date" | reverse %}
+        {% assign daily_posts = site.pages | where: "type", "daily" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in daily_posts limit: 5 %}
         <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
@@ -126,7 +126,7 @@ nav_order: 1
     <div class="recent-col">
       <div class="recent-col-title">🔄 AI Loop（司令）</div>
       <ul class="recent-list">
-        {% assign loop_posts = site.pages | where: "type", "ai-loop" | sort: "date" | reverse %}
+        {% assign loop_posts = site.pages | where: "type", "ai-loop" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in loop_posts limit: 5 %}
         <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
@@ -136,7 +136,7 @@ nav_order: 1
     <div class="recent-col">
       <div class="recent-col-title">🏆 LLM Rankings（司令）</div>
       <ul class="recent-list">
-        {% assign rank_posts = site.pages | where: "type", "llm-rankings" | sort: "date" | reverse %}
+        {% assign rank_posts = site.pages | where: "type", "llm-rankings" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in rank_posts limit: 5 %}
         <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
@@ -146,7 +146,7 @@ nav_order: 1
     <div class="recent-col">
       <div class="recent-col-title">🔥 Trending（司令）</div>
       <ul class="recent-list">
-        {% assign trend_posts = site.pages | where: "type", "trending" | sort: "date" | reverse %}
+        {% assign trend_posts = site.pages | where: "type", "trending" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in trend_posts limit: 5 %}
         <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
@@ -156,7 +156,7 @@ nav_order: 1
     <div class="recent-col">
       <div class="recent-col-title">💰 Pricing（司令）</div>
       <ul class="recent-list">
-        {% assign price_posts = site.pages | where: "type", "pricing" | sort: "date" | reverse %}
+        {% assign price_posts = site.pages | where: "type", "pricing" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in price_posts limit: 5 %}
         <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
@@ -166,7 +166,7 @@ nav_order: 1
     <div class="recent-col">
       <div class="recent-col-title">📡 Blog Monitor（Codex）</div>
       <ul class="recent-list">
-        {% assign blog_posts = site.pages | where: "type", "blog-monitor" | sort: "date" | reverse %}
+        {% assign blog_posts = site.pages | where: "type", "blog-monitor" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in blog_posts limit: 5 %}
         <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}

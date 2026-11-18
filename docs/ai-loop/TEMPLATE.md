@@ -1,6 +1,5 @@
 ---
 title: "{{DATE}}"
-date: "{{DATE}}"
 type: ai-loop
 author: commander-openclaw
 ---

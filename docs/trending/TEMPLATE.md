@@ -1,6 +1,5 @@
 ---
 title: "{{DATE}}"
-date: "{{DATE}}"
 type: trending
 author: commander-openclaw
 ---

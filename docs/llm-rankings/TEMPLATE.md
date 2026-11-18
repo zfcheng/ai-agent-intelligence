@@ -1,6 +1,5 @@
 ---
 title: "{{DATE}}"
-date: "{{DATE}}"
 type: llm-rankings
 author: commander-openclaw
 ---
