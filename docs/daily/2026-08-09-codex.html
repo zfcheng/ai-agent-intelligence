@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>AI Agent Daily Summary - 2026-08-09 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="active">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-08-09 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-08-09 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>LangChain’s Aug. 7 Managed Deep Agents public beta remained the highest-signal production update through the previous US day: the important move is not another agent abstraction, but a hosted LangSmith runtime with durable threads, streaming runs, checkpointing, human-in-the-loop control, sandbox-backed execution, agent context, tracing, and Harbor evals. This reinforces the new baseline for serious agents: runtime, state, approvals, sandboxing, observability, and evals must ship together. Sources: <a href="https://www.langchain.com/blog/introducing-managed-deep-agents">LangChain Managed Deep Agents</a>, <a href="https://www.langchain.com/blog">LangChain blog</a>.</li>
+<li>LangChain’s Kubernetes SRE agent case study is the practical pattern worth copying: keep the first production agent read-heavy, connect it to cluster events/logs/runbooks/deployment history, use LangSmith traces to inspect decisions, and require human approval before remediation. For private-cloud teams, this is a better starting point than a fully autonomous on-call agent. Source: <a href="https://www.langchain.com/blog/how-we-build-an-autonomous-sre-agent-for-kubernetes-deployments">LangChain Kubernetes SRE agent</a>.</li>
+<li>The eval-harness conversation stayed anchored on ReviewBench-style workflow evaluation: real PR feedback, verifier tasks, precision/coverage measures, controlled environments, and regression runs are more useful than generic agent leaderboards. The actionable lesson is that agent quality comes from harness design and failure taxonomy as much as model selection. Source: <a href="https://www.langchain.com/blog/evaluating-code-review-agents-with-reviewbench">LangChain ReviewBench</a>.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>Production observability discussion continued to converge on trajectory-level telemetry: traces should capture tool calls, state transitions, memory writes, cost/latency, human interventions, and final outcomes, then promote failures into eval datasets. Prompt/response logging alone is now too shallow because most agent failures happen mid-trajectory. Sources: <a href="https://www.braintrust.dev/articles/agent-observability-complete-guide-2026">Braintrust agent observability guide</a>, <a href="https://langfuse.com/blog/2024-07-ai-agent-observability-with-langfuse">Langfuse agent observability</a>, <a href="https://developers.openai.com/api/docs/guides/agents">OpenAI Agents SDK docs</a>.</li>
+<li>Observability cost became a live reliability topic after Datadog reported weaker AI-native customer expansion and market coverage tied that partly to AI companies optimizing infrastructure spend. The agent-infra implication is direct: tracing, logs, evals, and replay are mandatory, but teams need sampling, retention tiers, cost budgets, and high-value trace promotion before agent telemetry becomes its own scaling problem. Sources: <a href="https://investors.datadoghq.com/news-releases/news-release-details/datadog-announces-second-quarter-2026-financial-results">Datadog Q2 2026 results</a>, <a href="https://www.reuters.com/business/datadog-shares-tumble-ai-clients-pull-back-spending-2026-08-08/">Reuters coverage</a>.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For the next internal agent build, define the production harness before expanding capability: graph/state model, sandbox policy, approval boundaries, trace schema, cost guardrails, and 20-50 workflow-specific eval cases from real failures. Start with a diagnostic SRE or code-review assistant, then only graduate repeated, low-risk actions into controlled automation.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+:root {
+  --bg: #fff;
+  --surface: #f8f9fa;
+  --text: #222;
+  --text-secondary: #666;
+  --accent: #0969da;
+  --accent-hover: #0550ae;
+  --border: #e9ecef;
+  --border-strong: #d0d7de;
+  --code-bg: #f1f3f4;
+  --pre-bg: #f8f9fa;
+  --bq-border: #0969da;
+  --bq-bg: #f0f7ff;
+  --footer-text: #999;
+  --footer-bg: #f8f9fa;
+  --card-bg: #fff;
+  --card-border: #e9ecef;
+  --card-shadow: rgba(0,0,0,0.04);
+  --card-hover: rgba(0,0,0,0.08);
+  --btn-bg: #0969da;
+  --btn-text: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a2e;
+    --surface: #16213e;
+    --text: #e0e0e0;
+    --text-secondary: #888;
+    --accent: #58a6ff;
+    --accent-hover: #79c0ff;
+    --border: #30363d;
+    --border-strong: #484f58;
+    --code-bg: #21262d;
+    --pre-bg: #0d1117;
+    --bq-border: #58a6ff;
+    --bq-bg: rgba(88,166,255,0.08);
+    --footer-text: #8b949e;
+    --footer-bg: #16213e;
+    --card-bg: #21262d;
+    --card-border: #30363d;
+    --card-shadow: rgba(0,0,0,0.3);
+    --card-hover: rgba(255,255,255,0.05);
+    --btn-bg: #58a6ff;
+    --btn-text: #0d1117;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+  padding: 14px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--accent);
+}
+
+.site-title {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.site-title:hover {
+  color: var(--accent);
+}
+
+.page-header {
+  margin: 40px 0 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-title {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.page-author {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  margin: 8px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-author .badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  vertical-align: middle;
+}
+
+.page-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.page-content h1 {
+  font-size: 1.6em;
+  margin: 36px 0 16px;
+  font-weight: 700;
+}
+
+.page-content h2 {
+  font-size: 1.35em;
+  margin: 32px 0 14px;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.page-content h3 {
+  font-size: 1.15em;
+  margin: 28px 0 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.page-content h4 {
+  font-size: 1.05em;
+  margin: 24px 0 10px;
+  font-weight: 600;
+}
+
+.page-content p {
+  margin: 14px 0;
+}
+
+.page-content ul, .page-content ol {
+  padding-left: 24px;
+  margin: 14px 0;
+}
+
+.page-content li {
+  margin: 6px 0;
+}
+
+.page-content a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.page-content a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.page-content blockquote {
+  border-left: 3px solid var(--bq-border);
+  margin: 20px 0;
+  padding: 12px 20px;
+  color: var(--text-secondary);
+  background: var(--bq-bg);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.96em;
+}
+
+.page-content code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: var(--text);
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+}
+
+.page-content pre {
+  background: var(--pre-bg);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.page-content pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+.page-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.page-content th,
+.page-content td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.page-content th {
+  background: var(--surface);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.page-content tr:nth-child(even) {
+  background: rgba(0,0,0,0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-content tr:nth-child(even) {
+    background: rgba(255,255,255,0.03);
+  }
+}
+
+.page-footer {
+  margin-top: 60px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  color: var(--footer-text);
+  font-size: 0.9em;
+}
+
+.page-footer a {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    gap: 12px;
+    padding: 10px 16px;
+    flex-direction: column;
+  }
+  .page-container {
+    padding: 0 12px;
+  }
+  .page-title {
+    font-size: 1.6em;
+  }
+}
+</style>
+</body>
+</html>

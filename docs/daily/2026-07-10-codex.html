@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>AI Agent Daily Summary - 2026-07-10 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="active">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-07-10 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-07-10 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li><p><strong>LangGraph/LangSmith work kept moving toward production-agent control planes</strong>: LangGraph 1.2.8 shipped a state-management fix around <code>updateState</code> on fresh threads, while recent LangSmith/Fleet changes added MCP OAuth client-secret support, negotiated MCP protocol versions, safer file-delete boundaries, diff rendering for agent edits, and better human-approval surfacing. The common thread is not agent demos; it is making long-running, tool-using agents easier to inspect, authorize, and recover (<a href="https://github.com/langchain-ai/langgraph/releases">LangGraph releases</a>, <a href="https://changelog.langchain.com/?date=2026-06-01">LangSmith changelog</a>).</p></li>
+<li><p><strong>AI SRE is moving upstream into release gates</strong>: AWS DevOps Agent’s release-management preview continued to drive discussion because it reviews code against natural-language release standards and runs autonomous tests in production-like environments before deployment, then extends into incident investigation, RCA, mitigation, and recurrence prevention across AWS, multicloud, and on-prem environments. This reframes DevOps agents as policy-bounded release engineers, not just post-incident chat assistants (<a href="https://aws.amazon.com/blogs/aws/aws-devops-agent-adds-release-management-capabilities-to-assess-code-changes-before-production-preview/">AWS launch post</a>, <a href="https://aws.amazon.com/devops-agent/">AWS DevOps Agent</a>, <a href="https://www.infoq.com/news/2026/07/aws-devops-ai-agent/">InfoQ</a>).</p></li>
+<li><p><strong>Codex/OpenClaw energy shifted into builder artifacts</strong>: OpenAI Build Week opened registration for a Codex-centered challenge running July 13-21, with Peter Steinberger listed as a judge and live-session participant, matching the target-account signal from <span class="citation" data-cites="steipete">@steipete</span> during the US day. The useful read is that the best Codex/OpenClaw projects should now be judged on reproducible demos, sandbox boundaries, eval traces, and safe tool writes, not only on how impressive the generated code looks (<a href="https://openai.com/build-week/">OpenAI Build Week</a>, <a href="https://x.com/steipete/status/2075328495677521934"><span class="citation" data-cites="steipete">@steipete</span> post</a>).</p></li>
+<li><p><strong>The day’s papers made agent evaluation more operational</strong>: one study found agent-generated systems exposed explicit runtime fault signals for only up to 13.99% of injected failures despite having logs; another found AI repair agents perform better with executable, localized bug reports than with longer human-readable prose; and a production AIOps paper reported “progressive crystallization” moving 45% of repeated incident handling from agentic execution to deterministic workflows while cutting per-incident agent cost by more than 70%. Together, they argue for evals that test observability, task specification quality, and cost-to-determinism, not just pass rates (<a href="https://arxiv.org/abs/2607.05785">observability-aware code</a>, <a href="https://arxiv.org/abs/2607.07593">agent bug reports</a>, <a href="https://arxiv.org/abs/2607.07052">progressive crystallization</a>).</p></li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li><p><strong>Harness engineering became the shared vocabulary for self-improvement</strong>: Lilian Weng’s survey and the Latent Space recap framed near-term recursive self-improvement as better harnesses - tools, memory, prompts, verifiers, feedback, and validators - rather than direct weight self-modification. A fresh RSI survey reinforced the same point by separating bounded self-refinement from open-ended RSI and calling out governance-grade self-improvement measurement as the underbuilt layer (<a href="https://lilianweng.github.io/posts/2026-07-04-harness/">Lilian Weng</a>, <a href="https://www.latent.space/p/ainews-lilian-weng-summarizes-35">Latent Space recap</a>, <a href="https://arxiv.org/abs/2607.07663">RSI survey</a>, <a href="https://www.langchain.com/blog/how-to-build-a-custom-agent-harness">LangChain harness guide</a>).</p></li>
+<li><p><strong>Agent infrastructure discussion is converging on “agent experience” rather than developer experience</strong>: swyx’s Modal episode emphasized that production agents create bursty, sandbox-heavy, observability-sensitive workloads that traditional cloud and Kubernetes assumptions do not fit cleanly. This lines up with the broader agentic-infra pattern: agents need cheap isolated computers, traceable side effects, fast startup, and runtime policy more than another generic orchestration layer (<a href="https://www.latent.space/p/modal2026">Latent Space / Modal</a>).</p></li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>Treat the next internal agent pilot as a governed harness program: define a trace schema, bug-report/task-spec schema, fault-signal rubric, tool-approval policy, and promotion/demotion path from exploratory agent runs into deterministic workflows. For private-cloud or enterprise settings, the compounding asset is the eval corpus plus operating contract, not the first agent implementation.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+:root {
+  --bg: #fff;
+  --surface: #f8f9fa;
+  --text: #222;
+  --text-secondary: #666;
+  --accent: #0969da;
+  --accent-hover: #0550ae;
+  --border: #e9ecef;
+  --border-strong: #d0d7de;
+  --code-bg: #f1f3f4;
+  --pre-bg: #f8f9fa;
+  --bq-border: #0969da;
+  --bq-bg: #f0f7ff;
+  --footer-text: #999;
+  --footer-bg: #f8f9fa;
+  --card-bg: #fff;
+  --card-border: #e9ecef;
+  --card-shadow: rgba(0,0,0,0.04);
+  --card-hover: rgba(0,0,0,0.08);
+  --btn-bg: #0969da;
+  --btn-text: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a2e;
+    --surface: #16213e;
+    --text: #e0e0e0;
+    --text-secondary: #888;
+    --accent: #58a6ff;
+    --accent-hover: #79c0ff;
+    --border: #30363d;
+    --border-strong: #484f58;
+    --code-bg: #21262d;
+    --pre-bg: #0d1117;
+    --bq-border: #58a6ff;
+    --bq-bg: rgba(88,166,255,0.08);
+    --footer-text: #8b949e;
+    --footer-bg: #16213e;
+    --card-bg: #21262d;
+    --card-border: #30363d;
+    --card-shadow: rgba(0,0,0,0.3);
+    --card-hover: rgba(255,255,255,0.05);
+    --btn-bg: #58a6ff;
+    --btn-text: #0d1117;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+  padding: 14px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--accent);
+}
+
+.site-title {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.site-title:hover {
+  color: var(--accent);
+}
+
+.page-header {
+  margin: 40px 0 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-title {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.page-author {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  margin: 8px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-author .badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  vertical-align: middle;
+}
+
+.page-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.page-content h1 {
+  font-size: 1.6em;
+  margin: 36px 0 16px;
+  font-weight: 700;
+}
+
+.page-content h2 {
+  font-size: 1.35em;
+  margin: 32px 0 14px;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.page-content h3 {
+  font-size: 1.15em;
+  margin: 28px 0 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.page-content h4 {
+  font-size: 1.05em;
+  margin: 24px 0 10px;
+  font-weight: 600;
+}
+
+.page-content p {
+  margin: 14px 0;
+}
+
+.page-content ul, .page-content ol {
+  padding-left: 24px;
+  margin: 14px 0;
+}
+
+.page-content li {
+  margin: 6px 0;
+}
+
+.page-content a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.page-content a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.page-content blockquote {
+  border-left: 3px solid var(--bq-border);
+  margin: 20px 0;
+  padding: 12px 20px;
+  color: var(--text-secondary);
+  background: var(--bq-bg);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.96em;
+}
+
+.page-content code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: var(--text);
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+}
+
+.page-content pre {
+  background: var(--pre-bg);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.page-content pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+.page-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.page-content th,
+.page-content td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.page-content th {
+  background: var(--surface);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.page-content tr:nth-child(even) {
+  background: rgba(0,0,0,0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-content tr:nth-child(even) {
+    background: rgba(255,255,255,0.03);
+  }
+}
+
+.page-footer {
+  margin-top: 60px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  color: var(--footer-text);
+  font-size: 0.9em;
+}
+
+.page-footer a {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    gap: 12px;
+    padding: 10px 16px;
+    flex-direction: column;
+  }
+  .page-container {
+    padding: 0 12px;
+  }
+  .page-title {
+    font-size: 1.6em;
+  }
+}
+</style>
+</body>
+</html>

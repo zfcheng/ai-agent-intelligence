@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>AI Agent Daily Summary - 2026-09-26 (Codex / GPT 5.5) | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="active">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-09-26 (Codex / GPT 5.5)</h1>
+<p class="page-author">作者：unknown | 日期：2026-09-26 | 板块：daily</p></header>
+<div class="page-content">
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li>LangChain’s US-day signal centered on agent improvement becoming a first-class production loop, not a post-hoc dashboard. LangSmith Engine v2 adds proactive red teaming, issue detection for inefficient trajectories plus cost/latency/error trends, and pre-validates proposed fixes before human review; LangChain says Engine has already analyzed 70M+ traces. Treat this as the clearest current example of “self-improving agent” meaning trace-backed diagnosis, reproduction, eval, and PR-ready remediation rather than unsupervised autonomy. Sources: <a href="https://www.langchain.com/blog/langsmith-engine-v2-redteam">LangSmith Engine v2</a>, <a href="https://www.langchain.com/blog">LangChain blog index</a>.</li>
+<li>Managed Deep Agents v0.8 moved the agent harness closer to enterprise runtime infrastructure: user-scoped memory, agent-scoped memory, user-owned versus agent-owned credentials, HTTP channels, Slack file transfer, built-in Parallel web search, schedules, sandbox files, and eval folders all live inside the deployable agent project. The production implication is permissions and memory scope are now part of agent architecture, especially for internal tools and customer-facing workflows. Sources: <a href="https://www.langchain.com/blog/langsmith-managed-deep-agents-whats-new">Managed Deep Agents v0.8</a>, <a href="https://w.twstalker.com/hwchase17"><span class="citation" data-cites="hwchase17">@hwchase17</span> activity mirror</a>.</li>
+<li>LangSmith also pushed the “trace is the asset” theme through Trajectories, Custom Apps, and Fine-Tuning. Trajectories make long agent runs readable across deferred tool calls and context compaction; Custom Apps let teams build review UIs over LangSmith data; <code>smithtune</code> turns successful trajectories into fine-tuning datasets, runs training via Fireworks or Baseten, evaluates the checkpoint, and sends results back to LangSmith. This is a practical loop from production traces to review UI, eval dataset, and specialized model, with human review still needed before trusting generated evals or training data. Sources: <a href="https://www.langchain.com/blog">Trajectories / blog index</a>, <a href="https://www.langchain.com/blog/langsmith-custom-apps">LangSmith Custom Apps</a>, <a href="https://www.langchain.com/blog/langsmith-fine-tuning">LangSmith Fine-Tuning</a>, <a href="https://www.baseten.co/blog/fine-tune-on-your-langsmith-traces-with-baseten-loops/">Baseten launch note</a>.</li>
+<li>The AI SRE thread kept gaining shape around harnessed remediation rather than chat-only copilots. Dash0’s Agent0 docs describe continuous telemetry scanning, missing-alert discovery, commit-level root-cause analysis, PR drafting, sandboxed command execution, and automation without opening a chat; OpenAI’s API changelog adds a related enterprise primitive, Secure MCP Tunnel, for connecting ChatGPT, Codex, Responses API, and AgentKit to private/on-prem MCP servers through a customer-hosted tunnel client. Sources: <a href="https://www.dash0.com/docs/dash0/ai/agent0/overview">Dash0 Agent0 overview</a>, <a href="https://developers.openai.com/api/docs/changelog">OpenAI API changelog</a>.</li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li>The sharpest practitioner discussion was about agents reporting success when the real-world side effect never happened. A Sept. 25 r/AI_Agents thread reported eight platforms tested on a Slack-posting build, with several systems marking integration success while no message appeared; the useful lesson is “API returned 200” is not task success. Production agent harnesses need second-order verification: inspect the external artifact, reconcile channel state, and make the evaluator assert the business outcome, not just the tool call. Source: <a href="https://www.reddit.com/r/AI_Agents/comments/1wpwbb9/ran_one_build_on_eight_agent_platforms_two/">r/AI_Agents discussion</a>.</li>
+<li>Hamel Husain’s evals material remained the grounding counterweight to tool announcements: the current blog front page leads with “AI Evals: Everything You Need to Know,” and the broader message is still that teams win by measurement and iteration, not by architecture choice alone. Read the LangSmith announcements through that lens: red teaming, trajectories, fine-tuning, and custom apps only matter if they tighten an Analyze -&gt; Measure -&gt; Improve cycle with owned data and domain-specific failure taxonomies. Sources: <a href="https://hamel.dev/">Hamel’s blog</a>, <a href="https://ai.hamel.dev/eval-course">AI evals course</a>.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<ul>
+<li>For the next internal agent or AI SRE pilot, define the harness contract before expanding autonomy: identity-scoped credentials, memory access policy, trace retention/export path, trajectory review UI, second-order outcome checks, red-team cases, and a regression gate that can replay failures before a proposed fix ships. In private-cloud contexts, prioritize BYOK/self-hosted or tunnel-based patterns for anything touching production telemetry, repositories, customer data, or privileged internal tools.</li>
+</ul>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+:root {
+  --bg: #fff;
+  --surface: #f8f9fa;
+  --text: #222;
+  --text-secondary: #666;
+  --accent: #0969da;
+  --accent-hover: #0550ae;
+  --border: #e9ecef;
+  --border-strong: #d0d7de;
+  --code-bg: #f1f3f4;
+  --pre-bg: #f8f9fa;
+  --bq-border: #0969da;
+  --bq-bg: #f0f7ff;
+  --footer-text: #999;
+  --footer-bg: #f8f9fa;
+  --card-bg: #fff;
+  --card-border: #e9ecef;
+  --card-shadow: rgba(0,0,0,0.04);
+  --card-hover: rgba(0,0,0,0.08);
+  --btn-bg: #0969da;
+  --btn-text: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a2e;
+    --surface: #16213e;
+    --text: #e0e0e0;
+    --text-secondary: #888;
+    --accent: #58a6ff;
+    --accent-hover: #79c0ff;
+    --border: #30363d;
+    --border-strong: #484f58;
+    --code-bg: #21262d;
+    --pre-bg: #0d1117;
+    --bq-border: #58a6ff;
+    --bq-bg: rgba(88,166,255,0.08);
+    --footer-text: #8b949e;
+    --footer-bg: #16213e;
+    --card-bg: #21262d;
+    --card-border: #30363d;
+    --card-shadow: rgba(0,0,0,0.3);
+    --card-hover: rgba(255,255,255,0.05);
+    --btn-bg: #58a6ff;
+    --btn-text: #0d1117;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+  padding: 14px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--accent);
+}
+
+.site-title {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.site-title:hover {
+  color: var(--accent);
+}
+
+.page-header {
+  margin: 40px 0 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-title {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.page-author {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  margin: 8px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-author .badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  vertical-align: middle;
+}
+
+.page-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.page-content h1 {
+  font-size: 1.6em;
+  margin: 36px 0 16px;
+  font-weight: 700;
+}
+
+.page-content h2 {
+  font-size: 1.35em;
+  margin: 32px 0 14px;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.page-content h3 {
+  font-size: 1.15em;
+  margin: 28px 0 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.page-content h4 {
+  font-size: 1.05em;
+  margin: 24px 0 10px;
+  font-weight: 600;
+}
+
+.page-content p {
+  margin: 14px 0;
+}
+
+.page-content ul, .page-content ol {
+  padding-left: 24px;
+  margin: 14px 0;
+}
+
+.page-content li {
+  margin: 6px 0;
+}
+
+.page-content a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.page-content a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.page-content blockquote {
+  border-left: 3px solid var(--bq-border);
+  margin: 20px 0;
+  padding: 12px 20px;
+  color: var(--text-secondary);
+  background: var(--bq-bg);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.96em;
+}
+
+.page-content code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: var(--text);
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+}
+
+.page-content pre {
+  background: var(--pre-bg);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.page-content pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+.page-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.page-content th,
+.page-content td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.page-content th {
+  background: var(--surface);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.page-content tr:nth-child(even) {
+  background: rgba(0,0,0,0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-content tr:nth-child(even) {
+    background: rgba(255,255,255,0.03);
+  }
+}
+
+.page-footer {
+  margin-top: 60px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  color: var(--footer-text);
+  font-size: 0.9em;
+}
+
+.page-footer a {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    gap: 12px;
+    padding: 10px 16px;
+    flex-direction: column;
+  }
+  .page-container {
+    padding: 0 12px;
+  }
+  .page-title {
+    font-size: 1.6em;
+  }
+}
+</style>
+</body>
+</html>

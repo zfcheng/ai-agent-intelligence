@@ -56,7 +56,7 @@ def md_to_html(md_path):
         section = 'daily'
 
     nav_items = [
-        ('AI Agent Intelligence', ''),
+        ('AI Agent Intelligence', '', None),
         ('Daily', 'daily.html', 'daily'),
         ('AI Loop', 'ai-loop/', 'ai-loop'),
         ('LLM Rankings', 'llm-rankings/', 'llm-rankings'),

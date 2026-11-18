@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>AI Agent Daily Summary - 2026-06-27 | AI Agent Intelligence</title>
+</head>
+<body>
+<div class="page-container">
+<nav class="site-nav"><a href="/ai-agent-intelligence/" class="site-title">AI Agent Intelligence</a><a href="/ai-agent-intelligence/daily.html" class="active">Daily</a><a href="/ai-agent-intelligence/ai-loop/" class="">AI Loop</a><a href="/ai-agent-intelligence/llm-rankings/" class="">LLM Rankings</a><a href="/ai-agent-intelligence/trending/" class="">Trending</a><a href="/ai-agent-intelligence/pricing/" class="">Pricing</a><a href="/ai-agent-intelligence/blog-monitor/" class="">Blog Monitor</a><a href="/ai-agent-intelligence/insights/" class="">Insights</a></nav>
+<main class="main-content">
+<header class="page-header"><h1 class="page-title">AI Agent Daily Summary - 2026-06-27</h1>
+<p class="page-author">作者：unknown | 日期：2026-06-27 | 板块：daily</p></header>
+<div class="page-content">
+<h1 id="ai-agent-daily-summary---2026-06-27">AI Agent Daily Summary - 2026-06-27</h1>
+<h2 id="key-updates">Key Updates</h2>
+<ul>
+<li><p><strong>Deep Agents prompt caching harness details</strong>: <span class="citation" data-cites="its_ao">@its_ao</span> published in-depth on LangChain Deep Agents achieving 49-80% token cost reductions (Claude Haiku -77%, GPT-mini -80%, Gemini -49%) through automatic provider-agnostic caching: explicit breakpoints where supported, implicit otherwise, structured static prefixes (system prompts, tools, skills), and minimized bust radius on updates like memory. KV-cache hit rate positioned as the single most important production-stage AI agent metric. Full visibility via LangSmith traces for cache reads vs input tokens, per-invocation and per-trajectory. <span class="citation" data-cites="hwchase17">@hwchase17</span> highlighted related caching practices and Vercel AI SDK Harness API support for Deep Agents.</p></li>
+<li><p><strong>LangChain financial services and agent tooling content</strong>: Definitive guide covering Chime (evals aligning legal/compliance/engineering on concrete risks early), J.P. Morgan (Ask DAVID multi-agent research with orchestration + human review), and Bridgewater (PAT internal research agent with per-user security, deterministic code generation, and real-usage learning loops). Additional video on MCPs vs CLIs for agents and <span class="citation" data-cites="hwchase17">@hwchase17</span> podcast on simpler agents.</p></li>
+<li><p><strong>Vercel eve / Agent Stack production traction</strong>: Developers shipping real agents quickly on eve (“Next.js for agents” — directory of markdown + TS tools): example PR reviewer using subagents (product/code/QA), GitHub/Slack channels, sandboxes for context/diffs, starter evals, Vercel Connect scoped auth, and out-of-box OTEL + dashboard governance. AI SDK 7 + Workflow for durable resumable runs highlighted as closing “model answered, now what?” gap. Reports of 100+ agents already running in prod on the stack.</p></li>
+<li><p><strong>Self-Harness autonomous harness improvement</strong>: Research (Shanghai AI Lab signals via <span class="citation" data-cites="RobertTLange">@RobertTLange</span>) introduces Self-Harness paradigm where agents improve their own operating harness via Weakness Mining from execution traces, targeted minimal Harness Proposals, and regression-tested Proposal Validation — no human engineers or stronger external models required. Model-specific adaptations delivered 33-60% relative gains on Terminal-Bench-2.0 (e.g., 40.5% → 61.9%).</p></li>
+</ul>
+<h2 id="hot-discussions">Hot Discussions</h2>
+<ul>
+<li><p><strong>Harness ownership for economics and reliability</strong>: Emphasis on building open agent harnesses with rich internal context to enable routing, prompt caching, evals, and observability (vs chasing models). Context hygiene (deterministic serialization, no dynamic timestamps, append-only, explicit breakpoints) can swing costs 10x. <span class="citation" data-cites="sh_reya">@sh_reya</span> noted data/agent workloads show ~10x more turns than typical coding agents, often performing query optimization.</p></li>
+<li><p><strong>Agent framework and infra comparisons</strong>: LangGraph leading AX Arena rankings for agent dev experience. eve gaining mindshare for rapid prod deployment and tracing. Broader conversation on stack layers (memory, sandboxed execution, human escalation, telemetry, permissions) as the real formation opportunity beyond core models/chat.</p></li>
+<li><p><strong>Loops over one-shot, evals over pure observability</strong>: “The product is the loop” — capture trajectories, mine divergences/failures into eval data, update memory, improve next runs. LangChain signals showed high observability adoption (~89%) but lower evals adoption (~52%), underscoring need for preventive harnesses rather than post-facto detection.</p></li>
+</ul>
+<h2 id="notable-papers-benchmarks">Notable Papers / Benchmarks</h2>
+<ul>
+<li>Self-Harness (Shanghai AI Lab): agents as harness co-designers; iterative self-improvement via failure mining + validated edits yields substantial model-specific gains without external supervision.</li>
+<li>Deep Agents caching evals: quantified 49-80% cost reductions and TTFT wins across providers on real trajectories; long-horizon tasks benefit most.</li>
+</ul>
+<h2 id="suggested-new-accounts">Suggested New Accounts</h2>
+<ul>
+<li><span class="citation" data-cites="its_ao">@its_ao</span> — Deep, actionable posts on Deep Agents harness internals, provider-agnostic caching implementation, prompt structuring, and LangSmith-driven measurement (recent LangChain OSS team member).</li>
+<li><span class="citation" data-cites="RobertTLange">@RobertTLange</span> — Sharing Self-Harness research and comparisons, highlighting model-specific autonomous improvement loops and validation practices.</li>
+</ul>
+<h2 id="actionable-insight">Actionable Insight</h2>
+<p>Design harnesses first for measurable production invariants: enable prompt caching and KV hit-rate tracking (Deep Agents patterns or equivalent), instrument rich traces from the start (LangSmith or similar for cache/cost/trajectory analysis), and close self-improvement loops by turning execution evidence into memory/eval updates. Adopt cross-functional eval workflows early for regulated domains (per Chime/JPMC/Bridgewater examples) and evaluate agent-native stacks like Vercel eve for durable execution, sandboxes, and scoped infra. Cache hit rate and harness co-evolution are now core levers — treat them as such.</p>
+
+</div>
+<footer class="page-footer"><p>📖 <a href="/ai-agent-intelligence/">返回首页</a> | 🔗 <a href="https://github.com/zfcheng/ai-agent-intelligence">GitHub 仓库</a></p></footer>
+</main>
+</div>
+<style>
+:root {
+  --bg: #fff;
+  --surface: #f8f9fa;
+  --text: #222;
+  --text-secondary: #666;
+  --accent: #0969da;
+  --accent-hover: #0550ae;
+  --border: #e9ecef;
+  --border-strong: #d0d7de;
+  --code-bg: #f1f3f4;
+  --pre-bg: #f8f9fa;
+  --bq-border: #0969da;
+  --bq-bg: #f0f7ff;
+  --footer-text: #999;
+  --footer-bg: #f8f9fa;
+  --card-bg: #fff;
+  --card-border: #e9ecef;
+  --card-shadow: rgba(0,0,0,0.04);
+  --card-hover: rgba(0,0,0,0.08);
+  --btn-bg: #0969da;
+  --btn-text: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a2e;
+    --surface: #16213e;
+    --text: #e0e0e0;
+    --text-secondary: #888;
+    --accent: #58a6ff;
+    --accent-hover: #79c0ff;
+    --border: #30363d;
+    --border-strong: #484f58;
+    --code-bg: #21262d;
+    --pre-bg: #0d1117;
+    --bq-border: #58a6ff;
+    --bq-bg: rgba(88,166,255,0.08);
+    --footer-text: #8b949e;
+    --footer-bg: #16213e;
+    --card-bg: #21262d;
+    --card-border: #30363d;
+    --card-shadow: rgba(0,0,0,0.3);
+    --card-hover: rgba(255,255,255,0.05);
+    --btn-bg: #58a6ff;
+    --btn-text: #0d1117;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+  padding: 14px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--accent);
+}
+
+.site-title {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.site-title:hover {
+  color: var(--accent);
+}
+
+.page-header {
+  margin: 40px 0 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-title {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.page-author {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  margin: 8px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-author .badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  vertical-align: middle;
+}
+
+.page-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.page-content h1 {
+  font-size: 1.6em;
+  margin: 36px 0 16px;
+  font-weight: 700;
+}
+
+.page-content h2 {
+  font-size: 1.35em;
+  margin: 32px 0 14px;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.page-content h3 {
+  font-size: 1.15em;
+  margin: 28px 0 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.page-content h4 {
+  font-size: 1.05em;
+  margin: 24px 0 10px;
+  font-weight: 600;
+}
+
+.page-content p {
+  margin: 14px 0;
+}
+
+.page-content ul, .page-content ol {
+  padding-left: 24px;
+  margin: 14px 0;
+}
+
+.page-content li {
+  margin: 6px 0;
+}
+
+.page-content a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.page-content a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.page-content blockquote {
+  border-left: 3px solid var(--bq-border);
+  margin: 20px 0;
+  padding: 12px 20px;
+  color: var(--text-secondary);
+  background: var(--bq-bg);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.96em;
+}
+
+.page-content code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: var(--text);
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+}
+
+.page-content pre {
+  background: var(--pre-bg);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.page-content pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+.page-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.page-content th,
+.page-content td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.page-content th {
+  background: var(--surface);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.page-content tr:nth-child(even) {
+  background: rgba(0,0,0,0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-content tr:nth-child(even) {
+    background: rgba(255,255,255,0.03);
+  }
+}
+
+.page-footer {
+  margin-top: 60px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  color: var(--footer-text);
+  font-size: 0.9em;
+}
+
+.page-footer a {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    gap: 12px;
+    padding: 10px 16px;
+    flex-direction: column;
+  }
+  .page-container {
+    padding: 0 12px;
+  }
+  .page-title {
+    font-size: 1.6em;
+  }
+}
+</style>
+</body>
+</html>
