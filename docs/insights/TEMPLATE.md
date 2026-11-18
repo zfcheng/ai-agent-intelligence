@@ -3,6 +3,7 @@ title: "Insights - {{WEEK}}"
 type: insights
 author: commander
 week: {{WEEK}}
+nav_exclude: true
 ---
 
 # 💡 工作匹配与建议 | {{WEEK}}

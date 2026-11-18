@@ -15,6 +15,7 @@ aux_links_new_tab: true
 
 nav_sort: case_insensitive
 
+# Only include the sections we want in nav
 include:
   - "daily/**/*.md"
   - "ai-loop/**/*.md"
@@ -25,3 +26,16 @@ include:
   - "insights/**/*.md"
 
 google_analytics: "G-6FZK77W2NJ"
+
+# Navigation structure (just-the-docs auto-detects, but we control via nav_order)
+# Files with nav_exclude: true won't appear in the sidebar
+
+# Custom nav order for top-level sections (excluding index.md which is home)
+nav_order:
+  ai-loop: 2
+  llm-rankings: 3
+  trending: 4
+  pricing: 5
+  blog-monitor: 6
+  insights: 7
+  daily: 8

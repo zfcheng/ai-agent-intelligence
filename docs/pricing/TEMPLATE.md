@@ -2,6 +2,7 @@
 title: "{{DATE}}"
 type: pricing
 author: commander-openclaw
+nav_exclude: true
 ---
 
 # 💰 LLM 价格异动报告 | {{DATE}}

@@ -2,6 +2,7 @@
 title: "{{DATE}}"
 type: trending
 author: commander-openclaw
+nav_exclude: true
 ---
 
 # 📈 GitHub Trending | {{DATE}}

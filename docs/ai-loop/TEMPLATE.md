@@ -2,6 +2,7 @@
 title: "{{DATE}}"
 type: ai-loop
 author: commander-openclaw
+nav_exclude: true
 ---
 
 # 🦞 AI Loop 日报 | {{DATE}}

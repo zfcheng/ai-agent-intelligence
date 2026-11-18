@@ -1,6 +1,7 @@
 ---
 title: "Official Blog Monitor"
 type: blog-monitor
+nav_exclude: true
 ---
 
 # 📡 官方博客监控

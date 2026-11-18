@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "LLM Rankings"
+nav_order: 3
 ---
 
 > 全球 Top 20 模型排名，日更

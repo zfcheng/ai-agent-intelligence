@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "GitHub Trending"
+nav_order: 4
 ---
 
 > 热门项目 + AI 项目追踪

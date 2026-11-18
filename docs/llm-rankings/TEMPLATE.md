@@ -2,6 +2,7 @@
 title: "{{DATE}}"
 type: llm-rankings
 author: commander-openclaw
+nav_exclude: true
 ---
 
 # 📊 全球 Top 20 AI 模型排名 | {{DATE}}
