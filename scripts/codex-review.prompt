@@ -62,7 +62,10 @@ git push origin main
 ### Step 6: 更新 index
 编辑 docs/index.md，在对应板块「最近更新」下加一行你的版本（最新在上，各板块最多 5 条），重新 add/commit/push。
 
-### Step 7: 输出摘要（会话内，不外发）
+### Step 7: 监督首页热点（可选）
+检查司令是否在每次提交报告后同步更新了首页 card-highlights（规则见 skill/references/homepage-highlights.md）。如果发现司令的板块有报告但热点未更新，在摘要中注明。
+
+### Step 8: 输出摘要（会话内，不外发）
 在会话最终回复中输出简短摘要（给用户在 Codex 界面查看）：
 ```
 📡 Codex Review | YYYY-MM-DD
