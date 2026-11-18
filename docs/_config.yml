@@ -11,12 +11,9 @@ search_enabled: true
 aux_links:
   "View on GitHub":
     - "//github.com/zfcheng/ai-agent-intelligence"
+aux_links_new_tab: true
 
 nav_sort: case_insensitive
-
-sass:
-  sass_dir: _sass
-  style: compressed
 
 include:
   - "daily/**/*.md"
