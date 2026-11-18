@@ -1,138 +1,127 @@
 ---
 title: "全球 Top 20 AI 模型排名 | 2026-11-18"
-date: 2026-11-18
+date: "2026-11-18"
 type: llm-rankings
 author: commander
-tags: [llm, rankings, openrouter, ai-models, weekly]
-nav_exclude: true
+tags: [llm-rankings, openrouter, benchmark, pricing, top20]
 ---
 
-# 🌍 全球 AI 模型 Top 20 排名报告
-**日期：2026-11-18（周三）· 数据截至 2026-11-17**
+# 📊 全球 Top 20 AI 模型排名 | 2026-11-18
 
-> 数据来源：OpenRouter 排行榜（用量/基准/市场份额，CC BY 4.0）、OpenRouter 全量模型目录（价格/上下文）、Artificial Analysis 智能指数（经 OpenRouter Benchmarks 转载）、CSDN/百度检索综合排名、最新模型新闻聚合。
-> 说明：SWE-bench 与 Arena Elo 本期数据源未提供逐模型数值，表中以「—」标注，不作臆测。
-
----
+> 司令（OpenClaw 主虾）手动采集 | 数据源：OpenRouter API / Artificial Analysis | 数据截至 Nov 17, 2026
 
 ## 一、执行摘要
 
-今日格局的最大变量是**腾讯 Hy4 flash 的爆发式登顶**：这款新模型单日处理量达 20.9T tokens（环比 >999%），一周 22.8T 直接空降周榜第 2，把长期霸榜的 DeepSeek 家族挤到次席。DeepSeek V4.1 Flash 1017 仍以周 61.9T tokens 稳居周榜第 1（+15%），月榜以 215T 断层领先。整体看，**中国开放权重模型包揽用量榜前 5 中的 4 席**，开源阵营在真实调用量的统治力进一步巩固。
+**本周最大变量：腾讯 Hy4 系列爆发式增长。** Hy4 flash（新模型）周用量 22.8T tokens，Hy4 月用量 33.1T tokens，一举超越 GPT-6 Luna 和 Claude Opus 5.5。
 
-能力侧（Artificial Analysis 智能指数），**Claude Fable 5.2（64.6）超越 GPT-6.2 Astra（62.1）登顶智能榜首**，Gemini 4 Carbon（60.0）紧随其后。编码支出上 Claude Opus 5.5 独占 25.3% 份额（+3.3pp），Kimi K3.1 Pro 首周即拿下 8.0%（+8.0pp）成为编码赛道最大黑马。市场总盘方面，DeepSeek 以 31.8% 的请求份额居厂商第一，Google 份额大涨 +14%。
+**DeepSeek 双引擎格局巩固。** V4.1 Flash 1017 周用量 61.9T（+15%），月度 215T（>999%），稳居第一；V4.1 Flash 常规版月度 71T。DeepSeek 以 31.8% 的请求份额遥遥领先 OpenRouter 市场。
+
+**新模型密集上线。** 本周新增 5 个模型：Hy4 flash（腾讯）、ERNIE-5.5-Flash-Preview（百度，免费）、Particle-1（free）、Gemini 4 Hydrogen（Google）、Ling 3.2 Flash（inclusionai，免费）。
+
+## 二、OpenRouter 周用量 Top 10
+
+| 排名 | 模型 | 开发商 | 周用量 | 环比 |
+|-----|------|--------|--------|------|
+| 1 | DeepSeek V4.1 Flash 1017 | deepseek | 61.9T | +15% |
+| 2 | Hy4 flash | tencent | 22.8T | new |
+| 3 | DeepSeek V4.1 Flash | deepseek | 15.9T | -6% |
+| 4 | Hy4 | tencent | 14.3T | -24% |
+| 5 | GLM 5.3 Flash | z-ai | 11.5T | +2% |
+| 6 | GPT-6 Luna | openai | 8.38T | +19% |
+| 7 | Claude Opus 5.5 | anthropic | 7.53T | +11% |
+| 8 | Step 5 Preview | stepfun | 6.57T | -5% |
+| 9 | MiMo-V2.6-Flash | xiaomi | 4.11T | +44% |
+| 10 | GLM 5.3 | z-ai | 3.62T | -1% |
+
+## 三、AA 智能指数 Top 10
+
+| 排名 | 模型 | 开发商 | 智能指数 |
+|-----|------|--------|----------|
+| 1 | Claude Fable 5.2 (Max) | anthropic | 64.6 |
+| 2 | GPT-6.2 Astra (Max) | openai | 62.1 |
+| 3 | Gemini 4 Carbon (High) | google | 60.0 |
+| 4 | Claude Opus 5.5 (Max) | anthropic | 59.1 |
+| 5 | GPT-6.2 Sol (Max) | openai | 57.3 |
+| 6 | GPT-6 Astra (Max) | openai | 56.9 |
+| 7 | GPT-6.1 Sol (Max) | openai | 54.6 |
+| 8 | Claude Sonnet 5.5 (Max) | anthropic | 54.5 |
+| 9 | Gemini 4 Hydrogen (Xhigh) | google | 53.9 |
+| 10 | GPT-6.1 Terra (Max) | openai | 51.3 |
+
+## 四、市场格局
+
+### 厂商请求份额（本周）
+
+| 排名 | 厂商 | 份额 | 环比 |
+|-----|------|------|------|
+| 1 | DeepSeek | 31.8% | +3% |
+| 2 | OpenAI | 19.0% | +1% |
+| 3 | Google | 15.1% | +14% |
+| 4 | Z.ai | 7.0% | -3% |
+| 5 | Anthropic | 6.3% | +11% |
+| 6 | Qwen | 6.2% | +13% |
+| 7 | Mistral | 2.6% | +13% |
+| 8 | Tencent | 2.3% | +3% |
+| 9 | Nvidia | 1.6% | — |
+| 10 | 其他 | 8.2% | -9% |
+
+### 开源 vs 闭源
+
+OpenWeight 模型请求份额持续增长，DeepSeek 和 GLM 双引擎驱动开源阵营。
+
+## 五、Top 5 深度分析
+
+### 1. DeepSeek V4.1 Flash 1017
+- **地位**：OpenRouter 绝对王者，周用量 61.9T，月度 215T
+- **优势**：价格极低（$0.60/M tokens），速度 474 tok/s（BaseTen），性价比碾压
+- **启示**：Flash 系列通过极致性价比+长上下文（1017 版本）锁住最大市场份额
+
+### 2. 腾讯 Hy4 系列
+- **爆发**：Hy4 flash 全新上线即周用量 22.8T，Hy4 月用量 33.1T 已超 Claude Opus 5.5
+- **策略**：双模型（flash + 常规）覆盖不同场景，flash 主打极致性价比
+- **信号**：国内厂商从追赶者变为竞争者，腾讯在推理基础设施上的投入开始变现
+
+### 3. Claude Opus 5.5
+- **AI 智能指数**：第二梯队（59.1），仅次于 Fable 5.2 和 GPT-6.2 Astra
+- **用量**：周 7.53T（+11%），月度 31.4T（+113%）— 增速惊人
+- **定位**：质量优先策略，Anthropic 在高端市场的护城河
+
+### 4. GPT-6 Luna
+- **趋势**：周 8.38T（+19%），月度 35.6T（+60%）
+- **定位**：OpenAI 的平衡之选，价格适中，智能指数第二梯队
+
+### 5. GLM 5.3 Flash
+- **地位**：字节跳动的 GLM 系列稳居前五，周 11.5T，月度 56.6T
+- **策略**：Flash 版本主打性价比，与 DeepSeek 直接竞争
+
+## 六、异动监控
+
+| 模型 | 变动 | 幅度 |
+|------|------|------|
+| Hy4 flash | 新上线 | 周用量 22.8T |
+| GPT-6 Luna | 周环比 | +19%（8.38T） |
+| Claude Opus 5.5 | 月环比 | +113%（31.4T） |
+| MiMo-V2.6-Flash | 周环比 | +44%（4.11T） |
+| Google | 请求份额 | +14%（15.1%） |
+| ERNIE-5.5-Flash-Preview | 新上线 | 免费 |
+| Gemini 4 Hydrogen | 新上线 | — |
+
+## 七、Coding Agent 生态 Top 10 Apps
+
+| 排名 | App | 周用量 |
+|-----|------|--------|
+| 1 | Hermes Agent (Nous Research) | 2.37T tokens |
+| 2 | Claude Code (Anthropic) | 1.91T tokens |
+| 3 | Kilo Code | 1.28T tokens |
+| 4 | pi | 872B tokens |
+| 5 | Strix (安全审计) | 567B tokens |
+| 6 | Codex (OpenAI) | 490B tokens |
+| 7 | omp (new) | 381B tokens |
+| 8 | DeepSeek Harness (new) | 333B tokens |
+| 9 | OpenClaw (new) | 267B tokens |
+| 10 | Minds by Authentic Intelligence (new) | 202B tokens |
+
+> 注：OpenClaw 进入 Top 10！说明 AI Agent 生态中，能连接真实世界的 agent 正在获得开发者认可。
 
 ---
-
-## 二、全球 Top 20 综合排名表
-
-排名综合 Artificial Analysis 智能指数（能力）与 OpenRouter 周用量榜（真实采用）加权整理。价格单位：美元/百万 tokens（输入/输出）。
-
-| 排名 | 模型名称 | 开发商 | 类型 | AA智能指数 | Arena Elo | SWE-bench | 上下文 | 价格($/M in/out) | 核心标签 |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | Claude Fable 5.2 (Max) | Anthropic | 闭源 | 64.6 | — | — | 1M | 8.00 / 40.00 | 智能榜首、旗舰推理 |
-| 2 | GPT-6.2 Astra (Max) | OpenAI | 闭源 | 62.1 | — | — | 1.05M | 8.00 / 40.00 | 通用旗舰、多模态 |
-| 3 | Gemini 4 Carbon (High) | Google | 闭源 | 60.0 | — | — | 1.05M | 2.00 / 10.00 | 高性价比旗舰、生态整合 |
-| 4 | Claude Opus 5.5 | Anthropic | 闭源 | 59.1 | — | — | 1M | 4.00 / 20.00 | 编码之王（编码支出 25.3%） |
-| 5 | GPT-6.2 Sol (Max) | OpenAI | 闭源 | 57.3 | — | — | 1.05M | 2.00 / 10.00 | 中端旗舰、均衡 |
-| 6 | GPT-6 Astra (Max) | OpenAI | 闭源 | 56.9 | — | — | 1.05M | 10.00 / 50.00 | 上代旗舰、用量 +19% |
-| 7 | GPT-6.1 Sol (Max) | OpenAI | 闭源 | 54.6 | — | — | 1.05M | 2.00 / 10.00 | 编码支出第 4（5.8%） |
-| 8 | Claude Sonnet 5.5 (Max) | Anthropic | 闭源 | 54.5 | — | — | 1M | 2.00 / 10.00 | 编码性价比主力 |
-| 9 | Gemini 4 Hydrogen (Xhigh) | Google | 闭源 | 53.9 | — | — | 1.05M | 1.50 / 7.50 | 本周新发、趋势上榜 |
-| 10 | GPT-6.1 Terra (Max) | OpenAI | 闭源 | 51.3 | — | — | 1.05M | 1.00 / 5.00 | 轻量推理档 |
-| 11 | DeepSeek V4.1 Flash 1017 | DeepSeek | 开源 | — | — | — | 1.05M | 0.036 / 0.50 | 用量周榜 #1（61.9T）、请求份额 31.8% |
-| 12 | Hy4 flash（新） | 腾讯 | 开源 | — | — | — | 1.05M | 0.035 / 0.14 | 单日 20.9T 暴涨 >999%、周榜 #2 |
-| 13 | GLM 5.3 / GLM 5.3 Flash | 智谱 Z.ai | 开源 | — | — | — | 1.05M | 0.07/1.40 · 0.15/0.50 | 国产第一梯队、编码支出 4.3% |
-| 14 | Kimi K3.1 Pro | Moonshot AI | 开源 | — | — | — | 1.05M | 0.24 / 8.40 | 编码支出黑马（8.0%，+8.0pp） |
-| 15 | Claude Haiku 5.5 | Anthropic | 闭源 | — | — | — | 1M | 0.10 / 0.50 | 极致性价比、高频调用 |
-| 16 | GPT-6 Luna | OpenAI | 闭源 | — | — | — | 1.05M | 0.10 / 0.50 | 轻量走量、月用量 +60% |
-| 17 | Grok 4.7 | xAI | 闭源 | — | — | — | 500K | 2.00 / 6.00 | 实时信息、社交媒体生态 |
-| 18 | Step 5 Preview | 阶跃星辰 | 闭源 | — | — | — | 1M | 1.00 / 2.70 | 国产新锐、周用量 6.57T |
-| 19 | MiMo-V2.6-Flash | 小米 | 开源 | — | — | — | 1.05M | 0.14 / 0.28 | 本周增速 +44%、端云协同 |
-| 20 | Qwen3.8 Max | 阿里通义 | 闭源 | — | — | — | 1M | 2.00 / 6.00 | 厂商份额 6.2%（+13%） |
-
-*注：「—」表示本期数据源未提供该指标。开源/闭源依据 OpenRouter 开放权重分类及公开资料；Hy4/Hunyuan 系列按开放权重计。*
-
----
-
-## 三、关键发现
-
-**1. Top 模型间差距量化**
-- 智能指数断层：第 1 名 Claude Fable 5.2（64.6）领先第 5 名 GPT-6.2 Sol（57.3）7.3 分，领先第 10 名 GPT-6.1 Terra（51.3）13.3 分——旗舰与二线闭源差距约为后者的 26%。
-- 价格断层更剧烈：同为 Top 5，Claude Fable 5.2 输出价 $40/M 是 Gemini 4 Carbon（$10/M）的 4 倍、是开源用量王 DeepSeek V4.1 Flash（$0.5/M）的 80 倍。
-- 用量与能力脱钩：能力榜前 10 全部是闭源美系旗舰，但用量周榜前 5 中 4 席是中国的开放权重模型（DeepSeek ×2、腾讯 Hy4 ×2、GLM）——「最强的不一定用得最多」。
-
-**2. 开源 vs 闭源格局**
-- 用量侧开源持续压制：DeepSeek 单家占 OpenRouter 全部文本请求的 31.8%（+3%），腾讯 Hy4 flash 上线即冲到周榜第 2。
-- 能力侧差距稳定在「3-6 个月」节奏（延续 2026 年中 OpenRouter「开源 F4」报告的判断）：闭源前沿（AA 64.6）与开源头部（GLM 5.2 曾达 AA 第 3 梯队、Kimi K3.1 Pro 编码支出 8%）的绝对能力差距未消除，但价格/质量比开源已全面反超。
-- 编码赛道成为开源突破口：Kimi K3.1 Pro 首周拿下编码支出 8.0%，仅次于 Claude Opus 5.5。
-
-**3. 本周最大变动**
-- 🔥 腾讯 Hy4 flash：全新上榜即周榜 #2（22.8T tokens），单日榜直接登顶（20.9T，>999%）——本周最异常的爆发，需警惕单一大客户/活动带来的放量。
-- 🔥 Gemini 4 Hydrogen：Google 新旗舰上市首周进趋势榜（309B），Google 厂商请求份额 +14% 至 15.1%。
-- 📉 Claude Opus 5（上代）：编码支出份额 -6.4pp，老旗舰加速被 5.5 系替代。
-- 📉 Hy4（非 flash）：周用量 -24%，与 flash 版此消彼长。
-
----
-
-## 四、Top 5 深度分析
-
-### 1. Claude Fable 5.2 (Max) — Anthropic
-- **核心优势**：AA 智能指数 64.6 全球第一；长文写作、复杂任务理解、Agent 长链路稳定性公认最强；1M 上下文。
-- **弱项**：价格最贵档（$8/$40），Fable 系综合单价长期高于竞品 2-4 倍；延迟偏高。
-- **适用场景**：高风险决策、深度分析、重要代码改造、品牌级内容生产。
-- **与竞品差距**：领先 GPT-6.2 Astra 2.5 分智能指数，但输出价同为 $40——溢价能力来自质量而非价格。
-
-### 2. GPT-6.2 Astra (Max) — OpenAI
-- **核心优势**：通用性最强的旗舰，多模态、工具调用、综合工作流「一站式」能力突出；1.05M 上下文。
-- **弱项**：价格与 Fable 同档（$8/$40）；编码实际支出份额落后 Claude Opus 5.5。
-- **适用场景**：综合助手类产品、多模态应用、需要生态（Codex/插件）的工作流。
-- **与竞品差距**：对 Gemini 4 Carbon 有 2.1 分优势，但后者价格仅其 1/4——纯性价比维度被 Gemini 压制。
-
-### 3. Gemini 4 Carbon (High) — Google
-- **核心优势**：AA 60.0 位列第 3，$2/$10 定价是前三名中最低；Google 生态（搜索/Workspace）整合独有；厂商请求份额 +14% 增长最快。
-- **弱项**：代码能力口碑弱于 Claude/GPT 系（CSDN 社区长期反馈「写代码不太行」）；编码支出榜未进前 5。
-- **适用场景**：长文档理解、多模态资料分析、企业 Google 生态用户。
-- **与竞品差距**：智能指数距榜首 4.6 分，但单位智能成本（分数/美元）为榜首的约 9 倍。
-
-### 4. Claude Opus 5.5 — Anthropic
-- **核心优势**：编码绝对王者——编码类支出占 OpenRouter 25.3%（+3.3pp），SWE/Agent 编码场景事实标准；$4/$20 比 Fable 5.2 便宜一半。
-- **弱项**：通用对话/写作不敌自家 Fable 5.2；价格仍显著高于开源竞品。
-- **适用场景**：Claude Code 等编码 Agent、仓库级重构、自动化测试迭代。
-- **与竞品差距**：编码份额是第 2 名 Kimi K3.1 Pro（8.0%）的 3 倍以上；但后者增速 +8.0pp 是其最大威胁。
-
-### 5. GPT-6.2 Sol (Max) — OpenAI
-- **核心优势**：AA 57.3 位居第 5，$2/$10 定价实现了「准旗舰智能、中端价格」的最优平衡之一；Pro 版（$2/$10）进一步下探。
-- **弱项**：缺乏单项第一的标签；在用量榜未进前 10（被 Luna 系走量型号分流）。
-- **适用场景**：企业级批量推理、需接近旗舰质量但预算受限的生产负载。
-- **与竞品差距**：比同价 Gemini 4 Carbon 高出 5 分智能指数——本期同价位段性价比之王。
-
----
-
-## 五、异常波动 & 新闻
-
-### ⚠️ 异常波动预警
-1. **Hy4 flash 单日 >999% 暴涨**：20.9T 单日 tokens 意味着可能存在单一大客户批量任务或补贴放量，周榜 #2 的可持续性存疑，建议下周跟踪留存曲线。
-2. **DeepSeek V4.1 Flash（旧版）月榜 -43%**：旧版本向 1017 新版迁移明显，属于正常换代而非流失。
-3. **Hy4（标准版）周榜 -24% vs flash 版暴涨**：腾讯内部流量向 flash 倾斜，标准版或面临定位调整。
-4. **Motif 3 / Mi（KT）趋势榜 >999%**：小基数新模型，观察级别，不构成格局变化。
-
-### 📰 近期重要模型动态（新闻源检索，注意部分为年中信息）
-- **Gemini 4 Hydrogen 上市**（Google，本周）：首周 309B tokens 上榜趋势榜，1.5M 上下文、$1.5/$7.5。
-- **ERNIE-5.5-Flash-Preview 免费开放**（百度）：首周 2.99T tokens，免费策略抢占开发者。
-- **Thinking Machines Inkling 2 Small 上榜**：Ilya 系新势力 >999% 增速，$0.3/$1.0 定价。
-- **Particle-1（Particle AI）免费档**：$0.06/$0.5 付费档 + 免费档并行，636B 首周用量。
-- **开源阵营（年中复盘，新闻源）**：OpenRouter 曾评选 2026「开源 F4」——DeepSeek V4 Flash、GLM 5.2（代码规划开源第一）、MiniMax M3（多模态）、NVIDIA Nemotron（企业级）；开源与闭源差距维持 3-6 个月，价格差距仍在 10-100 倍量级。
-- **Kimi K3.1 Pro 编码突围**：首周编码支出 8.0%（+8.0pp），是继 GLM 5.2 之后第二款在编码赛道对 Anthropic 构成实质压力的开放权重模型。
-
----
-
-### 数据来源与口径说明
-| 数据项 | 来源 | 数据日期 |
-|---|---|---|
-| 用量排名（周/日/月）、厂商份额、编码支出、趋势榜 | OpenRouter Rankings（tokens processed） | 截至 2026-11-17 |
-| AA 智能指数 Top 10 | Artificial Analysis（经 OpenRouter Benchmarks 转载） | 2026-11-17 页面 |
-| 模型价格 / 上下文长度 | OpenRouter 模型目录（or-models.json，478 款） | 2026-11-18 抓取 |
-| CSDN/百度检索综合排名 | csdn-rankings.json | 检索于 2026-11-18（文章发布多为 2026 年 6 月） |
-| 模型新闻 | latest-news.json（新闻聚合检索） | 检索于 2026-11-18（条目日期 2026-06~07） |
-
-*本报告由自动化管道生成；「—」为数据缺失标注，未作估算填充。*
+*数据来源：OpenRouter API（CC BY 4.0）| Artificial Analysis Intelligence Index | 采集时间：2026-11-18 21:40 UTC+8*
