@@ -15,12 +15,14 @@
 10:00        司令：AI Loop 日报 + LLM 排名启动（±30min stagger）
 10:15        司令：GitHub Trending 启动
 ~10:30       司令：三份报告全部 push 到 main
-10:45        Codex：启动 review + 校准 + daily 情报（读司令当天产出 → 补全球视角 → push）
-~11:00       Codex：完成推送
+10:45        Codex：周一/三/五启动（review + 校准 + daily 情报 + push）
+~11:00       Codex：完成，摘要留在 Codex 会话内（不推送 IM）
 ```
 
-**依赖关系：Codex 的 review 以司令当天产出为输入，因此 Codex 触发时间不得早于 10:35。**
-若司令当日未产出（文件缺失），Codex 照常生成自己的 daily 情报，review 段注明「司令今日未产出」。
+**依赖关系：Codex 的 review 以司令产出为输入，触发时间不得早于 10:35。**
+Codex 运行日：周一（覆盖周末+周一）、周三（覆盖周一周二）、周五（覆盖周四周五）；周五额外生成周报。
+若司令期间未产出（文件缺失），Codex 照常生成自己的 daily 情报，review 段注明「司令期间未产出」。
+Codex 不接 IM 推送，产出以 git 仓库为准，用户到 Codex 会话或 GitHub Pages 查看。
 
 ## 写入规则（必须遵守）
 
@@ -35,7 +37,7 @@
 
 ## 校准闭环（每周）
 
-- Codex 在 `docs/weekly/YYYY-Www-codex.md` 中输出「校准结论」段：
+- Codex 在 `docs/weekly/YYYY-Www-codex.md` 中输出「校准结论」段（**每周五**随当日 review 一起生成）：
   1. 四大方向本周覆盖是否偏航
   2. 司令视角 vs Codex 视角的判断差异及依据
   3. 下周主题权重建议
