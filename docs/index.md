@@ -186,11 +186,11 @@ nav_order: 1
     </div>
     <p class="card-desc">全球 Top 20 模型排名，日更。</p>
     <ul class="card-highlights">
-      <li><strong>本周</strong>：腾讯 Hy4 系列爆发，Hy4 flash 周用量 22.8T，月用量超 Claude Opus 5.5</li>
-      <li><strong>本周</strong>：DeepSeek V4.1 Flash 1017 周用量 61.9T（+15%），月度 215T，稳居第一</li>
-      <li><strong>本周</strong>：Claude Opus 5.5 月环比 +113%（31.4T），增速惊人</li>
-      <li><strong>本周</strong>：新模型密集上线——Hy4 flash、ERNIE-5.5-Flash（免费）、Gemini 4 Hydrogen</li>
-      <li><strong>本周</strong>：OpenClaw 进入 Coding Agent Top 10 Apps（267B tokens，第 9 名）</li>
+      <li><strong>11-19</strong>：腾讯 Hy4 flash 首周 46.6T tokens 冲上周榜 #2，并以 23.8T 登顶日榜，成最大黑马</li>
+      <li><strong>11-19</strong>：DeepSeek V4.1 Flash 1017 周 62.1T（+17%）稳居第一，月度 222T 环比 >999%</li>
+      <li><strong>11-19</strong>：Kimi K3.1 Pro 编程花费升至 #2（8.5%，+8.5pp），切入 Claude 编程腹地</li>
+      <li><strong>11-19</strong>：Claude Opus 5.5 编程统治力加固——花费占 24.5%（+2.3pp），月环比 +99%</li>
+      <li><strong>11-19</strong>：Google 请求份额 +14%，Gemini 4 Hydrogen 新进 trending #3；Qwen4 Max、Particle-1 首发上榜</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/llm-rankings/' | relative_url }}" class="card-link">查看 →</a>
