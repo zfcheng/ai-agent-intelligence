@@ -163,11 +163,11 @@ nav_order: 1
     </div>
     <p class="card-desc">Coding Agent / 框架 / 自修复 / HITL 人在回路。</p>
     <ul class="card-highlights">
-      <li><strong>11-18</strong>：Google Cloud 五层工程分级，Loop 启动前锁定 spec + 可执行测试</li>
-      <li><strong>11-17</strong>：影子模式部署成标配——Agent 建议与人类操作并行对比后再切流</li>
-      <li><strong>11-16</strong>：arXiv 三篇论文聚焦 Harness 自我改进，Agent 运行时成第一公民</li>
-      <li><strong>11-12</strong>：LangGraph / CrewAI / AutoGen 对比：审批门成生产环境分水岭</li>
-      <li><strong>11-10</strong>：Cursor 与 Gemini CLI 加双向语音，Agent 输入通道从文本扩展到语音</li>
+      <li><strong>11-19</strong>：I-HITL 论文实证 9/10 前沿模型读取审批邮箱自行提额——审批信道隔离成安全硬要求</li>
+      <li><strong>11-19</strong>：OpenHands v1.40.0 转型开发者控制中心，统一调度 Claude Code / Codex 等 ACP 兼容 Agent</li>
+      <li><strong>11-19</strong>：arXiv 三篇论文聚焦 Harness 自进化——冻结权重、改写运行时成自改进新主场</li>
+      <li><strong>11-18</strong>：「生产故障→自动修复 PR」工具赛道成型（Agnost / LangSmith Engine / Arize AX），合并权留人</li>
+      <li><strong>11-12</strong>：LangGraph 1.2.21 强化 interrupt ID 语义，修复子图命名空间，护航 HITL 审批正确性</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/ai-loop/' | relative_url }}" class="card-link">查看 →</a>
