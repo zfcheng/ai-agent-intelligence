@@ -209,11 +209,11 @@ nav_order: 1
     </div>
     <p class="card-desc">热门项目 + AI 项目追踪。</p>
     <ul class="card-highlights">
-      <li><strong>今日</strong>：Google 发布 <strong>stitch-skills</strong>——Agent Skills 开放标准，兼容 Claude Code/Cursor/Gemini CLI</li>
-      <li><strong>今日</strong>：NVIDIA 发布 <strong>SkillEvaluator</strong>——多 tier 技能评测框架，含语义重叠检测</li>
-      <li><strong>今日</strong>：<strong>Claude-BugHunter</strong> 日增 1,464⭐——82 个安全审计 skill，24 类漏洞 + 企业攻击矩阵</li>
-      <li><strong>今日</strong>：<strong>CLI-Anything</strong>（59K⭐）与你的 CLIHub 方向高度相关——Agent-Native CLI 标准化</li>
-      <li><strong>今日</strong>：<strong>ECC</strong>（306K⭐）Agent harness 性能优化，含 Skills/本能/记忆/安全</li>
+      <li><strong>11-19</strong>：<strong>ag-ui</strong>（+513⭐）Agent-User Interaction 协议走红——Agent 前端交互层开始标准化</li>
+      <li><strong>11-19</strong>：<strong>paper-orchestra</strong>（+1,524⭐）连续两日霸榜，Multi-agent 角色分工写论文成工程范本</li>
+      <li><strong>11-19</strong>：<strong>stitch-skills</strong> 热度延续（10.4K⭐），Google 的 Agent Skills 开放标准持续圈地</li>
+      <li><strong>11-19</strong>：<strong>CLI-Anything</strong>（59.8K⭐）连续在榜——Agent-Native CLI 需求被社区验证，与 CLIHub 方向相关</li>
+      <li><strong>11-19</strong>：<strong>heretic</strong>（+515⭐）LLM 微调/去对齐实验工具走红，开源模型可玩性成新卖点</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/trending/' | relative_url }}" class="card-link">查看 →</a>
