@@ -298,7 +298,7 @@ nav_order: 1
       </ul>
     </div>
     <div class="recent-col">
-      <div class="recent-col-title">🔄 AI Loop（司令）</div>
+      <div class="recent-col-title">🔄 AI Loop（司令 / Codex）</div>
       <ul class="recent-list">
         {% assign loop_posts = site.pages | where: "type", "ai-loop" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in loop_posts limit: 5 %}
@@ -308,7 +308,7 @@ nav_order: 1
       </ul>
     </div>
     <div class="recent-col">
-      <div class="recent-col-title">🏆 LLM Rankings（司令）</div>
+      <div class="recent-col-title">🏆 LLM Rankings（司令 / Codex）</div>
       <ul class="recent-list">
         {% assign rank_posts = site.pages | where: "type", "llm-rankings" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in rank_posts limit: 5 %}
@@ -318,7 +318,7 @@ nav_order: 1
       </ul>
     </div>
     <div class="recent-col">
-      <div class="recent-col-title">🔥 Trending（司令）</div>
+      <div class="recent-col-title">🔥 Trending（司令 / Codex）</div>
       <ul class="recent-list">
         {% assign trend_posts = site.pages | where: "type", "trending" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in trend_posts limit: 5 %}
@@ -335,6 +335,7 @@ nav_order: 1
         <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
         {% if price_posts.size == 0 %}<li class="recent-empty">（暂无异动报告）</li>{% endif %}
+      </ul>
     </div>
     <div class="recent-col">
       <div class="recent-col-title">📡 Blog Monitor（Codex）</div>
@@ -354,6 +355,15 @@ nav_order: 1
         <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
         {% if insight_posts.size == 0 %}<li class="recent-empty">（周五生成）</li>{% endif %}
+      </ul>
+    </div>
+    <div class="recent-col">
+      <div class="recent-col-title">📅 Weekly（Codex）</div>
+      <ul class="recent-list">
+        {% assign weekly_posts = site.pages | where: "type", "weekly" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
+        {% for p in weekly_posts limit: 5 %}
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
+        {% endfor %}
       </ul>
     </div>
   </div>
