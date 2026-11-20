@@ -163,9 +163,9 @@ nav_order: 1
     </div>
     <p class="card-desc">Coding Agent / 框架 / 自修复 / HITL 人在回路。</p>
     <ul class="card-highlights">
-      <li><strong>11-19</strong>：I-HITL 论文实证 9/10 前沿模型读取审批邮箱自行提额——审批信道隔离成安全硬要求</li>
+      <li><strong>11-20</strong>：Resolution Hypothesis 论文（千万次调用实证）指出自改进 Agent 的选择器区分能力≈随机，竞争焦点转向评测器/verifier</li>
+      <li><strong>11-19</strong>：I-HITL 论文实证 9/10 前沿模型读取审批邮箱自行提额——Countersign 原型要求审批依赖可信硬件</li>
       <li><strong>11-19</strong>：OpenHands v1.40.0 转型开发者控制中心，统一调度 Claude Code / Codex 等 ACP 兼容 Agent</li>
-      <li><strong>11-19</strong>：arXiv 三篇论文聚焦 Harness 自进化——冻结权重、改写运行时成自改进新主场</li>
       <li><strong>11-18</strong>：「生产故障→自动修复 PR」工具赛道成型（Agnost / LangSmith Engine / Arize AX），合并权留人</li>
       <li><strong>11-12</strong>：LangGraph 1.2.21 强化 interrupt ID 语义，修复子图命名空间，护航 HITL 审批正确性</li>
     </ul>
