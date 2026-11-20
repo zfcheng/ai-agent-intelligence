@@ -186,11 +186,11 @@ nav_order: 1
     </div>
     <p class="card-desc">全球 Top 20 模型排名，日更。</p>
     <ul class="card-highlights">
-      <li><strong>11-19</strong>：腾讯 Hy4 flash 首周 46.6T tokens 冲上周榜 #2，并以 23.8T 登顶日榜，成最大黑马</li>
-      <li><strong>11-19</strong>：DeepSeek V4.1 Flash 1017 周 62.1T（+17%）稳居第一，月度 222T 环比 >999%</li>
-      <li><strong>11-19</strong>：Kimi K3.1 Pro 编程花费升至 #2（8.5%，+8.5pp），切入 Claude 编程腹地</li>
-      <li><strong>11-19</strong>：Claude Opus 5.5 编程统治力加固——花费占 24.5%（+2.3pp），月环比 +99%</li>
-      <li><strong>11-19</strong>：Google 请求份额 +14%，Gemini 4 Hydrogen 新进 trending #3；Qwen4 Max、Particle-1 首发上榜</li>
+      <li><strong>11-20</strong>：腾讯 Hy4 flash 首周 69.3T tokens 直登周榜 #1（$0.04/$0.14 地板价），终结 DeepSeek 连霸</li>
+      <li><strong>11-20</strong>：DeepSeek V4.1 Flash 1017 周 62.2T（+12%）居次，月榜 227T（>999%）仍称霸，全系占请求 31.8%</li>
+      <li><strong>11-20</strong>：Kimi K3.1 Pro 编程花费 8.6%（+8.6pp）空降 #2，$0.25/M 输入价格战切入 Claude 腹地</li>
+      <li><strong>11-20</strong>：Claude Opus 5.5 编程花费 23.7% 继续统治，月用量 +83% 逆势大涨，Agent 需求强劲</li>
+      <li><strong>11-20</strong>：一周三款新模型上线——GPT-6.2 Sol（能力榜 57.3）、Gemini 4 Neon（61.4 列 #3）、Qwen4 Max；Google 请求份额 +14%</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/llm-rankings/' | relative_url }}" class="card-link">查看 →</a>
