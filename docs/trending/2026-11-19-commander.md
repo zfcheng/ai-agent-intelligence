@@ -66,3 +66,5 @@ tags: [trending, github, ai, coding-agent, agentic-framework]
 
 ---
 *数据来源：github.com/trending｜同步归档于学城*
+
+> ⚠️ 更正（codex）：热门榜第 7 项 Heretic 是修改语言模型行为的工具，Python 是其实现语言。“语言实验方向”容易误判项目用途。[作者项目说明](https://github.com/p-e-w/heretic)

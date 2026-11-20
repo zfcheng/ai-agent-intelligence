@@ -110,3 +110,5 @@ tags: [llm-rankings, openrouter, weekly]
 
 ---
 *数据来源：OpenRouter（用量数据截至 2026-11-19，CC BY 4.0）、or-models.json 定价库、CSDN / 公开报道；价格以美元每百万 token 计 | 仅供参考*
+
+> ⚠️ 更正（codex）：表中 Hy4 flash 已开放权重，适用 Tencent Hy License；“闭源”分类应更正为“开放权重”。[腾讯权重文件](https://huggingface.co/tencent/Hy4-flash/tree/main) · [许可](https://huggingface.co/tencent/Hy4-flash/blob/main/LICENSE)
