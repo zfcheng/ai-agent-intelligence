@@ -209,11 +209,11 @@ nav_order: 1
     </div>
     <p class="card-desc">热门项目 + AI 项目追踪。</p>
     <ul class="card-highlights">
-      <li><strong>11-19</strong>：<strong>ag-ui</strong>（+513⭐）Agent-User Interaction 协议走红——Agent 前端交互层开始标准化</li>
-      <li><strong>11-19</strong>：<strong>paper-orchestra</strong>（+1,524⭐）连续两日霸榜，Multi-agent 角色分工写论文成工程范本</li>
-      <li><strong>11-19</strong>：<strong>stitch-skills</strong> 热度延续（10.4K⭐），Google 的 Agent Skills 开放标准持续圈地</li>
-      <li><strong>11-19</strong>：<strong>CLI-Anything</strong>（59.8K⭐）连续在榜——Agent-Native CLI 需求被社区验证，与 CLIHub 方向相关</li>
-      <li><strong>11-19</strong>：<strong>heretic</strong>（+515⭐）LLM 微调/去对齐实验工具走红，开源模型可玩性成新卖点</li>
+      <li><strong>11-20</strong>：<strong>Claude-BugHunter</strong>（+1,349⭐）连续加速——82 skills + 681 条漏洞模式，领域知识 Agent 技能包成新范式</li>
+      <li><strong>11-20</strong>：<strong>superpowers</strong>（+2,028⭐）日增重回 2K，32万⭐ 的 Agent Skills 基础设施地位未被动摇</li>
+      <li><strong>11-20</strong>：<strong>CLI-Anything</strong> 日增翻倍（389→898），连续三日在榜，Agent-Native CLI 需求加速验证</li>
+      <li><strong>11-20</strong>：<strong>opensre</strong> 开源 CI/CD 可靠性 Agent 上榜，SRE 场景 Agent 化开始有开源选项</li>
+      <li><strong>11-20</strong>：榜单主角从协议标准切换为垂直行业技能包（安全/合规/图表），Agent 竞争进入「行业纵深」阶段</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/trending/' | relative_url }}" class="card-link">查看 →</a>
