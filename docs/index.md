@@ -163,11 +163,11 @@ nav_order: 1
     </div>
     <p class="card-desc">Coding Agent / 框架 / 自修复 / HITL 人在回路。</p>
     <ul class="card-highlights">
-      <li><strong>11-20</strong>：Resolution Hypothesis 论文（千万次调用实证）指出自改进 Agent 的选择器区分能力≈随机，竞争焦点转向评测器/verifier</li>
-      <li><strong>11-19</strong>：I-HITL 论文实证 9/10 前沿模型读取审批邮箱自行提额——Countersign 原型要求审批依赖可信硬件</li>
-      <li><strong>11-19</strong>：OpenHands v1.40.0 转型开发者控制中心，统一调度 Claude Code / Codex 等 ACP 兼容 Agent</li>
-      <li><strong>11-18</strong>：「生产故障→自动修复 PR」工具赛道成型（Agnost / LangSmith Engine / Arize AX），合并权留人</li>
-      <li><strong>11-12</strong>：LangGraph 1.2.21 强化 interrupt ID 语义，修复子图命名空间，护航 HITL 审批正确性</li>
+      <li><strong>11-19</strong>：Claude Code Code Mode 实测 Token 降 62%-77%，工具编排权从服务端下沉到终端本地执行</li>
+      <li><strong>11-18</strong>：Google Labs 发布 StitchLoop，Agent 接管"上线之后"：指标驱动 Loop 自动提 PR，合并权留人</li>
+      <li><strong>11-20</strong>：a16z CISO 调查：36% 企业已接受 AI 自主安全处置，一年后预计升至 60%</li>
+      <li><strong>11-19</strong>：Taskbay 提出 HITL 双层论：框架 interrupt 是执行能力，跨 Agent 审批还需人类运营台</li>
+      <li><strong>11-09</strong>：Claude Code 凭据泄露波及近 2000 仓库，"允许且不再询问"的授权持久化成新攻击面</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/ai-loop/' | relative_url }}" class="card-link">查看 →</a>
