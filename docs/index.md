@@ -209,11 +209,11 @@ nav_order: 1
     </div>
     <p class="card-desc">热门项目 + AI 项目追踪。</p>
     <ul class="card-highlights">
-      <li><strong>11-20</strong>：<strong>Claude-BugHunter</strong>（+1,349⭐）连续加速——82 skills + 681 条漏洞模式，领域知识 Agent 技能包成新范式</li>
-      <li><strong>11-20</strong>：<strong>superpowers</strong>（+2,028⭐）日增重回 2K，32万⭐ 的 Agent Skills 基础设施地位未被动摇</li>
-      <li><strong>11-20</strong>：<strong>CLI-Anything</strong> 日增翻倍（389→898），连续三日在榜，Agent-Native CLI 需求加速验证</li>
-      <li><strong>11-20</strong>：<strong>opensre</strong> 开源 CI/CD 可靠性 Agent 上榜，SRE 场景 Agent 化开始有开源选项</li>
-      <li><strong>11-20</strong>：榜单主角从协议标准切换为垂直行业技能包（安全/合规/图表），Agent 竞争进入「行业纵深」阶段</li>
+      <li><strong>11-21</strong>：<strong>Claude-BugHunter</strong>（+1,622⭐）两连冠且持续加速，681 条漏洞模式验证「领域知识库技能化」范式</li>
+      <li><strong>11-21</strong>：<strong>app-store-compliance</strong>（+869⭐）空降——117 条拒审模式 + EU AI Act 等 95 个合规节点，垂直合规技能包破圈</li>
+      <li><strong>11-21</strong>：<strong>firecrawl</strong>（+1,241⭐）20 万⭐ 体量仍日增 1.2K，Agent 数据供给层需求持续扩张</li>
+      <li><strong>11-21</strong>：<strong>autoclip</strong>（+979⭐）AI 视频剪辑+分发全链路上榜，内容生产 Agent 化向短视频下沉</li>
+      <li><strong>11-21</strong>：Top 10 中 9 个与 Agent 相关但框架仅 superpowers 一个，竞争焦点已转向垂直领域知识厚度</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/trending/' | relative_url }}" class="card-link">查看 →</a>
