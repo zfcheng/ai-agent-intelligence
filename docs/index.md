@@ -186,11 +186,11 @@ nav_order: 1
     </div>
     <p class="card-desc">全球 Top 20 模型排名，日更。</p>
     <ul class="card-highlights">
-      <li><strong>11-20</strong>：腾讯 Hy4 flash 首周 69.3T tokens 直登周榜 #1（$0.04/$0.14 地板价），终结 DeepSeek 连霸</li>
-      <li><strong>11-20</strong>：DeepSeek V4.1 Flash 1017 周 62.2T（+12%）居次，月榜 227T（>999%）仍称霸，全系占请求 31.8%</li>
-      <li><strong>11-20</strong>：Kimi K3.1 Pro 编程花费 8.6%（+8.6pp）空降 #2，$0.25/M 输入价格战切入 Claude 腹地</li>
-      <li><strong>11-20</strong>：Claude Opus 5.5 编程花费 23.7% 继续统治，月用量 +83% 逆势大涨，Agent 需求强劲</li>
-      <li><strong>11-20</strong>：一周三款新模型上线——GPT-6.2 Sol（能力榜 57.3）、Gemini 4 Neon（61.4 列 #3）、Qwen4 Max；Google 请求份额 +14%</li>
+      <li><strong>11-21</strong>：DeepSeek V4.1 Flash 1017 周 62.4T（+15%）重夺王座，月榜 218T（>999%）统治级领先，全系请求份额 31.8%</li>
+      <li><strong>11-21</strong>：上周爆量登顶的腾讯 Hy4 flash 本周跌出 Top 10 并重标 new（417B），榜单条目疑重置，单周爆量数据可持续性存疑</li>
+      <li><strong>11-21</strong>：二线国产集体放量——Step 5 Preview（>999%）、MiniMax M3.1 Flash（+404%）、MiMo-V2.6-Flash（+363%）同周挤进周榜前十</li>
+      <li><strong>11-21</strong>：编程花费洗牌：Claude Opus 5.5 稳守 23.0% 第一，Kimi K3.1 Pro 跃至 8.8%（+8.8pp）#2，但周用量 -18% 出现迁移内耗</li>
+      <li><strong>11-21</strong>：Qwen4 Max trending #1（1.11T，$1.43/$4.28，1M 上下文）；GPT-6.2 Sol/Astra、Gemini 4 Neon 同周上线；闭源侧 GPT-6 Luna +41%、Opus 5.5 +54%</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/llm-rankings/' | relative_url }}" class="card-link">查看 →</a>
