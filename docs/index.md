@@ -163,11 +163,11 @@ nav_order: 1
     </div>
     <p class="card-desc">Coding Agent / 框架 / 自修复 / HITL 人在回路。</p>
     <ul class="card-highlights">
-      <li><strong>11-19</strong>：Claude Code Code Mode 实测 Token 降 62%-77%，工具编排权从服务端下沉到终端本地执行</li>
-      <li><strong>11-18</strong>：Google Labs 发布 StitchLoop，Agent 接管"上线之后"：指标驱动 Loop 自动提 PR，合并权留人</li>
+      <li><strong>11-21</strong>：UIUC 等团队 Self-Rewriting：27B 模型首次诊断并改写自身权重，无重训练准确率 +6.6%，RSI 迈出关键一步</li>
+      <li><strong>11-21</strong>：Codex CLI 0.171 发布：GPT-6.2 Astra/Sol 进模型目录，工作区沙箱默认开启，执行安全边界成出厂默认</li>
+      <li><strong>11-19</strong>：谷歌 SIM 论文：自改进成果沉淀进记忆层，跨模型持续递归自改进给出工程路径</li>
       <li><strong>11-20</strong>：a16z CISO 调查：36% 企业已接受 AI 自主安全处置，一年后预计升至 60%</li>
-      <li><strong>11-19</strong>：Taskbay 提出 HITL 双层论：框架 interrupt 是执行能力，跨 Agent 审批还需人类运营台</li>
-      <li><strong>11-09</strong>：Claude Code 凭据泄露波及近 2000 仓库，"允许且不再询问"的授权持久化成新攻击面</li>
+      <li><strong>11-18</strong>：Meta MLE Agent 跑进日十亿级推荐系统：实验采纳率翻倍至 29.6%，Harness 编排与模型同等关键</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/ai-loop/' | relative_url }}" class="card-link">查看 →</a>
