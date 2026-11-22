@@ -186,11 +186,11 @@ nav_order: 1
     </div>
     <p class="card-desc">全球 Top 20 模型排名，日更。</p>
     <ul class="card-highlights">
-      <li><strong>11-21</strong>：DeepSeek V4.1 Flash 1017 周 62.4T（+15%）重夺王座，月榜 218T（>999%）统治级领先，全系请求份额 31.8%</li>
-      <li><strong>11-21</strong>：上周爆量登顶的腾讯 Hy4 flash 本周跌出 Top 10 并重标 new（417B），榜单条目疑重置，单周爆量数据可持续性存疑</li>
-      <li><strong>11-21</strong>：二线国产集体放量——Step 5 Preview（>999%）、MiniMax M3.1 Flash（+404%）、MiMo-V2.6-Flash（+363%）同周挤进周榜前十</li>
-      <li><strong>11-21</strong>：编程花费洗牌：Claude Opus 5.5 稳守 23.0% 第一，Kimi K3.1 Pro 跃至 8.8%（+8.8pp）#2，但周用量 -18% 出现迁移内耗</li>
-      <li><strong>11-21</strong>：Qwen4 Max trending #1（1.11T，$1.43/$4.28，1M 上下文）；GPT-6.2 Sol/Astra、Gemini 4 Neon 同周上线；闭源侧 GPT-6 Luna +41%、Opus 5.5 +54%</li>
+      <li><strong>11-22</strong>：DeepSeek V4.1 Flash 1017 卫冕周榜（63.3T，+15%），对同门旧版拉开 4.1 倍差距，月榜 222T（+924%）统治级放量</li>
+      <li><strong>11-22</strong>：腾讯 Hy4 flash 第二次重标 new 重回 #6（6.51T）且冲上日榜 #2，连续两周「爆量→条目重置」，上榜口径存疑</li>
+      <li><strong>11-22</strong>：二线国产 flash 集体爆量进前十：Step 5 Preview（>999%）、MiniMax M3.1 Flash（+442%）、MiMo-V2.6-Flash（+375%）</li>
+      <li><strong>11-22</strong>：编程花费洗牌：Opus 5.5 稳守 22.3% 第一，Kimi K3.1 Pro 升至 10.0%（+10pp）#2，DeepSeek 1017 以 1/60 价格爬到 #5</li>
+      <li><strong>11-22</strong>：闭源高端扩容：OpenAI 双发 GPT-6.2 Sol/Astra（AA 最高 62.1），Gemini 4 Neon 首周进智能指数前三（61.4），Qwen4 Max trending #2</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/llm-rankings/' | relative_url }}" class="card-link">查看 →</a>
