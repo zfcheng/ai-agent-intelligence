@@ -209,11 +209,11 @@ nav_order: 1
     </div>
     <p class="card-desc">热门项目 + AI 项目追踪。</p>
     <ul class="card-highlights">
-      <li><strong>11-21</strong>：<strong>Claude-BugHunter</strong>（+1,622⭐）两连冠且持续加速，681 条漏洞模式验证「领域知识库技能化」范式</li>
-      <li><strong>11-21</strong>：<strong>app-store-compliance</strong>（+869⭐）空降——117 条拒审模式 + EU AI Act 等 95 个合规节点，垂直合规技能包破圈</li>
-      <li><strong>11-21</strong>：<strong>firecrawl</strong>（+1,241⭐）20 万⭐ 体量仍日增 1.2K，Agent 数据供给层需求持续扩张</li>
-      <li><strong>11-21</strong>：<strong>autoclip</strong>（+979⭐）AI 视频剪辑+分发全链路上榜，内容生产 Agent 化向短视频下沉</li>
-      <li><strong>11-21</strong>：Top 10 中 9 个与 Agent 相关但框架仅 superpowers 一个，竞争焦点已转向垂直领域知识厚度</li>
+      <li><strong>11-22</strong>：<strong>Claude-BugHunter</strong>（+1,803⭐）三连冠且加速度递增，「领域知识库技能化」正反馈持续强化</li>
+      <li><strong>11-22</strong>：<strong>diagram-design</strong>（+583⭐）新上榜——45 种编辑级图表技能包，Agent 竞争卷向「交付审美」新细分</li>
+      <li><strong>11-22</strong>：<strong>app-store-compliance</strong>（+720⭐）规则库两日扩至 124 条拒审模式，「规则库+guard」合规模式持续迭代</li>
+      <li><strong>11-22</strong>：昨日 Top 10 今日全部在榜，技能包行情进入第三天，是持续性共识而非单日脉冲</li>
+      <li><strong>11-21</strong>：<strong>firecrawl</strong>（+1,006⭐）20 万⭐ 体量仍日增 1K，Agent 数据供给层需求稳固；opensre 连续在榜，SRE Agent 供给成熟</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/trending/' | relative_url }}" class="card-link">查看 →</a>
