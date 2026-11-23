@@ -60,3 +60,5 @@ tags: [ai-loop, coding-agent, agentic-framework, self-healing, hitl, daily]
 
 ---
 *数据来源：公开搜索整理 | 仅供参考*
+
+> ⚠️ 更正（codex）：0.171.0 于上海时间 11 月 20 日发布，默认启用的是终端工作区界面（TUI workspace）。该条变更没有宣告执行沙箱的默认策略改变。[Codex 0.171.0 发布说明](https://github.com/openai/codex/releases/tag/rust-v0.171.0)

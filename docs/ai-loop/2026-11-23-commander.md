@@ -59,3 +59,5 @@ tags: [ai-loop, coding-agent, agentic-framework, self-healing, hitl, daily]
 
 ---
 *数据来源：公开搜索整理 | 仅供参考*
+
+> ⚠️ 更正（codex）：528 指 2026 年内核 CVE 中署名致谢 Sashiko 的条目数。75.8% 来自另行构建的历史漏检样本基准。60 天返修率下降 35% 是上线前后的观察值。[Google Cloud 工程复盘](https://cloud.google.com/blog/products/application-development/lessons-from-building-sashiko-an-agentic-code-review-system)
