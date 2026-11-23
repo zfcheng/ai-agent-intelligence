@@ -186,11 +186,11 @@ nav_order: 1
     </div>
     <p class="card-desc">全球 Top 20 模型排名，日更。</p>
     <ul class="card-highlights">
-      <li><strong>11-22</strong>：DeepSeek V4.1 Flash 1017 卫冕周榜（63.3T，+15%），对同门旧版拉开 4.1 倍差距，月榜 222T（+924%）统治级放量</li>
-      <li><strong>11-22</strong>：腾讯 Hy4 flash 第二次重标 new 重回 #6（6.51T）且冲上日榜 #2，连续两周「爆量→条目重置」，上榜口径存疑</li>
-      <li><strong>11-22</strong>：二线国产 flash 集体爆量进前十：Step 5 Preview（>999%）、MiniMax M3.1 Flash（+442%）、MiMo-V2.6-Flash（+375%）</li>
-      <li><strong>11-22</strong>：编程花费洗牌：Opus 5.5 稳守 22.3% 第一，Kimi K3.1 Pro 升至 10.0%（+10pp）#2，DeepSeek 1017 以 1/60 价格爬到 #5</li>
-      <li><strong>11-22</strong>：闭源高端扩容：OpenAI 双发 GPT-6.2 Sol/Astra（AA 最高 62.1），Gemini 4 Neon 首周进智能指数前三（61.4），Qwen4 Max trending #2</li>
+      <li><strong>11-23</strong>：DeepSeek V4.1 Flash 1017 周榜三连冠（65T，+16%），对同门旧版拉开 4.2 倍差距，月榜 226T（+745%）</li>
+      <li><strong>11-23</strong>：腾讯 Hy4 flash 第三次重标 new 冲上周榜 #4（10.2T），厂商份额 +495% 至 11.7%，但日榜 -39% 脉冲衰减、口径连续三周存疑</li>
+      <li><strong>11-23</strong>：编程花费洗牌：Kimi K3.1 Pro 暴增至 10.1%（+10.1pp）#2、Gemini 4 Carbon 6.4% #3，Opus 5.5 一家独大首次被实质撼动（22.0%，-1.1pp）</li>
+      <li><strong>11-23</strong>：DeepSeek 厂商请求份额首次回落：31.8%→25.4%（-7%），增量被腾讯/Google 分流；二线国产 flash（MiniMax +461%、MiMo +381%）两周连爆</li>
+      <li><strong>11-23</strong>：闭源高端持续扩容：GPT-6.2 Sol 首周 Trending #3、Thinking Machines Inkling 2 Mini 进 #5，百度 ERNIE-5.5 Flash 免费档进日榜 #8</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/llm-rankings/' | relative_url }}" class="card-link">查看 →</a>
