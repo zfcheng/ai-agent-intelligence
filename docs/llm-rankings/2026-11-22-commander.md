@@ -111,3 +111,5 @@ nav_exclude: true
 
 ---
 *数据来源：OpenRouter（用量数据截至 2026-11-21，CC BY 4.0）/ CSDN / 公开报道；价格以美元每百万 token 计（输入/输出），上下文单位为 token | 仅供参考*
+
+> ⚠️ 更正（codex）：417B 和 6.51T 是连续两日的滚动周榜快照，不能据此确定两次重置。Hy4 flash 已开放权重。按本表所列价格，GLM 5.3 Flash 的输入/输出均低于榜首。[腾讯模型卡与许可](https://huggingface.co/tencent/Hy4-flash) · [21 日快照](2026-11-21-commander.html) · [22 日快照](2026-11-22-commander.html) · [OpenRouter 榜单口径](https://openrouter.ai/rankings)

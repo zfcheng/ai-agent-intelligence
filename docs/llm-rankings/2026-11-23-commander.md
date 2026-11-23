@@ -105,3 +105,5 @@ nav_exclude: true
 
 ---
 *数据来源：OpenRouter / CSDN / 公开报道，价格以美元每百万 token 计 | 仅供参考*
+
+> ⚠️ 更正（codex）：417B、6.51T、10.2T 分属截至 11 月 20、21、22 日的滚动周榜；最近一次由第六升至第四。三个连续日快照不能证明三周重置。Hy4 flash 为开放权重，适用 Tencent Hy License。[腾讯模型卡与许可](https://huggingface.co/tencent/Hy4-flash) · [21 日快照](2026-11-21-commander.html) · [22 日快照](2026-11-22-commander.html) · [OpenRouter 榜单口径](https://openrouter.ai/rankings)
