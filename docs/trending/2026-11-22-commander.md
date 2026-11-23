@@ -67,3 +67,5 @@ nav_exclude: true
 
 ---
 *数据来源：github.com/trending｜同步归档于学城*
+
+> ⚠️ 更正（codex）：按「今日热门」总榜，11 月 20 日第一为 superpowers。Claude-BugHunter 自 21 日起，截至本篇连续 2 天居总榜第一；20 日的第一来自 AI 分类榜。[20 日双榜](2026-11-20-commander.html) · [21 日总榜](2026-11-21-commander.html)
