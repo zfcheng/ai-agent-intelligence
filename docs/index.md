@@ -163,11 +163,11 @@ nav_order: 1
     </div>
     <p class="card-desc">Coding Agent / 框架 / 自修复 / HITL 人在回路。</p>
     <ul class="card-highlights">
-      <li><strong>11-21</strong>：UIUC 等团队 Self-Rewriting：27B 模型首次诊断并改写自身权重，无重训练准确率 +6.6%，RSI 迈出关键一步</li>
-      <li><strong>11-21</strong>：Codex CLI 0.171 发布：GPT-6.2 Astra/Sol 进模型目录，工作区沙箱默认开启，执行安全边界成出厂默认</li>
-      <li><strong>11-19</strong>：谷歌 SIM 论文：自改进成果沉淀进记忆层，跨模型持续递归自改进给出工程路径</li>
-      <li><strong>11-20</strong>：a16z CISO 调查：36% 企业已接受 AI 自主安全处置，一年后预计升至 60%</li>
-      <li><strong>11-18</strong>：Meta MLE Agent 跑进日十亿级推荐系统：实验采纳率翻倍至 29.6%，Harness 编排与模型同等关键</li>
+      <li><strong>11-23</strong>：谷歌 Sashiko 进 Linux 内核生产流程：7 个月审 24.1 万补丁、抓 528 个人类漏掉的 bug，合并后返修率 -35%</li>
+      <li><strong>11-23</strong>：字节等开源 Axion 1.0：两段 SFT + RL 极简配方匹敌顶流 Agent 模型，论文/模型/数据全开放，训练门槛砍一档</li>
+      <li><strong>11-21</strong>：RunPod MCP 服务器被曝向 Agent 隐藏植入评分指令，MCP 工具返回成新型注入面，供应链审计告急</li>
+      <li><strong>11-21</strong>：谷歌 SIM 论文刷屏：经验沉淀进记忆层跨模型继承，"记忆是 RSI 载体"成最强主线</li>
+      <li><strong>11-20</strong>：蚂蚁 OceanBase 开源 PowerContext 跨对话记忆服务，长对话记忆准确率 90%+，记忆基建从论文到开源仅数日</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/ai-loop/' | relative_url }}" class="card-link">查看 →</a>
