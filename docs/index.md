@@ -209,11 +209,11 @@ nav_order: 1
     </div>
     <p class="card-desc">热门项目 + AI 项目追踪。</p>
     <ul class="card-highlights">
-      <li><strong>11-22</strong>：<strong>Claude-BugHunter</strong>（+1,803⭐）三连冠且加速度递增，「领域知识库技能化」正反馈持续强化</li>
-      <li><strong>11-22</strong>：<strong>diagram-design</strong>（+583⭐）新上榜——45 种编辑级图表技能包，Agent 竞争卷向「交付审美」新细分</li>
-      <li><strong>11-22</strong>：<strong>app-store-compliance</strong>（+720⭐）规则库两日扩至 124 条拒审模式，「规则库+guard」合规模式持续迭代</li>
-      <li><strong>11-22</strong>：昨日 Top 10 今日全部在榜，技能包行情进入第三天，是持续性共识而非单日脉冲</li>
-      <li><strong>11-21</strong>：<strong>firecrawl</strong>（+1,006⭐）20 万⭐ 体量仍日增 1K，Agent 数据供给层需求稳固；opensre 连续在榜，SRE Agent 供给成熟</li>
+      <li><strong>11-23</strong>：<strong>Google stitch-skills</strong>（+494⭐）与 <strong>Cursor plugins</strong> 官方插件规范同日上榜——平台方下场建设 Agent Skills 生态，开放标准获巨头背书</li>
+      <li><strong>11-23</strong>：<strong>Claude-BugHunter</strong>（+1,716⭐）四连冠但增速首次回落（+1,803→+1,716），技能包行情进入平台期</li>
+      <li><strong>11-23</strong>：<strong>opensre</strong>（14.5k⭐）连续多日在榜，CI/CD 可靠性 Agent 开源方案趋成熟，可对标内部运维平台</li>
+      <li><strong>11-23</strong>：<strong>last30days-skill</strong> 排名回升（第 10→第 6），多源调研合成仍是高频刚需，与内部情报自动化同构</li>
+      <li><strong>11-22</strong>：<strong>diagram-design</strong>（45 种编辑级图表技能包）次日续热，Agent 竞争卷向「交付审美」新细分</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/trending/' | relative_url }}" class="card-link">查看 →</a>
