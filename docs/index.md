@@ -140,11 +140,11 @@ nav_order: 1
     </div>
     <p class="card-desc">AI Agent 情报日报，全球视野覆盖最新趋势。</p>
     <ul class="card-highlights">
-      <li><strong>11-23</strong>：Sashiko 性能审阅在 20 个历史回归上的命中数由 3 升至 14</li>
-      <li><strong>11-23</strong>：Claude Code 自托管 runner 分别记录注册与首会话耗时</li>
-      <li><strong>11-23</strong>：Stitch Skills 贡献者报告配置缺失仍返回成功，已提交修复 PR</li>
-      <li><strong>11-20</strong>：OpenAI 在部署后另派 Agent 复核生产性能基线</li>
-      <li><strong>11-20</strong>：Google Cloud 公布的 Gemini 3.6 Flash 退役日期为 11 月 19 日</li>
+      <li><strong>11-18</strong>：腾讯开源 LoopForge，Coding Agent 流水线团队化，兼容 10 种 CLI</li>
+      <li><strong>11-17</strong>：Google Cloud 发布五层工程分级指南，Coding Agent 采用率 22%-29%</li>
+      <li><strong>11-17</strong>：五家工具形成"异常检测→诊断→修复 PR→人工合并"闭环赛道</li>
+      <li><strong>11-16</strong>：自改进 Agent 近半"改进"实为退化，自治 Loop 真正闭环不足 1%</li>
+      <li><strong>11-12</strong>：微软将 AutoGen 置于维护模式，投入集中到 Microsoft Agent Framework</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/daily.html' | relative_url }}" class="card-link">查看 →</a>
@@ -163,7 +163,7 @@ nav_order: 1
     </div>
     <p class="card-desc">Coding Agent / 框架 / 自修复 / HITL 人在回路。</p>
     <ul class="card-highlights">
-      <li><strong>11-23</strong>：谷歌 Sashiko 进 Linux 内核生产流程：已完成约 24.1 万次补丁评审，528 条内核 CVE 署名致谢</li>
+      <li><strong>11-23</strong>：谷歌 Sashiko 进 Linux 内核生产流程：7 个月审 24.1 万补丁、抓 528 个人类漏掉的 bug，合并后返修率 -35%</li>
       <li><strong>11-23</strong>：字节等开源 Axion 1.0：两段 SFT + RL 极简配方匹敌顶流 Agent 模型，论文/模型/数据全开放，训练门槛砍一档</li>
       <li><strong>11-21</strong>：RunPod MCP 服务器被曝向 Agent 隐藏植入评分指令，MCP 工具返回成新型注入面，供应链审计告急</li>
       <li><strong>11-21</strong>：谷歌 SIM 论文刷屏：经验沉淀进记忆层跨模型继承，"记忆是 RSI 载体"成最强主线</li>
@@ -187,7 +187,7 @@ nav_order: 1
     <p class="card-desc">全球 Top 20 模型排名，日更。</p>
     <ul class="card-highlights">
       <li><strong>11-23</strong>：DeepSeek V4.1 Flash 1017 周榜三连冠（65T，+16%），对同门旧版拉开 4.2 倍差距，月榜 226T（+745%）</li>
-      <li><strong>11-23</strong>：腾讯 Hy4 flash 滚动周榜从第六升至第四，重置原因未获平台确认</li>
+      <li><strong>11-23</strong>：腾讯 Hy4 flash 第三次重标 new 冲上周榜 #4（10.2T），厂商份额 +495% 至 11.7%，但日榜 -39% 脉冲衰减、口径连续三周存疑</li>
       <li><strong>11-23</strong>：编程花费洗牌：Kimi K3.1 Pro 暴增至 10.1%（+10.1pp）#2、Gemini 4 Carbon 6.4% #3，Opus 5.5 一家独大首次被实质撼动（22.0%，-1.1pp）</li>
       <li><strong>11-23</strong>：DeepSeek 厂商请求份额首次回落：31.8%→25.4%（-7%），增量被腾讯/Google 分流；二线国产 flash（MiniMax +461%、MiMo +381%）两周连爆</li>
       <li><strong>11-23</strong>：闭源高端持续扩容：GPT-6.2 Sol 首周 Trending #3、Thinking Machines Inkling 2 Mini 进 #5，百度 ERNIE-5.5 Flash 免费档进日榜 #8</li>
@@ -209,11 +209,11 @@ nav_order: 1
     </div>
     <p class="card-desc">热门项目 + AI 项目追踪。</p>
     <ul class="card-highlights">
-      <li><strong>11-23</strong>：<strong>Google stitch-skills</strong>（+494⭐）与 <strong>Cursor plugins</strong> 官方插件规范同日上榜——平台方下场建设 Agent Skills 生态，开放标准获巨头背书</li>
-      <li><strong>11-23</strong>：<strong>Claude-BugHunter</strong>（+1,716⭐）连续三日居总榜第一，日增星数回落（+1,803→+1,716），技能包行情进入平台期</li>
-      <li><strong>11-23</strong>：<strong>opensre</strong>（14.5k⭐）连续多日在榜，CI/CD 可靠性 Agent 开源方案趋成熟，可对标内部运维平台</li>
-      <li><strong>11-23</strong>：<strong>last30days-skill</strong> 排名回升（第 10→第 6），多源调研合成仍是高频刚需，与内部情报自动化同构</li>
-      <li><strong>11-22</strong>：<strong>diagram-design</strong>（45 种编辑级图表技能包）次日续热，Agent 竞争卷向「交付审美」新细分</li>
+      <li><strong>11-24</strong>：<strong>Claude-BugHunter</strong>（+2,029⭐）重夺日榜第一，84 技能/681 漏洞报告模式，安全技能包工程化标杆</li>
+      <li><strong>11-24</strong>：Agent Skills 成今日绝对主旋律：16 个上榜中至少 6 个直接相关，Google stitch-skills 以开放标准身份入局</li>
+      <li><strong>11-24</strong>：Agent 基础设施分层清晰化：数据层 firecrawl（550+ 数据源，总⭐破 20 万）、工具层 CLI-Anything、平台层 cursor/plugins</li>
+      <li><strong>11-24</strong>：<strong>opensre</strong>（CI/CD 可靠性 Agent）持续在榜，SRE 自动化从告警分析走向全链路 Agent 化，与内部运维方向重合</li>
+      <li><strong>11-24</strong>：<strong>diagram-design</strong>（52 种图型）续热，「让 Agent 产出好看」的交付质量规范成为独立细分赛道</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/trending/' | relative_url }}" class="card-link">查看 →</a>
@@ -292,7 +292,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign daily_posts = site.pages | where: "type", "daily" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in daily_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
         {% if daily_posts.size == 0 %}<li class="recent-empty">（待首篇入库）</li>{% endif %}
       </ul>
@@ -302,7 +302,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign loop_posts = site.pages | where: "type", "ai-loop" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in loop_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
         {% if loop_posts.size == 0 %}<li class="recent-empty">（待首篇入库）</li>{% endif %}
       </ul>
@@ -312,7 +312,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign rank_posts = site.pages | where: "type", "llm-rankings" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in rank_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
         {% if rank_posts.size == 0 %}<li class="recent-empty">（待首篇入库）</li>{% endif %}
       </ul>
@@ -322,7 +322,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign trend_posts = site.pages | where: "type", "trending" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in trend_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
         {% if trend_posts.size == 0 %}<li class="recent-empty">（待首篇入库）</li>{% endif %}
       </ul>
@@ -332,7 +332,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign price_posts = site.pages | where: "type", "pricing" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in price_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
         {% if price_posts.size == 0 %}<li class="recent-empty">（暂无异动报告）</li>{% endif %}
       </ul>
@@ -342,7 +342,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign blog_posts = site.pages | where: "type", "blog-monitor" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in blog_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
         {% if blog_posts.size == 0 %}<li class="recent-empty">（架子搭建中）</li>{% endif %}
       </ul>
@@ -352,7 +352,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign insight_posts = site.pages | where: "type", "insights" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in insight_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
         {% if insight_posts.size == 0 %}<li class="recent-empty">（周五生成）</li>{% endif %}
       </ul>
@@ -362,7 +362,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign weekly_posts = site.pages | where: "type", "weekly" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in weekly_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
         {% endfor %}
       </ul>
     </div>
