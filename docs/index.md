@@ -186,11 +186,11 @@ nav_order: 1
     </div>
     <p class="card-desc">全球 Top 20 模型排名，日更。</p>
     <ul class="card-highlights">
-      <li><strong>11-23</strong>：DeepSeek V4.1 Flash 1017 周榜三连冠（65T，+16%），对同门旧版拉开 4.2 倍差距，月榜 226T（+745%）</li>
-      <li><strong>11-23</strong>：腾讯 Hy4 flash 第三次重标 new 冲上周榜 #4（10.2T），厂商份额 +495% 至 11.7%，但日榜 -39% 脉冲衰减、口径连续三周存疑</li>
-      <li><strong>11-23</strong>：编程花费洗牌：Kimi K3.1 Pro 暴增至 10.1%（+10.1pp）#2、Gemini 4 Carbon 6.4% #3，Opus 5.5 一家独大首次被实质撼动（22.0%，-1.1pp）</li>
-      <li><strong>11-23</strong>：DeepSeek 厂商请求份额首次回落：31.8%→25.4%（-7%），增量被腾讯/Google 分流；二线国产 flash（MiniMax +461%、MiMo +381%）两周连爆</li>
-      <li><strong>11-23</strong>：闭源高端持续扩容：GPT-6.2 Sol 首周 Trending #3、Thinking Machines Inkling 2 Mini 进 #5，百度 ERNIE-5.5 Flash 免费档进日榜 #8</li>
+      <li><strong>11-24</strong>：<strong>DeepSeek V4.1 Flash 1017 周榜四连冠</strong>（66.8T，+9%），月榜 245T（+678%），但对 #2 领先从 6.4 倍骤缩至 2.8 倍</li>
+      <li><strong>11-24</strong>：<strong>腾讯 Hy4 flash 单周翻倍冲上周榜 #2</strong>（23.5T，>999%），日榜 -6% 平稳证伪上周口径疑云，厂商份额 +495% 至 11.7%</li>
+      <li><strong>11-24</strong>：编程花费连续三周洗牌：Kimi K3.1 Pro 9.9%、Gemini 4 Carbon 6.7% 稳居 #2/#3，Opus 5.5 降至 21.9%（-1.4pp）集中度持续下降</li>
+      <li><strong>11-24</strong>：闭源高端一周 4 条新血：GPT-6.2 Sol/Astra、Gemini 4 Neon、Inkling 2 Mini 包揽 Trending 前四，Astra/Neon 分列 AA 智能指数 #2/#3</li>
+      <li><strong>11-24</strong>：GPT-6 Luna 日榜 +79%、Opus 5.5 +65% 单日暴增（周榜仅 +3%/-10%），疑似 GPT-6.2 发布连带效应，下周验证回落</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/llm-rankings/' | relative_url }}" class="card-link">查看 →</a>
