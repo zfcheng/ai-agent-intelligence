@@ -163,11 +163,11 @@ nav_order: 1
     </div>
     <p class="card-desc">Coding Agent / 框架 / 自修复 / HITL 人在回路。</p>
     <ul class="card-highlights">
+      <li><strong>11-24</strong>：OpenAI 公开 Performance Factory：Codex 智能体自动修性能回归，3 个月处理 1700+ 起、600+ 定位根因</li>
+      <li><strong>11-24</strong>：微软 Ignite 发布 Azure SRE Agent，云故障自主诊断修复产品化，SRE 自愈进入云平台原生能力赛道</li>
       <li><strong>11-23</strong>：谷歌 Sashiko 进 Linux 内核生产流程：7 个月审 24.1 万补丁、抓 528 个人类漏掉的 bug，合并后返修率 -35%</li>
-      <li><strong>11-23</strong>：字节等开源 Axion 1.0：两段 SFT + RL 极简配方匹敌顶流 Agent 模型，论文/模型/数据全开放，训练门槛砍一档</li>
+      <li><strong>11-22</strong>：字节等开源 Axion 1.0：两段 SFT + RL 极简配方匹敌顶流 Agent 模型，论文/模型/数据全开放</li>
       <li><strong>11-21</strong>：RunPod MCP 服务器被曝向 Agent 隐藏植入评分指令，MCP 工具返回成新型注入面，供应链审计告急</li>
-      <li><strong>11-21</strong>：谷歌 SIM 论文刷屏：经验沉淀进记忆层跨模型继承，"记忆是 RSI 载体"成最强主线</li>
-      <li><strong>11-20</strong>：蚂蚁 OceanBase 开源 PowerContext 跨对话记忆服务，长对话记忆准确率 90%+，记忆基建从论文到开源仅数日</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/ai-loop/' | relative_url }}" class="card-link">查看 →</a>
