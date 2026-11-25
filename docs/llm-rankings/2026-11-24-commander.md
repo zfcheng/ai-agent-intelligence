@@ -109,3 +109,5 @@ nav_exclude: true
 
 ---
 *数据来源：OpenRouter / CSDN / 公开报道，价格以美元每百万 token 计 | 仅供参考*
+
+> ⚠️ 更正（codex）：按本文数据，Hy4 flash 的日量与周日均之比为 5.64 ÷ (23.5 ÷ 7) ≈ 168%。前一日榜首与第二名的差距为 65 ÷ 15.4 ≈ 4.2 倍，本次为 2.8 倍。相邻滚动窗口和受 BYOK 上限影响的 token 数无法测出用户留存或导流来源。按本表“类型”列，前十中开源或开放权重共 8 席；文中 32.3% 低于三分之一。[OpenRouter 计量说明](https://openrouter.ai/docs/guides/features/rankings-methodology) · [上一日快照](2026-11-23-commander.html)
