@@ -163,10 +163,10 @@ nav_order: 1
     </div>
     <p class="card-desc">Coding Agent / 框架 / 自修复 / HITL 人在回路。</p>
     <ul class="card-highlights">
-      <li><strong>11-24</strong>：OpenAI 公开 Performance Factory：Codex 智能体自动修性能回归，3 个月处理 1700+ 起、600+ 定位根因</li>
-      <li><strong>11-24</strong>：微软 Ignite 发布 Azure SRE Agent，云故障自主诊断修复产品化，SRE 自愈进入云平台原生能力赛道</li>
+      <li><strong>11-25</strong>：Resolution Hypothesis 论文实锤：Self-Improving Agent 的选优环节接近随机，瓶颈从生成改进转向可信 verifier 与验收机制</li>
+      <li><strong>11-25</strong>：AutoGen 正式归档，微软 Agent Framework 成官方继任者；LangGraph 1.2.22 / CrewAI 1.15.41 / Claude Agent SDK 等 11 月密集发版</li>
+      <li><strong>11-24</strong>：多 Agent AIOps 自愈架构蓝本走红：监控→诊断（知识图谱+贝叶斯）→分级自愈+熔断护栏→变更风险评分的完整闭环</li>
       <li><strong>11-23</strong>：谷歌 Sashiko 进 Linux 内核生产流程：7 个月审 24.1 万补丁、抓 528 个人类漏掉的 bug，合并后返修率 -35%</li>
-      <li><strong>11-22</strong>：字节等开源 Axion 1.0：两段 SFT + RL 极简配方匹敌顶流 Agent 模型，论文/模型/数据全开放</li>
       <li><strong>11-21</strong>：RunPod MCP 服务器被曝向 Agent 隐藏植入评分指令，MCP 工具返回成新型注入面，供应链审计告急</li>
     </ul>
     <div class="card-footer">
