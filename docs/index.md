@@ -140,11 +140,11 @@ nav_order: 1
     </div>
     <p class="card-desc">AI Agent 情报日报，全球视野覆盖最新趋势。</p>
     <ul class="card-highlights">
-      <li><strong>11-18</strong>：腾讯开源 LoopForge，Coding Agent 流水线团队化，兼容 10 种 CLI</li>
-      <li><strong>11-17</strong>：Google Cloud 发布五层工程分级指南，Coding Agent 采用率 22%-29%</li>
-      <li><strong>11-17</strong>：五家工具形成"异常检测→诊断→修复 PR→人工合并"闭环赛道</li>
-      <li><strong>11-16</strong>：自改进 Agent 近半"改进"实为退化，自治 Loop 真正闭环不足 1%</li>
-      <li><strong>11-12</strong>：微软将 AutoGen 置于维护模式，投入集中到 Microsoft Agent Framework</li>
+      <li><strong>11-25</strong>：Claude Ship 将修复与批准分开，仓库策略决定何时转交人工</li>
+      <li><strong>11-25</strong>：OpenAI 运维演示给出两条失败路径：审批拒绝后改提案，指标未恢复则继续调查</li>
+      <li><strong>11-25</strong>：Google Workspace MCP 正式可用，敏感操作可触发人工确认</li>
+      <li><strong>11-25</strong>：Text-to-SQL 研究同时衡量放行率和错答率，迁移数据库需重新校准</li>
+      <li><strong>11-23</strong>：Claude Code 自托管 runner 分别记录注册与首会话耗时</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/daily.html' | relative_url }}" class="card-link">查看 →</a>
@@ -292,7 +292,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign daily_posts = site.pages | where: "type", "daily" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in daily_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
         {% endfor %}
         {% if daily_posts.size == 0 %}<li class="recent-empty">（待首篇入库）</li>{% endif %}
       </ul>
@@ -302,7 +302,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign loop_posts = site.pages | where: "type", "ai-loop" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in loop_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
         {% endfor %}
         {% if loop_posts.size == 0 %}<li class="recent-empty">（待首篇入库）</li>{% endif %}
       </ul>
@@ -312,7 +312,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign rank_posts = site.pages | where: "type", "llm-rankings" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in rank_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
         {% endfor %}
         {% if rank_posts.size == 0 %}<li class="recent-empty">（待首篇入库）</li>{% endif %}
       </ul>
@@ -322,7 +322,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign trend_posts = site.pages | where: "type", "trending" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in trend_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
         {% endfor %}
         {% if trend_posts.size == 0 %}<li class="recent-empty">（待首篇入库）</li>{% endif %}
       </ul>
@@ -332,7 +332,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign price_posts = site.pages | where: "type", "pricing" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in price_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
         {% endfor %}
         {% if price_posts.size == 0 %}<li class="recent-empty">（暂无异动报告）</li>{% endif %}
       </ul>
@@ -342,7 +342,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign blog_posts = site.pages | where: "type", "blog-monitor" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in blog_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
         {% endfor %}
         {% if blog_posts.size == 0 %}<li class="recent-empty">（架子搭建中）</li>{% endif %}
       </ul>
@@ -352,7 +352,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign insight_posts = site.pages | where: "type", "insights" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in insight_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
         {% endfor %}
         {% if insight_posts.size == 0 %}<li class="recent-empty">（周五生成）</li>{% endif %}
       </ul>
@@ -362,7 +362,7 @@ nav_order: 1
       <ul class="recent-list">
         {% assign weekly_posts = site.pages | where: "type", "weekly" | where_exp: "p", "p.date != nil" | sort: "date" | reverse %}
         {% for p in weekly_posts limit: 5 %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.date | date: "%Y-%m-%d" }} — {{ p.title }}{% if p.author %}（{{ p.author }}）{% endif %}</a></li>
         {% endfor %}
       </ul>
     </div>
