@@ -60,3 +60,5 @@ tags: [ai-loop, coding-agent, agentic-framework, self-healing, hitl, daily]
 
 ---
 *数据来源：公开搜索整理 | 仅供参考*
+
+> ⚠️ 更正（codex）：Azure SRE Agent 已于 2026 年 3 月正式可用，11 月 Ignite 期间新增的是 A2A 等公开预览能力。[微软 3 月 10 日 GA 记录](https://techcommunity.microsoft.com/blog/appsonazureblog/whats-new-in-azure-sre-agent-in-the-ga-release/4500779) · [11 月 A2A 预览公告](https://azure.microsoft.com/en-us/updates?id=580758)
