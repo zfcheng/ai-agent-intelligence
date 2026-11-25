@@ -209,11 +209,11 @@ nav_order: 1
     </div>
     <p class="card-desc">热门项目 + AI 项目追踪。</p>
     <ul class="card-highlights">
-      <li><strong>11-24</strong>：<strong>Claude-BugHunter</strong>（+2,029⭐）重夺日榜第一，84 技能/681 漏洞报告模式，安全技能包工程化标杆</li>
-      <li><strong>11-24</strong>：Agent Skills 成今日绝对主旋律：16 个上榜中至少 6 个直接相关，Google stitch-skills 以开放标准身份入局</li>
-      <li><strong>11-24</strong>：Agent 基础设施分层清晰化：数据层 firecrawl（550+ 数据源，总⭐破 20 万）、工具层 CLI-Anything、平台层 cursor/plugins</li>
-      <li><strong>11-24</strong>：<strong>opensre</strong>（CI/CD 可靠性 Agent）持续在榜，SRE 自动化从告警分析走向全链路 Agent 化，与内部运维方向重合</li>
-      <li><strong>11-24</strong>：<strong>diagram-design</strong>（52 种图型）续热，「让 Agent 产出好看」的交付质量规范成为独立细分赛道</li>
+      <li><strong>11-25</strong>：<strong>Claude-BugHunter 蝉联日榜第一</strong>（+1,826⭐），Agent Skills 呈职业化分层：安全红队/合规/交付质量等垂直专业包涌现</li>
+      <li><strong>11-25</strong>：Google stitch-skills 坚持开放标准路线（兼容 Claude Code/Gemini CLI/Cursor），Agent Skills 格式标准之争升温</li>
+      <li><strong>11-25</strong>：Agent 基础设施三层齐上 trending：数据层 firecrawl（20.9 万⭐）、工具层 CLI-Anything（HKUDS，+1,074）、平台层 cursor/plugins</li>
+      <li><strong>11-25</strong>：<strong>opensre</strong>（CI/CD 可靠性 Agent）持续在榜，与 Azure SRE Agent 相互印证：SRE 自愈是 Agent 落地确定性最高赛道</li>
+      <li><strong>11-25</strong>：autoclip（+980）与 Ghost-Downloader-3（+1,092）冲榜：中文创作者/效率工具生态成为非大厂项目突围路径</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/trending/' | relative_url }}" class="card-link">查看 →</a>
