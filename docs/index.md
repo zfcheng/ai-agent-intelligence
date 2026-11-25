@@ -186,11 +186,11 @@ nav_order: 1
     </div>
     <p class="card-desc">全球 Top 20 模型排名，日更。</p>
     <ul class="card-highlights">
-      <li><strong>11-24</strong>：<strong>DeepSeek V4.1 Flash 1017 周榜四连冠</strong>（66.8T，+9%），月榜 245T（+678%），但对 #2 领先从 6.4 倍骤缩至 2.8 倍</li>
-      <li><strong>11-24</strong>：<strong>腾讯 Hy4 flash 单周翻倍冲上周榜 #2</strong>（23.5T，>999%），日榜 -6% 平稳证伪上周口径疑云，厂商份额 +495% 至 11.7%</li>
-      <li><strong>11-24</strong>：编程花费连续三周洗牌：Kimi K3.1 Pro 9.9%、Gemini 4 Carbon 6.7% 稳居 #2/#3，Opus 5.5 降至 21.9%（-1.4pp）集中度持续下降</li>
-      <li><strong>11-24</strong>：闭源高端一周 4 条新血：GPT-6.2 Sol/Astra、Gemini 4 Neon、Inkling 2 Mini 包揽 Trending 前四，Astra/Neon 分列 AA 智能指数 #2/#3</li>
-      <li><strong>11-24</strong>：GPT-6 Luna 日榜 +79%、Opus 5.5 +65% 单日暴增（周榜仅 +3%/-10%），疑似 GPT-6.2 发布连带效应，下周验证回落</li>
+      <li><strong>11-25</strong>：<strong>DeepSeek V4.1 Flash 1017 周榜五连冠</strong>（70T，+13%），月榜 252T（+576%），对 #2 领先扩大至 2.4 倍；作者请求份额 25.4% 居首</li>
+      <li><strong>11-25</strong>：<strong>腾讯 Hy4 flash 站稳周榜 #2</strong>（28.8T，>999%），$0.035/$0.14 为 Top 10 最低价，输出价约为 DeepSeek 1/8，价格屠夫策略持续见效</li>
+      <li><strong>11-25</strong>：<strong>Kimi K3.1 Pro 编程份额升至 9.8%（+9.7pp）</strong>，单日用量 +62%，Gemini 4 Carbon 以 6.6%（new）居编程 #3，Opus 5.5 守住 21.9%（-1.4pp）</li>
+      <li><strong>11-25</strong>：闭源高端新血持续放量：Claude Fable 5.2 以 64.8 AA 智能指数登顶，GPT-6.2 系列 batch 用量首周 >999%，GPT-6.1 Sol 月增 +93%</li>
+      <li><strong>11-25</strong>：Claude Opus 5.5 周用量 -14%、GPT-6 Luna -3%，头部闭源在国产 Flash 军团价格战下持续承压；周榜 Top 10 开源占 7 席</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/llm-rankings/' | relative_url }}" class="card-link">查看 →</a>
