@@ -163,11 +163,11 @@ nav_order: 1
     </div>
     <p class="card-desc">Coding Agent / 框架 / 自修复 / HITL 人在回路。</p>
     <ul class="card-highlights">
+      <li><strong>11-26</strong>：Cursor 3 密集更新：Live Apps 让云端 Agent 构建/托管/分享内部应用，Copilot 双模型（GPT-6.1 Terra + Gemini 4 Carbon）同日到位</li>
+      <li><strong>11-26</strong>：HITL 进化到「人管例外」：ema.ai 细粒度审批 + Kiro "Approve for me" + Antigravity Loop 护栏，人工干预粒度从「每次都要人」降到「只管异常」</li>
       <li><strong>11-25</strong>：Resolution Hypothesis 论文实锤：Self-Improving Agent 的选优环节接近随机，瓶颈从生成改进转向可信 verifier 与验收机制</li>
-      <li><strong>11-25</strong>：AutoGen 正式归档，微软 Agent Framework 成官方继任者；LangGraph 1.2.22 / CrewAI 1.15.41 / Claude Agent SDK 等 11 月密集发版</li>
       <li><strong>11-24</strong>：多 Agent AIOps 自愈架构蓝本走红：监控→诊断（知识图谱+贝叶斯）→分级自愈+熔断护栏→变更风险评分的完整闭环</li>
       <li><strong>11-23</strong>：谷歌 Sashiko 进 Linux 内核生产流程：7 个月审 24.1 万补丁、抓 528 个人类漏掉的 bug，合并后返修率 -35%</li>
-      <li><strong>11-21</strong>：RunPod MCP 服务器被曝向 Agent 隐藏植入评分指令，MCP 工具返回成新型注入面，供应链审计告急</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/ai-loop/' | relative_url }}" class="card-link">查看 →</a>
