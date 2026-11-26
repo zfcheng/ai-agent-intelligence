@@ -209,11 +209,11 @@ nav_order: 1
     </div>
     <p class="card-desc">热门项目 + AI 项目追踪。</p>
     <ul class="card-highlights">
-      <li><strong>11-25</strong>：<strong>Claude-BugHunter 蝉联日榜第一</strong>（+1,826⭐），Agent Skills 呈职业化分层：安全红队/合规/交付质量等垂直专业包涌现</li>
-      <li><strong>11-25</strong>：Google stitch-skills 坚持开放标准路线（兼容 Claude Code/Gemini CLI/Cursor），Agent Skills 格式标准之争升温</li>
-      <li><strong>11-25</strong>：Agent 基础设施三层齐上 trending：数据层 firecrawl（20.9 万⭐）、工具层 CLI-Anything（HKUDS，+1,074）、平台层 cursor/plugins</li>
-      <li><strong>11-25</strong>：<strong>opensre</strong>（CI/CD 可靠性 Agent）持续在榜，与 Azure SRE Agent 相互印证：SRE 自愈是 Agent 落地确定性最高赛道</li>
-      <li><strong>11-25</strong>：autoclip（+980）与 Ghost-Downloader-3（+1,092）冲榜：中文创作者/效率工具生态成为非大厂项目突围路径</li>
+      <li><strong>11-26</strong>：<strong>Claude-BugHunter 三连冠</strong>（+1,652⭐），Skills 生态进入「行业知识封装之争」：安全红队/移动合规/图表设计等垂直职业包霸榜</li>
+      <li><strong>11-26</strong>：HKUDS CLI-Anything（+1,106，总 65.7k）提出「让所有软件 Agent-Native」，与 firecrawl（210k）、cursor/plugins 构成 Agent 基础设施三层卡位</li>
+      <li><strong>11-26</strong>：diagram-design（+1,141）打出「No Mermaid slop」：Coding Agent 竞争从「能生成」转向「生成得体面」，反 AI slop 成卖点</li>
+      <li><strong>11-26</strong>：opensre（CI/CD 可靠性 Agent，+348）持续在榜，SRE 自愈赛道确定性再获验证，与内部告警 RCA 方向共振</li>
+      <li><strong>11-26</strong>：autoclip（+880）与 last30days-skill（+945）走热：轻技能+内容再分发路线证明「知识密度+分发力」比框架更易突围</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/trending/' | relative_url }}" class="card-link">查看 →</a>
