@@ -9,17 +9,17 @@ nav_exclude: true
 
 # 💡 工作匹配与建议 | 2026-W48
 
-> 生成：司令 | 输入：本周 ai-loop / llm-rankings / trending（11-23~11-27 commander 版）+ daily / 校准（11-23、11-25 codex 版）+ 大瓜板块（11-27）+ work-profile.md
-> 注：codex W48 周报截至本报告成稿尚未归档，待其发布后补充吸收；本报告已吸收 codex 本周三篇校准（11-23 daily/trending/llm-rankings、11-25 daily/trending/llm-rankings）。
+> 生成：司令 | 输入：本周 ai-loop / llm-rankings / trending（11-23~11-27 commander 版）+ daily / 校准（11-23、11-25、11-27 codex 版）+ 大瓜板块（11-27）+ codex W48 周报校准结论（周五刚归档，已吸收，见思考 5 与反哺）+ work-profile.md
 
 ## 一、本周信号盘点
 
 1. **验证层范式从「概念」落地为「失败路径语义」**（ai-loop 11-25 头条 + daily 11-25 codex）：Resolution Hypothesis 实锤选择环节近随机之外，本周真正的增量是 OpenAI 11-24 工程演示给出的可操作验收流程——**审批拒绝后不得有生产写入；批准执行后指标未恢复则任务回到调查而非标记结案**。Text-to-SQL 预印本（独立评判模型，放行 52.4% / 错答 9.1%，且换数据集后保证不可迁移）补上了「验证器本身要按业务校准」的第三块拼图。
 2. **SRE Agent 赛道三线收敛，但需要校准眼镜**（ai-loop 11-24 头条 + trending 全周 opensre 连续在榜 + ai-loop 11-23 Sashiko）：OpenAI Performance Factory（3 个月 1700+ 调查）→ Azure SRE Agent A2A 公开预览 → opensre 开源方案持续上榜。*codex 校准：Azure SRE Agent 3 月已 GA，11 月只是 A2A 预览；Performance Factory 的 1700 调查与 600 定位根因是不同分母，不能折算自动修复成功率。*同期 Sashiko 0.9.5 给出了评审门禁的对照实验范式：20 个已知回归命中 3→14，20 个对照 12 个零告警，token 中位数 +11%。
 3. **HITL 从「每次审批」进化到「权限边界 + 异常升级 + 策略托管」**（ai-loop 11-26/27 洞察 + daily 11-25 codex）：Claude Ship beta 的 Claude Approvals 按仓库策略自动批/转人工，PR Steward 接管 CI 失败修复；Google Workspace MCP 正式版支持敏感动作请求人工确认；Apple Agent 立项聚焦沙箱隔离与权限最小化。Reddit 关键担忧（codex 11-25 转录）：**能写分支的 Agent 也会读到不可信的 PR 内容**——策略托管本身需要回归测试。
-4. **Agent Skills 开放标准获得 Google 背书，标准之争开打**（trending 11-23~27 连续 5 日，stitch-skills 稳定在榜）：技能包行情全周霸榜（BugHunter 六连冠至 24.7k），Google stitch-skills 明确遵循开放标准并兼容 Claude Code/Gemini CLI/Cursor。*codex 校准：Cursor 插件 2 月已发布、stitch-skills v1.0 是 5 月，trending 反映的是关注度而非首发；且 stitch-skills PR #111 实锤其检查器缺文件仍返回 0——标准宣讲与工程质量是两回事。*
+4. **Agent Skills 开放标准获得 Google 背书，标准之争开打**（trending 11-23~27 连续 5 日，stitch-skills 稳定在榜）：技能包行情全周霸榜（BugHunter 按总榜 11-21~27 已七连冠，至 24.7k），Google stitch-skills 明确遵循开放标准并兼容 Claude Code/Gemini CLI/Cursor。*codex 校准：Cursor 插件 2 月已发布、stitch-skills v1.0 是 5 月，trending 反映的是关注度而非首发；且 stitch-skills PR #111 实锤其检查器缺文件仍返回 0——标准宣讲与工程质量是两回事。*
 5. **模型格局：batch 通道集体起量 + 编程 spend 三强分食**（llm-rankings 11-26/27）：各厂 batch 定价 5 折策略见效（Haiku 4.5 / Text Embedding 3 Large / Qwen3.7 Plus batch 全部 >999%），离线负载成新增长极；编程花费榜 Anthropic 系合计 32.6%、Kimi 9.7%、Gemini 高端 9.7%，Opus 让出的份额被三家分食。Top Apps 榜 Hermes Agent（2.06T）超越 Claude Code 登顶——Agent 原生应用的模型消耗已超 coding 工具。
 6. **🍉 大瓜（11-27）**：Scott Aaronson 长文惊呼 AGI 级进展（HN 1989 分/1817 评论）；多项迹象显示 **OpenAI 进入成本控制模式**；Google 强推自家 MCP Servers 但 Gmail MCP 不能发邮件（能力阉割引发开放标准「官方化」信任担忧）；AI 让自托管重新变有趣（个人运维时代回归叙事）；AMD 硬分叉 llama.cpp。
+7. **codex W48 校准结论**（weekly/2026-W48-codex，11-27）：本周主题定为「验收要同时保留成功样例与反例」——daily 11-27 补充 TASK Memory 实验：把「相似但不适用」的近邻反例放进记忆回归组，误用率 39.2%→7.5%（分母与「记住了多少」不同）；偏航判定：司令从 BenchLeader 单一榜单推及「编码能力整体领先」属过度外推，trending「采用度判断超出证据」（46.9 倍是去重环节、整任务仅 1.65 倍）；Blog Monitor 独立归档连续两周缺失；下周主题权重：可靠性/发布门禁 40%（要一条错误放行/拦截的完整轨迹）、记忆与安全自改进 25%、部署预算路由 20%。
 
 ## 二、工作匹配矩阵
 
@@ -75,12 +75,12 @@ nav_exclude: true
 
 ### ACT-2026W48-5（观察项，暂不立项）：官方 MCP server 能力核验清单
 - **来源**：大瓜 11-27（Google 强推自家 MCP Servers 但 Gmail MCP 不能发邮件）+ daily 11-25 codex（Workspace MCP 敏感动作人工确认）
-- **建议**：暂不产生正式 ACT，记录一条选型纪律：未来任何官方/厂商 MCP server 进入我们的 agent 工具空间前，先跑一遍能力清单核验（读写边界、敏感动作确认、能力是否被阉割），不默认「官方出品=能力完整」。若后续我们实际引入 Google Workspace 或其他厂商 MCP，再升级为 ACT。
+- **建议**：暂不产生正式 ACT，记录一条选型纪律：未来任何官方/厂商 MCP server 进入我们的 agent 工具空间前，先跑一遍能力清单核验（读写边界、敏感动作确认、能力是否被阉割），不默认「官方出品=能力完整」。现成核验样例：codex 11-27 按 Gmail 官方发布记录核对，能力清单为搜索/读取/草稿，确无发送——HN 讨论与传言相符，但结论应以发布记录为准。若后续我们实际引入 Google Workspace 或其他厂商 MCP，再升级为 ACT。
 - **作用于**：work-profile #2、#5
 - **预期收益/成本/风险**：收益是避免集成半成品后返工；成本趋近于零（纪律性检查）；风险低。
 - **下一步**：写入 TOOLS.md 的集成检查备注即可，无需任务排期。
 
-**不硬凑说明**：Apple Agent 立项（11-27 头条）是 2027 年底的事，对我们无近期决策影响；AutoGen 归档与框架三派出清——我们未绑定编排框架，记录为选型背景；Aaronson AGI 震荡帖与大瓜中其余项目（自托管、YouTube 反广告、AMD 分叉）属长期观察，无本周可行动项；模型用量榜 flash 大战延续上周判断（用量榜与花费榜分离，选型口径分开看），不重复设 ACT。
+**不硬凑说明**：Apple Agent 立项（11-27 头条）是 2027 年底的事，对我们无近期决策影响；AutoGen 归档与框架三派出清——我们未绑定编排框架，记录为选型背景；Aaronson AGI 震荡帖与大瓜中其余项目（自托管、YouTube 反广告、AMD 分叉）属长期观察，无本周可行动项；模型用量榜 flash 大战延续上周判断（用量榜与花费榜分离，选型口径分开看），不重复设 ACT；last30days-skill 的 Rust 加速（46.9× 去重/1.65× 整任务）是测量纪律的好样本但与我们的技术栈无直接交集，仅作引用；TASK Memory 的「近邻反例」方法与 codex 下周 25% 记忆主题相关，我们暂无独立记忆子系统的生产负载，先在思考中记录、不设 ACT。
 
 ## 四、思考
 
@@ -88,13 +88,15 @@ nav_exclude: true
 2. **Sashiko 给我们的不是「AI 审查能行」的信心，而是「数据先行」的纪律。** codex 11-23 的校准很有说服力：同一个 Sashiko，司令头条里的三个数字（528 CVE、75.8%、返修率降 35%）统计对象各不相同，直接搬用会高估。真正可迁移的是它的对照实验方法：固定模型与推理档位、20+20 分组、同时报告命中/误报/成本。我们内部推 AI Review 的最大阻力一定来自误报，ACT-1 的对照集就是把这个问题前置量化。
 3. **「策略托管审批」是效率解药也是新风险面。** Claude Approvals 这类「按仓库策略自动批」的方向和 ai-loop 11-26 洞察（HITL 从「人管每次」到「人管例外」）一致，也是我们多 agent 体系想要的终态；但 Reddit 那句「能写分支的 Agent 也会读到不可信的 PR 内容」点破了要害——策略本身可能被 prompt 注入操纵。落地顺序必须是：先有「策略会放行、人工最终拒绝」的统计（说明策略过松），再谈自动批准。我们不必抢这个功能，但统计口径现在就可以埋。
 4. **大瓜的两条长期判断**：① OpenAI 成本控制模式若属实，叠加本周 batch 5 折与 flash 价格战，说明「推理成本通缩」是行业性而非单一厂商现象——对我们是利好（降本窗口），对供应商选型的含义是别签长周期高价合约；② Google MCP 官方化+能力阉割与 stitch-skills 的「标准宣讲 vs 工程质量」落差是同一件事的两面：**开放标准正在被巨头收编为生态锁定工具**。我们坚持 Agent Skills 开放标准（ACT 观察项）没错，但对「官方实现」要多一层核验，标准兼容不等于能力完整。
-5. **对 codex 校准的吸收**：本周三篇校准的增量质量很高——Sashiko 统计口径拆解、Azure SRE Agent GA 时间更正、stitch-skills 检查器返回 0 的反例，都直接改变了司令报告的结论强度。trending 板块「上榜热度 ≠ 首发时间」的纪律已在本报告执行（信号 4）。等 codex W48 周报归档后，若其对本周判断有推翻性意见，下周 insights 开头补充吸收。
+5. **对 codex 校准的吸收**（本周四篇：daily/trending/llm-rankings 11-23、11-25、11-27 + W48 周报）：Sashiko 统计口径拆解、Azure SRE Agent GA 时间更正、stitch-skills 检查器返回 0 的反例都直接修正了司令报告的结论强度。W48 周报对我 11-27 头条的偏航判定（从单一评测榜推及「编码能力整体领先」）成立，已在本报告修正为「BenchLeader 编码评测榜上 Claude 领先」这一受限表述。周报的核心增量是「验收要同时保留正例与反例」：TASK Memory 的近邻反例设计（39.2%→7.5%）给我们两个提醒——(a) ACT-1/ACT-2 的用例组同样要含「相似但不适用」的负例，不是只测会失败的任务；(b) 我们自己的 MEMORY.md / daily notes 记忆机制没有反例自检，记忆污染（过时事实、相邻条目误用）是下周 codex 记忆主题（25% 权重）值得观察的方向。trending「星数≠采用度」的纪律继续收紧：46.9 倍 vs 1.65 倍的案例说明组件级加速与端到端收益必须分开陈述，本报告引用数字时沿用此口径。
 
 ## 五、反哺
 
 - **pricing 板块正式降级**：codex 连续两期标注「Pricing：司令期间未产出」，W47 已建议降为触发式，本周仍无产出——执行降级：从每周必读移除，仅当在用模型价格变动 >30% 时触发。司令在调度配置中落实。
-- **llm-rankings 分类错误复发，需要硬约束**：Hy4 flash 闭源/开放权重标注错误在 11-22/23 复发（W47 已纠正过一次，codex 11-23 再次核实腾讯模型卡）。说明「建议核对」软约束无效，改为硬流程：榜单生成前对本周新进榜/异动模型强制核对许可证字段并记录来源链接，未核对不发版。
-- **trending 增加「首发时间」字段**：连续两周被 codex 纠正「上榜≠首发」（Cursor 插件、stitch-skills、Azure SRE Agent），建议 trending 项目表中为平台级项目增加「首发日期」列，与「本周热度」分开陈述。
+- **llm-rankings 分类错误复发，按 codex 建议改表结构**：Hy4 flash 闭源/开放权重标注本周两次复发（codex 11-23/11-25 连续纠正）。说明「建议核对」软约束无效，采纳 codex W48 周报的具体方案：榜单采集时把「可下载权重与许可证」「API 可用与价格」「平台流量调整（BYOK 星号等）」拆为三个独立字段分列陈述，未分列不发版。
+- **trending 增加「首发时间」字段 + 收敛采用度措辞**：连续两周被 codex 纠正「上榜≠首发」（Cursor 插件、stitch-skills、Azure SRE Agent），建议 trending 项目表增加「首发日期」列；同时榜单点评中「行业采用」「赛道验证」类措辞仅在有一手使用证据（issue/PR/部署案例）时使用，星数只描述关注度。
+- **Blog Monitor 连续两周独立归档缺失，给出最后期限**：codex W47、W48 连续判定覆盖不足。建议下周正式二选一：要么把 Blog Monitor 降级为 daily 校准内的固定段落（监控官方行为变化：模型退役、权限策略、接口废弃），要么从信号源清单移除——不再维持「有名无实」的板块状态。
 - **大瓜板块建议例行化**：11-27 首次出现的「🍉 今日大瓜」是本周最具战略纵深的板块（OpenAI 成本模式、MCP 官方化都是长期信号），建议从单日实验变为每日 trending 的固定板块。
 - **ai-loop 维持最高权重**：本周 ACT 全部 5 条中 4 条的源头在 ai-loop 及其对应 daily 校准，信号密度无可替代。
 - **backlog 状态**：W47 的 5 条 ACT 均仍为 proposed，本周无一被采纳/放弃（backlog 无变化）；新增 ACT-2026W48-1~4（其中 ACT-2 明确与 W47 ACT-4/5 捆绑落地）、ACT-2026W48-5 为观察项不入表。当前共 9 条 proposed，建议用户集中处理一次：最低成本路径是「先采纳 W47-1（轨迹数据），它同时解锁 W47-5 与 W48-4」。
+- **下周选题对齐 codex 权重建议**：可靠性/发布门禁 40%（目标产出：一条错误放行或错误拦截的完整轨迹 + 修复后回归结果，与 ACT-1/2/3 天然重合）、记忆与安全自改进 25%（TASK Memory 近邻反例范式）、部署预算路由 20%（batch 测算并入 ACT-4）、Agent DevOps 10%（安装失败/无权限/后端回退各取一例，与 ACT-3 重合）、FDE 5%。司令下周报告选题按此配比执行。
