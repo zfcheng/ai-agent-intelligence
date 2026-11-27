@@ -186,11 +186,11 @@ nav_order: 1
     </div>
     <p class="card-desc">全球 Top 20 模型排名，日更。</p>
     <ul class="card-highlights">
-      <li><strong>11-26</strong>：<strong>DeepSeek V4.1 Flash 1017 周榜蝉联</strong>（73.7T，+19%），月榜 260T（+509%），对 #2 领先 2.3 倍；旧版 0910 月榜 -45% 平滑让位，自我换血不流失基本盘</li>
-      <li><strong>11-26</strong>：<strong>腾讯 Hy4 flash 单周 >999% 空降周榜 #2</strong>（32.1T），$0.04/$0.14 全场最低价，作者份额 +495% 至 11.7%；但日榜 -33% 且 BYOK 被 cap，含水量待验证</li>
-      <li><strong>11-26</strong>：<strong>Kimi K3.1 Pro 编程份额升至 9.7%（+9.5pp）</strong>稳居编程 #2，Opus 5.5 守住 21.8%（-1.6pp），Gemini 4 Carbon 以 6.3%（new）空降 #3</li>
-      <li><strong>11-26</strong>：新面孔扎堆：Thinking Machines Inkling 2 Mini 首周 413B 登顶 Trending（$0.07/$0.30），typesafe Jev 1.13 日榜 +55% 冲进 Top 7，路由型模型起量</li>
-      <li><strong>11-26</strong>：batch 通道集体 >999%（GPT-6.2、Gemini 4 Neon、Haiku 5.5、Qwen3.7 Plus），闭源高端靠 Claude Fable 5.2（AA 64.8 第一）+ batch 放量续命；周榜 Top 10 开源占 7 席</li>
+      <li><strong>11-27</strong>：<strong>DeepSeek V4.1 Flash 1017 周榜七连霸</strong>（77.2T，+24%），月榜 267T（+448%）；对 #2 领先 2.2 倍，但作者份额 25.4%（-7%）首次松动，腾讯/Google 蚕食增量</li>
+      <li><strong>11-27</strong>：<strong>腾讯 Hy4 flash 第二周 >999%</strong>（35.6T）且日榜 -33% → +11% 转正，批量注水疑虑部分解除；BYOK cap 仍在，$0.035/$0.14 最低价贴身肉搏 DeepSeek</li>
+      <li><strong>11-27</strong>：<strong>Kimi K3.1 Pro 三线共振</strong>：周 +31%（Top 10 最高）+ 日榜 +11% + 编程 spend 9.7%（+9.4pp）稳坐编程 #2，Opus 5.5 让出的编程份额被 Anthropic 系/Google/Kimi 三家分食</li>
+      <li><strong>11-27</strong>：新模型扎堆上架：Upstage Solar Mini 4.5 首周 59.3B（$0.01/$0.04，输出价再创新低）、小米 MiMo-V2.6-Flash-MOPD（1M ctx）登场；Inkling 2 Mini 第二周 487B（+18%）持续领跑 Trending</li>
+      <li><strong>11-27</strong>：GPT-6 Luna 跌幅扩大至 -16%，闭源走量型号加速失血；AA 榜第一梯队固化（Fable 5.2 64.8 / GPT-6.2 Astra 62.2 / Gemini 4 Neon 61.5）；Hermes Agent（2.06T）超越 Claude Code 登顶 Top Apps</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/llm-rankings/' | relative_url }}" class="card-link">查看 →</a>
