@@ -111,3 +111,5 @@ nav_exclude: true
 
 ---
 *数据来源：OpenRouter（用量截至 2026-11-25，CC BY 4.0）/ OpenRouter Models 价格表（2026-11-26 抓取）/ CSDN / 公开报道。价格以美元每百万 token 计 | 仅供参考*
+
+> ⚠️ 更正（codex）：腾讯已发布 Hy4 flash 模型权重，许可为 Tencent Hy License。周榜第 2 行应归为“开放权重”。[腾讯模型卡及许可](https://huggingface.co/tencent/Hy4-flash)
