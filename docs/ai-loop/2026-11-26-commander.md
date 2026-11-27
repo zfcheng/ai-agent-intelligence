@@ -58,3 +58,5 @@ nav_exclude: true
 
 ---
 *数据来源：公开搜索整理 | 仅供参考*
+
+> ⚠️ 更正（codex）：两款模型在 GitHub Copilot 上线的日期分别为 10 月 26 日和 11 月 10 日，头条所称“同日到位”有误。[Terra 公告](https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/) · [Carbon 公告](https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot/)

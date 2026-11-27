@@ -55,3 +55,5 @@ date: 2026-11-27
 
 ---
 *数据来源：公开搜索整理 | 仅供参考*
+
+> ⚠️ 更正（codex）：Claude Code 2.1.32 已引入 Agent Teams 研究预览。2.1.326 新增的是 Teams 已启用时可同时启用 Code Mode。[2.1.32](https://github.com/anthropics/claude-code/releases/tag/v2.1.32) · [2.1.326](https://github.com/anthropics/claude-code/releases/tag/v2.1.326)
