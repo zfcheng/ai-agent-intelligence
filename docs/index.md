@@ -140,11 +140,11 @@ nav_order: 1
     </div>
     <p class="card-desc">AI Agent 情报日报，全球视野覆盖最新趋势。</p>
     <ul class="card-highlights">
+      <li><strong>11-27</strong>：TASK Memory 实验把相似问题误用记忆的比例从 39.2% 降到 7.5%</li>
+      <li><strong>11-27</strong>：last30days-skill 的千条去重快 46.9 倍，同次联网任务从 31 秒缩至 19 秒</li>
+      <li><strong>11-27</strong>：Gmail MCP 工具清单区分草拟与发送，可按邮箱状态验收授权边界</li>
       <li><strong>11-25</strong>：Claude Ship 将修复与批准分开，仓库策略决定何时转交人工</li>
-      <li><strong>11-25</strong>：OpenAI 运维演示给出两条失败路径：审批拒绝后改提案，指标未恢复则继续调查</li>
-      <li><strong>11-25</strong>：Google Workspace MCP 正式可用，敏感操作可触发人工确认</li>
-      <li><strong>11-25</strong>：Text-to-SQL 研究同时衡量放行率和错答率，迁移数据库需重新校准</li>
-      <li><strong>11-23</strong>：Claude Code 自托管 runner 分别记录注册与首会话耗时</li>
+      <li><strong>11-25</strong>：OpenAI 运维演示分别定义了审批被拒、执行后未恢复的后续动作</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/daily.html' | relative_url }}" class="card-link">查看 →</a>
@@ -186,7 +186,7 @@ nav_order: 1
     </div>
     <p class="card-desc">全球 Top 20 模型排名，日更。</p>
     <ul class="card-highlights">
-      <li><strong>11-27</strong>：<strong>DeepSeek V4.1 Flash 1017 周榜七连霸</strong>（77.2T，+24%），月榜 267T（+448%）；对 #2 领先 2.2 倍，但作者份额 25.4%（-7%）首次松动，腾讯/Google 蚕食增量</li>
+      <li><strong>11-27</strong>：<strong>DeepSeek V4.1 Flash 1017 仍居滚动周榜第一</strong>（77.2T，+24%），月榜 267T（+448%）；对 #2 领先 2.2 倍，但作者份额 25.4%（-7%）首次松动，腾讯/Google 蚕食增量</li>
       <li><strong>11-27</strong>：<strong>腾讯 Hy4 flash 第二周 >999%</strong>（35.6T）且日榜 -33% → +11% 转正，批量注水疑虑部分解除；BYOK cap 仍在，$0.035/$0.14 最低价贴身肉搏 DeepSeek</li>
       <li><strong>11-27</strong>：<strong>Kimi K3.1 Pro 三线共振</strong>：周 +31%（Top 10 最高）+ 日榜 +11% + 编程 spend 9.7%（+9.4pp）稳坐编程 #2，Opus 5.5 让出的编程份额被 Anthropic 系/Google/Kimi 三家分食</li>
       <li><strong>11-27</strong>：新模型扎堆上架：Upstage Solar Mini 4.5 首周 59.3B（$0.01/$0.04，输出价再创新低）、小米 MiMo-V2.6-Flash-MOPD（1M ctx）登场；Inkling 2 Mini 第二周 487B（+18%）持续领跑 Trending</li>
@@ -209,7 +209,7 @@ nav_order: 1
     </div>
     <p class="card-desc">热门项目 + AI 项目追踪。</p>
     <ul class="card-highlights">
-      <li><strong>11-27</strong>：<strong>Claude-BugHunter 四连冠</strong>（+1,597⭐），Skills 生态全面接管 Trending：Top 16 中 6 个是纯技能包，竞争彻底转向「职业知识封装之争」</li>
+      <li><strong>11-27</strong>：<strong>Claude-BugHunter 连续七天居总榜第一</strong>（+1,597⭐），Skills 生态全面接管 Trending：Top 16 中 6 个是纯技能包，竞争彻底转向「职业知识封装之争」</li>
       <li><strong>11-27</strong>：Google 官方 stitch-skills 入榜（+309），Agent Skills 开放标准获大厂背书，正与 MCP 形成配套协议层</li>
       <li><strong>11-27</strong>：firecrawl（+1,046，总 211k）与 CLI-Anything（+746）继续卡位 Agent 取数/接口层，内部系统 Agent-Native 改造有可复制路径</li>
       <li><strong>11-27</strong>：opensre（CI/CD 可靠性 Agent，+327）连续多日在榜，SRE 自愈赛道确定性再验证，与告警 RCA 方向同频</li>
