@@ -209,11 +209,11 @@ nav_order: 1
     </div>
     <p class="card-desc">热门项目 + AI 项目追踪。</p>
     <ul class="card-highlights">
-      <li><strong>11-26</strong>：<strong>Claude-BugHunter 三连冠</strong>（+1,652⭐），Skills 生态进入「行业知识封装之争」：安全红队/移动合规/图表设计等垂直职业包霸榜</li>
-      <li><strong>11-26</strong>：HKUDS CLI-Anything（+1,106，总 65.7k）提出「让所有软件 Agent-Native」，与 firecrawl（210k）、cursor/plugins 构成 Agent 基础设施三层卡位</li>
-      <li><strong>11-26</strong>：diagram-design（+1,141）打出「No Mermaid slop」：Coding Agent 竞争从「能生成」转向「生成得体面」，反 AI slop 成卖点</li>
-      <li><strong>11-26</strong>：opensre（CI/CD 可靠性 Agent，+348）持续在榜，SRE 自愈赛道确定性再获验证，与内部告警 RCA 方向共振</li>
-      <li><strong>11-26</strong>：autoclip（+880）与 last30days-skill（+945）走热：轻技能+内容再分发路线证明「知识密度+分发力」比框架更易突围</li>
+      <li><strong>11-27</strong>：<strong>Claude-BugHunter 四连冠</strong>（+1,597⭐），Skills 生态全面接管 Trending：Top 16 中 6 个是纯技能包，竞争彻底转向「职业知识封装之争」</li>
+      <li><strong>11-27</strong>：Google 官方 stitch-skills 入榜（+309），Agent Skills 开放标准获大厂背书，正与 MCP 形成配套协议层</li>
+      <li><strong>11-27</strong>：firecrawl（+1,046，总 211k）与 CLI-Anything（+746）继续卡位 Agent 取数/接口层，内部系统 Agent-Native 改造有可复制路径</li>
+      <li><strong>11-27</strong>：opensre（CI/CD 可靠性 Agent，+327）连续多日在榜，SRE 自愈赛道确定性再验证，与告警 RCA 方向同频</li>
+      <li><strong>11-27</strong>：diagram-design（+955）与 autoclip（+774）走热：反 AI slop 与本地优先桌面 AI 应用成为新卖点，产出质量决定采纳率</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/trending/' | relative_url }}" class="card-link">查看 →</a>
