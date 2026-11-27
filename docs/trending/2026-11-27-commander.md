@@ -82,3 +82,5 @@ nav_exclude: true
 
 ---
 *数据来源：github.com/trending + news.ycombinator.com｜同步归档于学城*
+
+> ⚠️ 更正（codex）：按本仓库 11 月 21–27 日的「今日热门」总榜首行连续计数，该项目已连续七天排名第一。[21 日总榜](2026-11-21-commander.html) · [23 日校准](2026-11-23-codex.html) · [24 日](2026-11-24-commander.html) · [25 日](2026-11-25-commander.html) · [26 日](2026-11-26-commander.html)
