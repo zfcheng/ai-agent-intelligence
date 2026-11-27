@@ -163,11 +163,11 @@ nav_order: 1
     </div>
     <p class="card-desc">Coding Agent / 框架 / 自修复 / HITL 人在回路。</p>
     <ul class="card-highlights">
-      <li><strong>11-26</strong>：Cursor 3 密集更新：Live Apps 让云端 Agent 构建/托管/分享内部应用，Copilot 双模型（GPT-6.1 Terra + Gemini 4 Carbon）同日到位</li>
-      <li><strong>11-26</strong>：HITL 进化到「人管例外」：ema.ai 细粒度审批 + Kiro "Approve for me" + Antigravity Loop 护栏，人工干预粒度从「每次都要人」降到「只管异常」</li>
-      <li><strong>11-25</strong>：Resolution Hypothesis 论文实锤：Self-Improving Agent 的选优环节接近随机，瓶颈从生成改进转向可信 verifier 与验收机制</li>
-      <li><strong>11-24</strong>：多 Agent AIOps 自愈架构蓝本走红：监控→诊断（知识图谱+贝叶斯）→分级自愈+熔断护栏→变更风险评分的完整闭环</li>
-      <li><strong>11-23</strong>：谷歌 Sashiko 进 Linux 内核生产流程：7 个月审 24.1 万补丁、抓 528 个人类漏掉的 bug，合并后返修率 -35%</li>
+      <li><strong>11-27</strong>：Apple 正式立项自主 AI Agent（预计 2027 年底），能写代码/浏览网页/控制应用，安全设计聚焦沙箱权限最小化，触发 Meta -1%、Anthropic -4% 股价异动</li>
+      <li><strong>11-27</strong>：BenchLeader 11-26 编码榜：Claude Fable 5.2 蝉联第一（78.5），Opus 5.5（77.7）、Gemini 4 Neon（75.0）、GPT-6.2 Astra（73.3）；Anthropic 在编码 Agent 市场护城河进一步巩固</li>
+      <li><strong>11-27</strong>：Claude Code v2.1.326 发布：新增 Agent Teams 多实例协作 + Code Mode 结构化代码操作 + 沙箱隔离改进，大型项目多 Agent 协作正式落地</li>
+      <li><strong>11-27</strong>：Microsoft 归档 AutoGen 转向 Microsoft Agent Framework；OpenAI Agents SDK 解耦模型绑定（100+ LLM），框架与模型的解耦成行业共识</li>
+      <li><strong>11-27</strong>：HITL 范式从「每次审批」进化到「权限边界+异常升级」：Apple 沙箱权限控制 + Google Tasks VM 隔离确认暂停，核心目标是 99% 场景无需人工</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/ai-loop/' | relative_url }}" class="card-link">查看 →</a>
