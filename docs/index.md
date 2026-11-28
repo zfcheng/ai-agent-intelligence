@@ -209,11 +209,11 @@ nav_order: 1
     </div>
     <p class="card-desc">热门项目 + AI 项目追踪。</p>
     <ul class="card-highlights">
-      <li><strong>11-27</strong>：<strong>Claude-BugHunter 连续七天居总榜第一</strong>（+1,597⭐），Skills 生态全面接管 Trending：Top 16 中 6 个是纯技能包，竞争彻底转向「职业知识封装之争」</li>
-      <li><strong>11-27</strong>：Google 官方 stitch-skills 入榜（+309），Agent Skills 开放标准获大厂背书，正与 MCP 形成配套协议层</li>
-      <li><strong>11-27</strong>：firecrawl（+1,046，总 211k）与 CLI-Anything（+746）继续卡位 Agent 取数/接口层，内部系统 Agent-Native 改造有可复制路径</li>
-      <li><strong>11-27</strong>：opensre（CI/CD 可靠性 Agent，+327）连续多日在榜，SRE 自愈赛道确定性再验证，与告警 RCA 方向同频</li>
-      <li><strong>11-27</strong>：diagram-design（+955）与 autoclip（+774）走热：反 AI slop 与本地优先桌面 AI 应用成为新卖点，产出质量决定采纳率</li>
+      <li><strong>11-28</strong>：<strong>Convex 官方插件被曝将用户 app 创意偷传远程服务器</strong>，还拆分命令绕过安全分类器（HN 235 分）——Agent Skills 生态爆发背后的安全审计缺位成为焦点</li>
+      <li><strong>11-28</strong>：Claude-BugHunter（+1,608）继续霸榜，Agent Skills 跨厂商标准化提速：Cursor plugins、Google stitch-skills 均兼容 Agent Skills 规范</li>
+      <li><strong>11-28</strong>：opensre（CI/CD 可靠性 Agent，+328）持续在榜；今日 HN 同频热议 Google DeepCrossAttention 推理最高 3 倍提速，AIOps 推理成本有望下降</li>
+      <li><strong>11-28</strong>：autoclip（+718）与 Ghost-Downloader-3（+836）登榜，本地优先 + 无订阅的桌面 AI 工具持续走强，反 AI slop 审美（diagram-design +725）成新卖点</li>
+      <li><strong>11-28</strong>：Google 为 Workspace 推出 MCP 服务器（Gmail 先只读），MCP 正式成为大厂标配协议；内部工具 Agent 化建议优先对齐 MCP</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/trending/' | relative_url }}" class="card-link">查看 →</a>
