@@ -163,11 +163,11 @@ nav_order: 1
     </div>
     <p class="card-desc">Coding Agent / 框架 / 自修复 / HITL 人在回路。</p>
     <ul class="card-highlights">
-      <li><strong>11-27</strong>：Apple 正式立项自主 AI Agent（预计 2027 年底），能写代码/浏览网页/控制应用，安全设计聚焦沙箱权限最小化，触发 Meta -1%、Anthropic -4% 股价异动</li>
-      <li><strong>11-27</strong>：BenchLeader 11-26 编码榜：Claude Fable 5.2 蝉联第一（78.5），Opus 5.5（77.7）、Gemini 4 Neon（75.0）、GPT-6.2 Astra（73.3）；Anthropic 在编码 Agent 市场护城河进一步巩固</li>
-      <li><strong>11-27</strong>：Claude Code v2.1.326 发布：新增 Agent Teams 多实例协作 + Code Mode 结构化代码操作 + 沙箱隔离改进，大型项目多 Agent 协作正式落地</li>
-      <li><strong>11-27</strong>：Microsoft 归档 AutoGen 转向 Microsoft Agent Framework；OpenAI Agents SDK 解耦模型绑定（100+ LLM），框架与模型的解耦成行业共识</li>
-      <li><strong>11-27</strong>：HITL 范式从「每次审批」进化到「权限边界+异常升级」：Apple 沙箱权限控制 + Google Tasks VM 隔离确认暂停，核心目标是 99% 场景无需人工</li>
+      <li><strong>11-28</strong>：Claude Code 2.1.332 新增 MCP 服务器调用 Skills + 执行前安全钩子，Skills 生态与 MCP 打通，「能力扩展」与「风险控制」在 Loop 内同时落地</li>
+      <li><strong>11-28</strong>：「Skill 即软件包」生态爆发：claude-plugins-official 逼近 4 万星（日增 1173），superpowers、Claude-BugHunter 霸榜 Trending，Coding Agent 正长出自己的包管理器</li>
+      <li><strong>11-28</strong>：Codex CLI 0.171.0 默认切 GPT-6.2 Sol，/import 一键迁移 Claude Code 全套配置与对话；Cursor 云端 Agent 可直接发布 Live App，Loop 产出从 diff 延伸到可访问应用</li>
+      <li><strong>11-28</strong>：厂商竞争焦点从「生成」转向「门禁」：Devin 质量门 + Codex 审计门禁 + fail-closed 验证闸密集发布，可治理验证成新竞争维度</li>
+      <li><strong>11-28</strong>：Loop 完成三级跳：应用层循环 → LangGraph 1.2.20 审批 ID 分离/断点恢复 → 模型架构层（GLM-5.4 中间 28 层跑两遍），「循环深度」正取代参数规模成新叙事</li>
     </ul>
     <div class="card-footer">
       <a href="{{ '/ai-loop/' | relative_url }}" class="card-link">查看 →</a>
